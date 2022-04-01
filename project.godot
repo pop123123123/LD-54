@@ -12,7 +12,7 @@ config_version=4
 
 config/name="LD50"
 run/main_scene="res://src/Game/Game.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/sprites/yannick.png"
 
 [autoload]
 
