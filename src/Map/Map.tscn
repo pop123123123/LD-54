@@ -21,7 +21,7 @@ scale = Vector2( 0.494695, 0.454907 )
 shape = SubResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -3, -182 )
+position = Vector2( -3, -270 )
 
 [node name="Navigation2D" type="Navigation2D" parent="."]
 
