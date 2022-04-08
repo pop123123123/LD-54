@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Level/Level.gd" type="Script" id=1]
+[ext_resource path="res://src/Map/Map.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/HUD/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/HUD/HUD.gd" type="Script" id=4]
+
+[node name="Level" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Map" parent="." instance=ExtResource( 2 )]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource( 3 )]
+script = ExtResource( 4 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

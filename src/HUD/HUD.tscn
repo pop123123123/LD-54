@@ -13,14 +13,52 @@ default_font = SubResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_right = 1.0
-margin_right = 40.0
-margin_bottom = 40.0
 
-[node name="Label" type="Label" parent="CenterContainer"]
-margin_left = 380.0
-margin_right = 684.0
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 62.0
+
+[node name="Label" type="Label" parent="VBoxContainer/CenterContainer"]
+margin_left = 360.0
+margin_right = 664.0
 margin_bottom = 62.0
 theme = SubResource( 2 )
 text = "Ludum Dare 50"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 66.0
+margin_right = 1024.0
+margin_bottom = 98.0
+
+[node name="LevelNumber" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 14.0
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/LevelNumber"]
+margin_right = 42.0
+margin_bottom = 14.0
+text = "Level: "
+
+[node name="LevelNumberValue" type="Label" parent="VBoxContainer/VBoxContainer/LevelNumber"]
+margin_left = 46.0
+margin_right = 51.0
+margin_bottom = 14.0
+text = "/"
+
+[node name="CoinNumber" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 1024.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/CoinNumber"]
+margin_right = 43.0
+margin_bottom = 14.0
+text = "Coins: "
+
+[node name="CoinNumberValue" type="Label" parent="VBoxContainer/VBoxContainer/CoinNumber"]
+margin_left = 47.0
+margin_right = 52.0
+margin_bottom = 14.0
+text = "/"
