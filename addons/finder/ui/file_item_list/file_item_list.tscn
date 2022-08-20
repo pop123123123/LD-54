@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/finder/theme/default.tres" type="Theme" id=1]
+[ext_resource path="res://addons/finder/ui/file_item_list/file_item_list.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.14902 )
+
+[node name="FileItemList" type="ScrollContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_mode = 2
+theme = ExtResource( 1 )
+custom_styles/bg = SubResource( 1 )
+follow_focus = true
+script = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="EmptyLabel" type="Label" parent="VBoxContainer"]
+margin_top = 278.0
+margin_right = 1024.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 30, 30 )
+size_flags_vertical = 6
+text = "No items yet, start typing to show something"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="EasterEggLabel" type="Label" parent="VBoxContainer"]
+modulate = Color( 1, 1, 1, 0.0980392 )
+margin_top = 586.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = " Wow, It feels so empty here "
+align = 2
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]

@@ -1,0 +1,30 @@
+[gd_resource type="Theme" load_steps=8 format=2]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+content_margin_left = 2.0
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.172549, 0.164706, 0.196078, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[resource]
+HBoxContainer/constants/separation = 0
+HSeparator/constants/separation = 0
+LineEdit/styles/focus = SubResource( 1 )
+LineEdit/styles/normal = SubResource( 2 )
+RichTextLabel/styles/normal = SubResource( 3 )
+ScrollContainer/styles/bg = SubResource( 4 )
+TextEdit/constants/line_spacing = 8
+TextEdit/styles/focus = SubResource( 5 )
+TextEdit/styles/normal = SubResource( 6 )
+TextEdit/styles/read_only = SubResource( 7 )
+VBoxContainer/constants/separation = 0

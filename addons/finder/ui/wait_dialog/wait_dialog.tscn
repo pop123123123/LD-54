@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://addons/finder/theme/default.tres" type="Theme" id=1]
+[ext_resource path="res://addons/finder/ui/wait_dialog/wait_dialog.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.203922, 0.203922, 0.203922, 1 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "tree_dots"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PopupPanel/Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "Wait while we do some very important work behind the scenes", "Wait while we do some very important work behind the scenes.", "Wait while we do some very important work behind the scenes..", "Wait while we do some very important work behind the scenes..." ]
+}
+
+[node name="Wait" type="Control"]
+self_modulate = Color( 0.211765, 0.211765, 0.211765, 0.615686 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.0392157, 0.0392157, 0.0392157, 0.490196 )
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -265.5
+margin_top = -58.5
+margin_right = 265.5
+margin_bottom = 58.5
+theme = ExtResource( 1 )
+custom_styles/panel = SubResource( 1 )
+popup_exclusive = true
+
+[node name="Label" type="Label" parent="PopupPanel"]
+modulate = Color( 0.792157, 0.792157, 0.792157, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -265.5
+margin_top = -58.5
+margin_right = 265.5
+margin_bottom = 58.5
+grow_horizontal = 2
+rect_min_size = Vector2( 531, 117 )
+focus_mode = 2
+text = "Wait while we do some very important work behind the scenes..."
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/tree_dots = SubResource( 2 )

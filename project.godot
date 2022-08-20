@@ -8,6 +8,58 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "DirWalker",
+"language": "GDScript",
+"path": "res://addons/finder/utils/dir_walker.gd"
+}, {
+"base": "Control",
+"class": "FileItem",
+"language": "GDScript",
+"path": "res://addons/finder/ui/file_item_list/file_item.gd"
+}, {
+"base": "Control",
+"class": "Finder",
+"language": "GDScript",
+"path": "res://addons/finder/finder.gd"
+}, {
+"base": "Reference",
+"class": "FuzzyFile",
+"language": "GDScript",
+"path": "res://addons/finder/utils/fuzzy_file.gd"
+}, {
+"base": "Reference",
+"class": "FuzzyMatching",
+"language": "GDScript",
+"path": "res://addons/finder/utils/fuzzy_matching.gd"
+}, {
+"base": "Reference",
+"class": "GDscriptParser",
+"language": "GDScript",
+"path": "res://addons/finder/utils/gdscript_parser/gdscript_parser.gd"
+}, {
+"base": "Reference",
+"class": "RelevanceSorter",
+"language": "GDScript",
+"path": "res://addons/finder/utils/relevance_sorter.gd"
+}, {
+"base": "Control",
+"class": "WaitDialog",
+"language": "GDScript",
+"path": "res://addons/finder/ui/wait_dialog/wait_dialog.gd"
+} ]
+_global_script_class_icons={
+"DirWalker": "",
+"FileItem": "",
+"Finder": "",
+"FuzzyFile": "",
+"FuzzyMatching": "",
+"GDscriptParser": "",
+"RelevanceSorter": "",
+"WaitDialog": ""
+}
+
 [application]
 
 config/name="LD-Base"
@@ -18,6 +70,10 @@ config/icon="res://assets/sprites/player.png"
 [autoload]
 
 Globals="*res://src/Globals.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/finder/plugin.cfg" )
 
 [input]
 
