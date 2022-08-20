@@ -13,7 +13,7 @@ config_version=4
 config/name="LD-Base"
 config/description="Template project for Ludum Dare game jam"
 run/main_scene="res://src/SceneManager/SceneManager.tscn"
-config/icon="res://assets/sprites/yannick.png"
+config/icon="res://assets/sprites/player.png"
 
 [autoload]
 
