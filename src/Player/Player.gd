@@ -1,5 +1,6 @@
 extends Node2D
 
+
 func _ready():
 	# Waits for Game.gd to run randomize()
 	yield(get_tree(), "idle_frame")
