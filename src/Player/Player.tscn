@@ -9,10 +9,12 @@
 [ext_resource path="res://assets/sounds/Player/spawn/spawn3.wav" type="AudioStream" id=7]
 
 [sub_resource type="AtlasTexture" id=3]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 128, 128 )
 
 [sub_resource type="AtlasTexture" id=4]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 128, 0, 128, 128 )
 
@@ -34,6 +36,7 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="AnimatedSprite" parent="RigidBody2D"]
 frames = SubResource( 2 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
