@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var map = get_parent().get_node("TileMap")
+onready var map = get_parent()
 onready var game = map.get_parent()
 
 
