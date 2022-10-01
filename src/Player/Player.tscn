@@ -27,26 +27,34 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 50, 50 )
+extents = Vector2( 20, 20 )
 
-[node name="Player" type="Node2D"]
+[node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
-[node name="RigidBody2D" type="KinematicBody2D" parent="."]
-
-[node name="Sprite" type="AnimatedSprite" parent="RigidBody2D"]
+[node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 frame = 1
 playing = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
-[node name="Camera2D" type="Camera2D" parent="RigidBody2D"]
+[node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 20.0
+target_desired_distance = 20.0
+path_max_distance = 60.0
+avoidance_enabled = true
 
 [node name="SoundFx" type="Node" parent="."]
 
 [node name="SpawnSound" type="AudioStreamPlayer" parent="SoundFx"]
 script = ExtResource( 3 )
 sounds = [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
