@@ -23,11 +23,11 @@ margin_right = 1024.0
 margin_bottom = 62.0
 
 [node name="Label" type="Label" parent="VBoxContainer/CenterContainer"]
-margin_left = 360.0
-margin_right = 664.0
+margin_left = 326.0
+margin_right = 698.0
 margin_bottom = 62.0
 theme = SubResource( 2 )
-text = "Ludum Dare 50"
+text = "Ludum Dare - Base"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
 margin_top = 66.0
