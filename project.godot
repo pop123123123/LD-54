@@ -62,7 +62,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="LD-51"
+config/name="LD-Base"
 config/description="Ludum Dare 51"
 run/main_scene="res://src/SceneManager/SceneManager.tscn"
 config/icon="res://assets/sprites/player.png"
