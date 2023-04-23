@@ -4,11 +4,11 @@ signal back
 
 var back_button_visible
 
-onready var back_button = $CenterContainer/VBoxContainer/CenterContainer4/Back
+@onready var back_button = $CenterContainer/VBoxContainer/CenterContainer4/Back
 
 
 func _ready():
-	assert(back_button_visible != null, "set_back must be called before creating Credits scene")
+	assert(back_button_visible != null) #,"set_back must be called before creating Credits scene")
 	if back_button_visible:
 		back_button.show()
 	else:

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/spawn0.wav-bda23008f0b805b0fce5a41bec2e77c4.sample"
+type="AudioStreamWAV"
+uid="uid://ba1vnr0wa8k01"
+path="res://.godot/imported/spawn0.wav-bda23008f0b805b0fce5a41bec2e77c4.sample"
 
 [deps]
 
 source_file="res://assets/sounds/Player/spawn/spawn0.wav"
-dest_files=[ "res://.import/spawn0.wav-bda23008f0b805b0fce5a41bec2e77c4.sample" ]
+dest_files=["res://.godot/imported/spawn0.wav-bda23008f0b805b0fce5a41bec2e77c4.sample"]
 
 [params]
 

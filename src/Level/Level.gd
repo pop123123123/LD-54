@@ -6,7 +6,7 @@ signal game_over
 var level_number
 var nb_coins
 
-onready var hud = $UI/HUD
+@onready var hud = $UI/HUD
 
 
 func _ready():

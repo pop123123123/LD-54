@@ -1,50 +1,50 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=12 format=3 uid="uid://dss1w1wv5xvq1"]
 
-[ext_resource path="res://assets/sprites/player.png" type="Texture" id=1]
-[ext_resource path="res://src/Player/Player.gd" type="Script" id=2]
-[ext_resource path="res://src/AudioBankPlayer.gd" type="Script" id=3]
-[ext_resource path="res://assets/sounds/Player/spawn/spawn1.wav" type="AudioStream" id=4]
-[ext_resource path="res://assets/sounds/Player/spawn/spawn0.wav" type="AudioStream" id=5]
-[ext_resource path="res://assets/sounds/Player/spawn/spawn2.wav" type="AudioStream" id=6]
-[ext_resource path="res://assets/sounds/Player/spawn/spawn3.wav" type="AudioStream" id=7]
+[ext_resource type="Texture2D" uid="uid://bprdj2krbpywu" path="res://assets/sprites/player.png" id="1"]
+[ext_resource type="Script" path="res://src/Player/Player.gd" id="2"]
+[ext_resource type="Script" path="res://src/AudioBankPlayer.gd" id="3"]
+[ext_resource type="AudioStream" uid="uid://cdftql8bh2ubw" path="res://assets/sounds/Player/spawn/spawn1.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://ba1vnr0wa8k01" path="res://assets/sounds/Player/spawn/spawn0.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://b4bcome7y8keg" path="res://assets/sounds/Player/spawn/spawn2.wav" id="6"]
+[ext_resource type="AudioStream" uid="uid://shb47hd4iaj2" path="res://assets/sounds/Player/spawn/spawn3.wav" id="7"]
 
-[sub_resource type="AtlasTexture" id=3]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 128, 128 )
+[sub_resource type="AtlasTexture" id="3"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id=4]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 128, 0, 128, 128 )
+[sub_resource type="AtlasTexture" id="4"]
+atlas = ExtResource("1")
+region = Rect2(128, 0, 128, 128)
 
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ SubResource( 3 ), SubResource( 4 ) ],
+[sub_resource type="SpriteFrames" id="2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("3")
+}, {
+"duration": 1.0,
+"texture": SubResource("4")
+}],
 "loop": true,
-"name": "default",
+"name": &"default",
 "speed": 5.0
-} ]
+}]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 20, 20 )
+[sub_resource type="RectangleShape2D" id="1"]
 
-[node name="Player" type="KinematicBody2D"]
-script = ExtResource( 2 )
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("2")
 
-[node name="Sprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 2 )
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("2")
 frame = 1
-playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource("1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-current = true
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-path_desired_distance = 20.0
 target_desired_distance = 20.0
 path_max_distance = 60.0
 avoidance_enabled = true
@@ -52,8 +52,8 @@ avoidance_enabled = true
 [node name="SoundFx" type="Node" parent="."]
 
 [node name="SpawnSound" type="AudioStreamPlayer" parent="SoundFx"]
-script = ExtResource( 3 )
-sounds = [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ]
+script = ExtResource("3")
+sounds = Array[AudioStream]([ExtResource("5"), ExtResource("4"), ExtResource("6"), ExtResource("7")])
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.1

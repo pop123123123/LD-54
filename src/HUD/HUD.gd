@@ -1,7 +1,7 @@
 extends Control
 
-onready var level_label = $VBoxContainer/VBoxContainer/LevelNumber/LevelNumberValue
-onready var coins_label = $VBoxContainer/VBoxContainer/CoinNumber/CoinNumberValue
+@onready var level_label = $VBoxContainer/VBoxContainer/LevelNumber/LevelNumberValue
+@onready var coins_label = $VBoxContainer/VBoxContainer/CoinNumber/CoinNumberValue
 
 
 func set_level_number(level_number):
