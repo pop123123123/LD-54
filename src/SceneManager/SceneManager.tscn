@@ -28,6 +28,8 @@ render_target_update_mode = 4
 
 [node name="Music1" type="AudioStreamPlayer" parent="Musics"]
 stream = ExtResource("2")
+bus = &"Music"
 
 [node name="Music2" type="AudioStreamPlayer" parent="Musics"]
 stream = ExtResource("3")
+bus = &"Music"

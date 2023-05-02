@@ -52,6 +52,7 @@ avoidance_enabled = true
 [node name="SoundFx" type="Node" parent="."]
 
 [node name="SpawnSound" type="AudioStreamPlayer" parent="SoundFx"]
+bus = &"SFX"
 script = ExtResource("3")
 sounds = Array[AudioStream]([ExtResource("5"), ExtResource("4"), ExtResource("6"), ExtResource("7")])
 
