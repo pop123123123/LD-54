@@ -14,7 +14,7 @@ config/name="LD-54"
 config/description="Ludum Dare 54"
 run/main_scene="res://src/SceneManager/SceneManager.tscn"
 config/features=PackedStringArray("4.1")
-config/icon="res://assets/sprites/player.png"
+config/icon="res://assets/sprites/gdansk.png"
 
 [autoload]
 
