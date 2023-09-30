@@ -24,9 +24,11 @@ func _ready() -> void:
 	confirmation_dialog.canceled.connect(Callable(self, "_on_delete_cancel"))
 	confirmation_dialog.confirmed.connect(Callable(self, "_on_delete_confirm"))
 
+	# add_item('test', 2, 2)
+	# add_item('test2', 3, 1)
+
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
-	lbl_info.show()
 	lbl_info.text = item.get_property('title', item.prototype_id)
 	if item_to_delete == null:
 		item_to_delete_position = inventory.get_item_position(item)
@@ -34,14 +36,39 @@ func _on_item_mouse_entered(item: InventoryItem) -> void:
 
 
 func _on_item_mouse_exited(_item: InventoryItem) -> void:
-	lbl_info.hide()
+	pass
+
+func _get_cell_at_mouse_position(ctrl_inventory: CtrlInventoryGrid, inv: Inventory):
+	var pos = get_global_mouse_position()
+	var rect = ctrl_inventory.get_global_rect()
+	var relative_pos = pos - rect.position
+	if relative_pos.x < 0 or relative_pos.y < 0 or relative_pos.x > rect.size.x or relative_pos.y > rect.size.y:
+		return null
+	var normalized_position = relative_pos / rect.size
+	var x = floor(normalized_position.x * inv.size.x)
+	var y = floor(normalized_position.y * inv.size.y)
+	return Vector2i(x, y)
+
+func get_hovered_item():
+	var cell = _get_cell_at_mouse_position(ctrl_inventory_left, inventory_left)
+	if cell != null:
+		return inventory_left.get_item_at(cell)
+	cell = _get_cell_at_mouse_position(ctrl_inventory_right, inventory)
+	if cell != null:
+		return inventory.get_item_at(cell)
+	return null
 
 
 func _input(event: InputEvent) -> void:
 	if !(event is InputEventMouseMotion):
 		return
 
-	lbl_info.set_global_position(get_global_mouse_position() + info_offset)
+	var item = get_hovered_item()
+	if item != null:
+		lbl_info.show()
+		lbl_info.set_global_position(get_global_mouse_position() + info_offset)
+	else:
+		lbl_info.hide()
 
 func _on_delete_cancel() -> void:
 	confirmation_dialog.hide()
