@@ -19,12 +19,12 @@ config/icon="res://assets/sprites/gdansk.png"
 [autoload]
 
 Globals="*res://src/Globals.gd"
-Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 GLoot="*res://addons/gloot/gloot_autoload.gd"
+Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 
 [dialogic]
 
-settings/text_speed=0.01
+text/letter_speed=0.01
 text/skippable=true
 text/skippable_delay=0.1
 text/autoadvance_delay=1.0
@@ -39,8 +39,6 @@ animations/leave_default_wait=true
 animations/join_default_wait=true
 save/autosave_delay=60.0
 text/autopauses={}
-glossary/default_case_sensitive=true
-variables={}
 
 [editor_plugins]
 
