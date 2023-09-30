@@ -1,0 +1,129 @@
+[gd_scene load_steps=14 format=3 uid="uid://n4chpcm77cn4"]
+
+[ext_resource type="Script" path="res://src/Inventory/Inventory.gd" id="1_ytdco"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_grid.gd" id="2_uiyc4"]
+[ext_resource type="Script" path="res://addons/gloot/ui/ctrl_inventory_grid_ex.gd" id="2_v6x15"]
+[ext_resource type="Texture2D" uid="uid://bo8gnlrlqdos1" path="res://assets/ui/field_background_new.png" id="3_ceai2"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="4_161hm"]
+[ext_resource type="Texture2D" uid="uid://cdhuw0juxw3up" path="res://assets/ui/field_highlighted_background.png" id="4_h03hu"]
+[ext_resource type="Texture2D" uid="uid://cbsp0lkcf7m2p" path="res://assets/ui/memory.png" id="5_bbk6n"]
+[ext_resource type="Texture2D" uid="uid://bpmdtgysdm2tp" path="res://assets/ui/field_background.png" id="6_yja42"]
+[ext_resource type="Resource" uid="uid://bd18t5t4rc43r" path="res://src/Inventory/items.tres" id="8_ie0jr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kk5v"]
+texture = ExtResource("3_ceai2")
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="2"]
+texture = ExtResource("4_h03hu")
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="3"]
+texture = ExtResource("6_yja42")
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="4"]
+texture = ExtResource("4_h03hu")
+region_rect = Rect2(0, 0, 32, 32)
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ytdco")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="CtrlInventoryGridLeft" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(144, 288)
+layout_mode = 2
+script = ExtResource("2_v6x15")
+field_style = SubResource("StyleBoxTexture_4kk5v")
+field_highlighted_style = SubResource("2")
+field_dimensions = Vector2(48, 48)
+draw_grid = false
+inventory_path = NodePath("../../../../../InventoryGridLeft")
+default_item_texture = ExtResource("5_bbk6n")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="CtrlInventoryGridRight" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer2/PanelContainer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(288, 288)
+layout_mode = 2
+script = ExtResource("2_v6x15")
+field_style = SubResource("3")
+field_highlighted_style = SubResource("4")
+field_dimensions = Vector2(48, 48)
+draw_grid = false
+inventory_path = NodePath("../../../../../InventoryGridRight")
+default_item_texture = ExtResource("5_bbk6n")
+
+[node name="InventoryGridLeft" type="Node" parent="."]
+script = ExtResource("2_uiyc4")
+size = Vector2i(3, 6)
+item_protoset = ExtResource("8_ie0jr")
+
+[node name="L_item_2x2_2" type="Node" parent="InventoryGridLeft"]
+script = ExtResource("4_161hm")
+protoset = ExtResource("8_ie0jr")
+prototype_id = "item_1x1"
+
+[node name="InventoryGridRight" type="Node" parent="."]
+script = ExtResource("2_uiyc4")
+size = Vector2i(6, 6)
+item_protoset = ExtResource("8_ie0jr")
+
+[node name="R_item_1x1" type="Node" parent="InventoryGridRight"]
+script = ExtResource("4_161hm")
+protoset = ExtResource("8_ie0jr")
+prototype_id = "item_1x1"
+properties = {
+"grid_position": Vector2i(0, 2)
+}
+
+[node name="_Node_28453" type="Node" parent="InventoryGridRight"]
+script = ExtResource("4_161hm")
+protoset = ExtResource("8_ie0jr")
+prototype_id = "item_2x2"
+
+[node name="LblInfo" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 14.0
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+title = ""
+position = Vector2i(190, 105)
+ok_button_text = "Forget"
+cancel_button_text = "No!"
+
+[node name="Label" type="Label" parent="ConfirmationDialog"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 51.0
+text = "Forget this memory?"
