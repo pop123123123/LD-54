@@ -20,6 +20,7 @@ config/icon="res://assets/sprites/gdansk.png"
 
 Globals="*res://src/Globals.gd"
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
+GLoot="*res://addons/gloot/gloot_autoload.gd"
 
 [dialogic]
 
@@ -43,7 +44,7 @@ variables={}
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/gloot/plugin.cfg")
 
 [input]
 
