@@ -7,22 +7,7 @@ script = ExtResource("1_3oiai")
 json_data = "[
     {
         \"height\": 1,
-        \"id\": \"item_1x1\",
-        \"width\": 1
-    },
-    {
-        \"height\": 2,
-        \"id\": \"item_2x2\",
-        \"width\": 2
-    },
-    {
-        \"height\": 1,
-        \"id\": \"item_2x1\",
-        \"width\": 2
-    },
-    {
-        \"height\": 2,
-        \"id\": \"item_1x2\",
+        \"id\": \"base_memory\",
         \"width\": 1
     }
 ]"

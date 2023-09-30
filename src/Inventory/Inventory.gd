@@ -27,11 +27,9 @@ func _ready() -> void:
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
 	lbl_info.show()
-	lbl_info.text = item.prototype_id
+	lbl_info.text = item.get_property('title', item.prototype_id)
 	if item_to_delete == null:
-		print(item)
 		item_to_delete_position = inventory.get_item_position(item)
-		print(item_to_delete_position)
 
 
 
@@ -63,14 +61,30 @@ func _on_item_activated(item: InventoryItem) -> void:
 	print_debug('activated', item)
 
 func _on_item_added_left(item: InventoryItem) -> void:
-	print_debug('added', item)
 	# var pos = inventory.find_free_place(item)
-	inventory_left.transfer(item, inventory)
+	# inventory_left.transfer(item, inventory)
 	# print('pos', item_to_delete_position)
 	# print(pos.success, pos.position)
 	# TODO: investigate why this does not work
 	# to reproduce: move item from inventory to left inventory
-	inventory.move_item_to(item, item_to_delete_position)
+	# inventory.move_item_to(item, item_to_delete_position)
 	# if pos.success:
 	# 	inventory.move_item_to(item, pos.position)
+	pass
 
+func add_item(title: String, width=1, height=1):
+	var protoset: ItemProtoset = inventory_left.item_protoset
+	var item: InventoryItem = InventoryItem.new()
+	item.protoset = protoset
+	item.prototype_id = 'base_memory'
+	item.set_property('title', title)
+	item.set_property('width', width)
+	item.set_property('height', height)
+	var pos = inventory_left.find_free_place(item)
+	if pos.success:
+		inventory_left.add_item_at(item, pos.position)
+	else:
+		pos = inventory.find_free_place(item)
+		if pos.success:
+			inventory.add_item_at(item, pos.position)
+	inventory_left.sort()

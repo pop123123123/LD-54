@@ -1,10 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://n4chpcm77cn4"]
+[gd_scene load_steps=13 format=3 uid="uid://n4chpcm77cn4"]
 
 [ext_resource type="Script" path="res://src/Inventory/Inventory.gd" id="1_ytdco"]
 [ext_resource type="Script" path="res://addons/gloot/core/inventory_grid.gd" id="2_uiyc4"]
 [ext_resource type="Script" path="res://addons/gloot/ui/ctrl_inventory_grid_ex.gd" id="2_v6x15"]
 [ext_resource type="Texture2D" uid="uid://bo8gnlrlqdos1" path="res://assets/ui/field_background_new.png" id="3_ceai2"]
-[ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="4_161hm"]
 [ext_resource type="Texture2D" uid="uid://cdhuw0juxw3up" path="res://assets/ui/field_highlighted_background.png" id="4_h03hu"]
 [ext_resource type="Texture2D" uid="uid://cbsp0lkcf7m2p" path="res://assets/ui/memory.png" id="5_bbk6n"]
 [ext_resource type="Texture2D" uid="uid://bpmdtgysdm2tp" path="res://assets/ui/field_background.png" id="6_yja42"]
@@ -86,28 +85,10 @@ script = ExtResource("2_uiyc4")
 size = Vector2i(3, 6)
 item_protoset = ExtResource("8_ie0jr")
 
-[node name="L_item_2x2_2" type="Node" parent="InventoryGridLeft"]
-script = ExtResource("4_161hm")
-protoset = ExtResource("8_ie0jr")
-prototype_id = "item_1x1"
-
 [node name="InventoryGridRight" type="Node" parent="."]
 script = ExtResource("2_uiyc4")
 size = Vector2i(6, 6)
 item_protoset = ExtResource("8_ie0jr")
-
-[node name="R_item_1x1" type="Node" parent="InventoryGridRight"]
-script = ExtResource("4_161hm")
-protoset = ExtResource("8_ie0jr")
-prototype_id = "item_1x1"
-properties = {
-"grid_position": Vector2i(0, 2)
-}
-
-[node name="_Node_28453" type="Node" parent="InventoryGridRight"]
-script = ExtResource("4_161hm")
-protoset = ExtResource("8_ie0jr")
-prototype_id = "item_2x2"
 
 [node name="LblInfo" type="Label" parent="."]
 visible = false
