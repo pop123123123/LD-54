@@ -58,6 +58,9 @@ func get_hovered_item():
 		return inventory.get_item_at(cell)
 	return null
 
+func get_items():
+	return inventory.get_items().map(func(item: InventoryItem): return item.get_property('title'))
+
 
 func _input(event: InputEvent) -> void:
 	if !(event is InputEventMouseMotion):
