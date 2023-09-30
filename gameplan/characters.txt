@@ -1,0 +1,10 @@
+Intern is guilty scenario:
+
+Janitor est le fils du boucher. Janitor devient à moitié vegan donc à moitié déshérité par son père.
+Janitor travaile dans la boutique d'à côté
+Stagiaire arrive
+Stagiaire sait que Janitor est le fils du boucher et qu'il veut se racheter
+Stagiaire + Janitor montent un traffic de viande canine
+Stagiaire n'est pas au courant du traffic de fourrure
+Stagiaire met Warden dans la confidence car pas le choix
+Viande canine -> boucherie -> hot dog
