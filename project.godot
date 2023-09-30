@@ -21,6 +21,26 @@ config/icon="res://assets/sprites/player.png"
 Globals="*res://src/Globals.gd"
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 
+[dialogic]
+
+settings/text_speed=0.01
+text/skippable=true
+text/skippable_delay=0.1
+text/autoadvance_delay=1.0
+text/hide_empty_textbox=true
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+animations/join_default_length=0.5
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/join_default_wait=true
+save/autosave_delay=60.0
+text/autopauses={}
+glossary/default_case_sensitive=true
+variables={}
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
