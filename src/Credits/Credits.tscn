@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://j5a7okn8a6xv"]
 
-[ext_resource type="Script" path="res://src/Credits/Credits.gd" id="1"]
+[ext_resource type="Script" path="res://src/Credits/Credits.gd" id="1_44132"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -9,7 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1")
+script = ExtResource("1_44132")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 0
@@ -61,4 +61,4 @@ layout_mode = 2
 size_flags_horizontal = 0
 text = "Back"
 
-[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer4/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer4/Back" to="." method="_on_back_pressed"]

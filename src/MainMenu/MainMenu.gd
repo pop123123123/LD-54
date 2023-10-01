@@ -1,17 +1,16 @@
 extends Control
 
-signal start_game
-signal show_credits
-signal quit_game
+@onready var quit_button: Button = $CenterContainer/VBoxContainer/Quit
 
+func _ready() -> void:
+	if (OS.has_feature("web")):
+		quit_button.hide()
 
 func _on_Start_pressed():
-	emit_signal("start_game")
-
+	get_tree().change_scene_to_file("res://src/Credits/Credits.tscn")
 
 func _on_Credits_pressed():
-	emit_signal("show_credits")
-
+	get_tree().change_scene_to_file("res://src/Credits/Credits.tscn")
 
 func _on_Quit_pressed():
-	emit_signal("quit_game")
+	get_tree().quit()
