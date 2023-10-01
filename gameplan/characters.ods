@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
- <office:meta><meta:creation-date>2023-09-30T23:25:14.687685440</meta:creation-date><dc:date>2023-10-01T15:40:03.447000000</dc:date><meta:editing-duration>PT3H59M8S</meta:editing-duration><meta:editing-cycles>14</meta:editing-cycles><meta:generator>LibreOffice/6.4.7.2$Windows_X86_64 LibreOffice_project/639b8ac485750d5696d7590a72ef1b496725cfb5</meta:generator><meta:document-statistic meta:table-count="3" meta:cell-count="206" meta:object-count="0"/></office:meta>
+ <office:meta><meta:creation-date>2023-09-30T23:25:14.687685440</meta:creation-date><dc:date>2023-10-01T15:49:10.431000000</dc:date><meta:editing-duration>PT4H5M36S</meta:editing-duration><meta:editing-cycles>15</meta:editing-cycles><meta:generator>LibreOffice/6.4.7.2$Windows_X86_64 LibreOffice_project/639b8ac485750d5696d7590a72ef1b496725cfb5</meta:generator><meta:document-statistic meta:table-count="3" meta:cell-count="206" meta:object-count="0"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
    <config:config-item config:name="VisibleAreaLeft" config:type="int">0</config:config-item>
-   <config:config-item config:name="VisibleAreaWidth" config:type="int">49683</config:config-item>
-   <config:config-item config:name="VisibleAreaHeight" config:type="int">13335</config:config-item>
+   <config:config-item config:name="VisibleAreaWidth" config:type="int">22577</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">94255</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
@@ -49,8 +49,8 @@
        <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
       </config:config-item-map-entry>
       <config:config-item-map-entry config:name="Sheet3">
-       <config:config-item config:name="CursorPositionX" config:type="int">5</config:config-item>
-       <config:config-item config:name="CursorPositionY" config:type="int">16</config:config-item>
+       <config:config-item config:name="CursorPositionX" config:type="int">8</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">19</config:config-item>
        <config:config-item config:name="HorizontalSplitMode" config:type="short">0</config:config-item>
        <config:config-item config:name="VerticalSplitMode" config:type="short">0</config:config-item>
        <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
@@ -59,7 +59,7 @@
        <config:config-item config:name="PositionLeft" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
-       <config:config-item config:name="PositionBottom" config:type="int">15</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">16</config:config-item>
        <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
        <config:config-item config:name="ZoomValue" config:type="int">120</config:config-item>
        <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -302,37 +302,34 @@
    <style:table-row-properties style:row-height="2.027cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
   <style:style style:name="ro7" style:family="table-row">
-   <style:table-row-properties style:row-height="1.235cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+   <style:table-row-properties style:row-height="8.345cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
   <style:style style:name="ro8" style:family="table-row">
-   <style:table-row-properties style:row-height="8.378cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+   <style:table-row-properties style:row-height="7.16cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
   <style:style style:name="ro9" style:family="table-row">
-   <style:table-row-properties style:row-height="0.838cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+   <style:table-row-properties style:row-height="2.817cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
   <style:style style:name="ro10" style:family="table-row">
-   <style:table-row-properties style:row-height="7.188cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
-  </style:style>
-  <style:style style:name="ro11" style:family="table-row">
-   <style:table-row-properties style:row-height="2.822cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
-  </style:style>
-  <style:style style:name="ro12" style:family="table-row">
-   <style:table-row-properties style:row-height="5.997cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
-  </style:style>
-  <style:style style:name="ro13" style:family="table-row">
-   <style:table-row-properties style:row-height="4.396cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
-  </style:style>
-  <style:style style:name="ro14" style:family="table-row">
    <style:table-row-properties style:row-height="5.976cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
-  <style:style style:name="ro15" style:family="table-row">
+  <style:style style:name="ro11" style:family="table-row">
+   <style:table-row-properties style:row-height="4.396cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro12" style:family="table-row">
    <style:table-row-properties style:row-height="13.873cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
-  <style:style style:name="ro16" style:family="table-row">
+  <style:style style:name="ro13" style:family="table-row">
    <style:table-row-properties style:row-height="6.369cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
-  <style:style style:name="ro17" style:family="table-row">
+  <style:style style:name="ro14" style:family="table-row">
    <style:table-row-properties style:row-height="7.95cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro15" style:family="table-row">
+   <style:table-row-properties style:row-height="4.807cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ro16" style:family="table-row">
+   <style:table-row-properties style:row-height="2.822cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
   <style:style style:name="ta1" style:family="table" style:master-page-name="Default">
    <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
@@ -358,13 +355,32 @@
   <style:style style:name="ce11" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties fo:background-color="#b2b2b2" fo:border="0.06pt solid #000000"/>
   </style:style>
+  <style:style style:name="ce12" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:text-properties fo:color="#ff4000"/>
+  </style:style>
+  <style:style style:name="ce15" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#ff4000"/>
+  </style:style>
+  <style:style style:name="ce16" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:background-color="#ffbf00"/>
+  </style:style>
+  <style:style style:name="ce18" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <style:style style:name="ce19" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:text-properties fo:color="#ff4000"/>
+  </style:style>
+  <style:style style:name="ce20" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#ffbf00" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+  </style:style>
   <style:style style:name="ce21" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties fo:background-color="#cccccc" fo:border="0.06pt solid #000000"/>
    <style:text-properties fo:color="#ff4000"/>
   </style:style>
-  <style:style style:name="ce12" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
-   <style:table-cell-properties fo:background-color="#cccccc" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
-   <style:text-properties fo:color="#ff4000"/>
+  <style:style style:name="ce23" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="transparent" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
   </style:style>
   <style:style style:name="ce24" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties fo:background-color="#cccccc" fo:border="0.06pt solid #000000"/>
@@ -375,10 +391,6 @@
   </style:style>
   <style:style style:name="ce27" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
    <style:table-cell-properties fo:background-color="#cccccc" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
-  </style:style>
-  <style:style style:name="ce36" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
-   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
-   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
   </style:style>
   <style:style style:name="ce28" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
    <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000" style:vertical-align="middle"/>
@@ -416,23 +428,103 @@
    <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false" fo:background-color="transparent" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
    <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
   </style:style>
-  <style:style style:name="ce18" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+  <style:style style:name="ce36" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
+  </style:style>
+  <style:style style:name="ce55" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce56" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:background-color="#b2b2b2"/>
+  </style:style>
+  <style:style style:name="ce57" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:background-color="#ffffa6"/>
+  </style:style>
+  <style:style style:name="ce58" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:background-color="#ffa6a6"/>
+  </style:style>
+  <style:style style:name="ce59" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:background-color="#afd095"/>
+  </style:style>
+  <style:style style:name="ce60" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:background-color="#b2b2b2" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <style:style style:name="ce61" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:background-color="#cccccc" fo:border="0.06pt solid #000000"/>
+   <style:text-properties fo:color="#ff4000"/>
+  </style:style>
+  <style:style style:name="ce62" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:text-properties fo:color="#ff4000"/>
+  </style:style>
+  <style:style style:name="ce63" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties fo:background-color="#cccccc" fo:border="0.06pt solid #000000"/>
+   <style:text-properties fo:color="#ff4000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="10pt" fo:language="en" fo:country="US" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="Noto Sans CJK SC" style:font-size-asian="10pt" style:language-asian="zh" style:country-asian="CN" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Droid Sans Devanagari" style:font-size-complex="10pt" style:language-complex="hi" style:country-complex="IN" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="ce64" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#b2b2b2" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <style:style style:name="ce65" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+  </style:style>
+  <style:style style:name="ce66" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
+  </style:style>
+  <style:style style:name="ce67" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000" style:vertical-align="middle"/>
+   <style:paragraph-properties fo:text-align="center"/>
+  </style:style>
+  <style:style style:name="ce68" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
+   <style:text-properties fo:color="#ff4000"/>
+  </style:style>
+  <style:style style:name="ce69" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000" style:vertical-align="middle"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
+  </style:style>
+  <style:style style:name="ce70" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
+   <style:text-properties fo:color="#000000"/>
+  </style:style>
+  <style:style style:name="ce71" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000" style:vertical-align="middle"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
+   <style:text-properties fo:color="#000000"/>
+  </style:style>
+  <style:style style:name="ce72" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
+   <style:text-properties fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Sans" fo:font-size="10pt" fo:language="en" fo:country="US" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="Noto Sans CJK SC" style:font-size-asian="10pt" style:language-asian="zh" style:country-asian="CN" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Droid Sans Devanagari" style:font-size-complex="10pt" style:language-complex="hi" style:country-complex="IN" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="ce73" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties fo:background-color="#cccccc" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:text-properties fo:color="#c9211e"/>
+  </style:style>
+  <style:style style:name="ce74" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false" fo:background-color="transparent" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
+   <style:paragraph-properties fo:text-align="center" fo:margin-left="0cm"/>
+  </style:style>
+  <style:style style:name="ce75" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
    <style:table-cell-properties fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
   </style:style>
-  <style:style style:name="ce20" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+  <style:style style:name="ce76" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
    <style:table-cell-properties fo:background-color="#ffbf00" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
   </style:style>
-  <style:style style:name="ce23" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+  <style:style style:name="ce77" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
    <style:table-cell-properties fo:background-color="transparent" fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
   </style:style>
-  <style:style style:name="ce19" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
+  <style:style style:name="ce78" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N100">
    <style:table-cell-properties fo:wrap-option="wrap" fo:border="0.06pt solid #000000"/>
    <style:text-properties fo:color="#ff4000"/>
   </style:style>
-  <style:style style:name="ce15" style:family="table-cell" style:parent-style-name="Default">
+  <style:style style:name="ce79" style:family="table-cell" style:parent-style-name="Default">
    <style:text-properties fo:color="#ff4000"/>
   </style:style>
-  <style:style style:name="ce16" style:family="table-cell" style:parent-style-name="Default">
+  <style:style style:name="ce80" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties fo:background-color="#ffbf00"/>
   </style:style>
   <style:style style:name="ce51" style:family="table-cell" style:parent-style-name="Default">
@@ -491,33 +583,33 @@
    <table:calculation-settings table:automatic-find-labels="false" table:use-regular-expressions="false" table:use-wildcards="true"/>
    <table:table table:name="Roles" table:style-name="ta1">
     <table:table-column table:style-name="co1" table:default-cell-style-name="Default"/>
-    <table:table-column table:style-name="co2" table:default-cell-style-name="ce17"/>
+    <table:table-column table:style-name="co2" table:default-cell-style-name="ce57"/>
     <table:table-column table:style-name="co3" table:default-cell-style-name="Default"/>
-    <table:table-column table:style-name="co4" table:default-cell-style-name="ce22"/>
+    <table:table-column table:style-name="co4" table:default-cell-style-name="ce58"/>
     <table:table-column table:style-name="co5" table:default-cell-style-name="Default"/>
-    <table:table-column table:style-name="co6" table:default-cell-style-name="ce22"/>
+    <table:table-column table:style-name="co6" table:default-cell-style-name="ce58"/>
     <table:table-column table:style-name="co7" table:default-cell-style-name="Default"/>
     <table:table-column table:style-name="co2" table:default-cell-style-name="Default"/>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce13" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce55" office:value-type="string" calcext:value-type="string">
       <text:p>Role</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce13" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce55" office:value-type="string" calcext:value-type="string">
       <text:p>Name</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce13" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce55" office:value-type="string" calcext:value-type="string">
       <text:p>Personality</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce13" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce55" office:value-type="string" calcext:value-type="string">
       <text:p>Sweatshop ?</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce13" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce55" office:value-type="string" calcext:value-type="string">
       <text:p>Role in sweatshop</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce13" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce55" office:value-type="string" calcext:value-type="string">
       <text:p>Meat factory ?</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce13" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce55" office:value-type="string" calcext:value-type="string">
       <text:p>Role in meat factory</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -600,7 +692,7 @@
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>Tired</text:p><text:p>Drinks cofee</text:p><text:p>Rollex</text:p><text:p>Bad tempered</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce26" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce59" office:value-type="string" calcext:value-type="string">
       <text:p>Yes</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
@@ -623,12 +715,12 @@
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>White rasta</text:p><text:p>Drinks CBD tea</text:p><text:p>Vegan</text:p><text:p>Guilty pleasure: butcher’s hotdogs</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce26" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce59" office:value-type="string" calcext:value-type="string">
       <text:p>Yes</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>Cleans (d)</text:p><text:p>Gathers hairs (d)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce26" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce59" office:value-type="string" calcext:value-type="string">
       <text:p>Yes</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
@@ -645,13 +737,13 @@
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>Paranoid</text:p><text:p>Not here on the day</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce26" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce59" office:value-type="string" calcext:value-type="string">
       <text:p>Yes</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>Watches (n)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce26" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce59" office:value-type="string" calcext:value-type="string">
       <text:p>Yes</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
@@ -671,24 +763,24 @@
      <table:table-cell table:number-columns-repeated="2"/>
     </table:table-row>
     <table:table-row table:style-name="ro2">
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce56" office:value-type="string" calcext:value-type="string">
       <text:p>Intern (pure)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce56" office:value-type="string" calcext:value-type="string">
       <text:p>Pascal</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string"><text:p>Dead</text:p><text:p>Cheating on pres wife</text:p><text:p>Becomes hotdog</text:p>
+     <table:table-cell table:style-name="ce56" office:value-type="string" calcext:value-type="string"><text:p>Dead</text:p><text:p>Cheating on pres wife</text:p><text:p>Becomes hotdog</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce56" office:value-type="string" calcext:value-type="string">
       <text:p>No</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce56" office:value-type="string" calcext:value-type="string">
       <text:p>/</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce56" office:value-type="string" calcext:value-type="string">
       <text:p>No</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce56" office:value-type="string" calcext:value-type="string">
       <text:p>Fall in machine</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -708,7 +800,7 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>/</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce26" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce59" office:value-type="string" calcext:value-type="string">
       <text:p>Yes</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>Boss</text:p><text:p>(Betrayed by Janitor ?)</text:p>
@@ -717,48 +809,48 @@
     </table:table-row>
    </table:table>
    <table:table table:name="Matrice des indices en journée" table:style-name="ta1">
-    <table:table-column table:style-name="co8" table:default-cell-style-name="ce21"/>
-    <table:table-column table:style-name="co8" table:default-cell-style-name="ce36"/>
-    <table:table-column table:style-name="co9" table:default-cell-style-name="ce18"/>
-    <table:table-column table:style-name="co10" table:default-cell-style-name="ce18"/>
-    <table:table-column table:style-name="co11" table:default-cell-style-name="ce18"/>
-    <table:table-column table:style-name="co12" table:default-cell-style-name="ce18"/>
-    <table:table-column table:style-name="co13" table:default-cell-style-name="ce18"/>
-    <table:table-column table:style-name="co14" table:default-cell-style-name="ce18"/>
-    <table:table-column table:style-name="co15" table:default-cell-style-name="ce18"/>
-    <table:table-column table:style-name="co16" table:default-cell-style-name="ce18"/>
+    <table:table-column table:style-name="co8" table:default-cell-style-name="ce61"/>
+    <table:table-column table:style-name="co8" table:default-cell-style-name="ce66"/>
+    <table:table-column table:style-name="co9" table:default-cell-style-name="ce75"/>
+    <table:table-column table:style-name="co10" table:default-cell-style-name="ce75"/>
+    <table:table-column table:style-name="co11" table:default-cell-style-name="ce75"/>
+    <table:table-column table:style-name="co12" table:default-cell-style-name="ce75"/>
+    <table:table-column table:style-name="co13" table:default-cell-style-name="ce75"/>
+    <table:table-column table:style-name="co14" table:default-cell-style-name="ce75"/>
+    <table:table-column table:style-name="co15" table:default-cell-style-name="ce75"/>
+    <table:table-column table:style-name="co16" table:default-cell-style-name="ce75"/>
     <table:table-column table:style-name="co17" table:default-cell-style-name="Default"/>
     <table:table-column table:style-name="co18" table:default-cell-style-name="Default"/>
     <table:table-column table:style-name="co19" table:default-cell-style-name="Default"/>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce60" office:value-type="string" calcext:value-type="string">
       <text:p>TRIGGERING CONDITIONS</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>TRIGGERING CLUES</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>President</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Receptionist</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Groomer</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Janitor</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Customer</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>D4rk Groomer</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>D4rk Janitor</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Night Warden</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -769,8 +861,8 @@
     </table:table-row>
     <table:table-row table:style-name="ro3">
      <table:table-cell/>
-     <table:table-cell table:style-name="ce27"/>
-     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce65"/>
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string">
       <text:p>Night Services (no sex)</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
@@ -789,7 +881,7 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>R = Receptionist</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce79" office:value-type="string" calcext:value-type="string">
       <text:p>Clue =&gt; passive clue</text:p>
      </table:table-cell>
     </table:table-row>
@@ -805,13 +897,13 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>J = Janitor</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce80" office:value-type="string" calcext:value-type="string">
       <text:p>Clue =&gt; ending clue</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="ro1">
      <table:table-cell/>
-     <table:table-cell table:style-name="ce28" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
+     <table:table-cell table:style-name="ce67" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
       <text:p>Mission</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3" office:value-type="string" calcext:value-type="string">
@@ -825,7 +917,7 @@
     </table:table-row>
     <table:table-row table:style-name="ro1">
      <table:table-cell/>
-     <table:covered-table-cell table:style-name="ce27"/>
+     <table:covered-table-cell table:style-name="ce65"/>
      <table:table-cell table:number-columns-repeated="3" office:value-type="string" calcext:value-type="string">
       <text:p>Intern’s job</text:p>
      </table:table-cell>
@@ -855,11 +947,11 @@
       <text:p>I’s name</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>I fcks w P’s wife</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>I fcks w P’s wife</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="7"/>
@@ -869,21 +961,21 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>D stayed in Kennel</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string">
       <text:p>Night Services (no sex)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Dispute btw J&amp;I</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="9"/>
     </table:table-row>
     <table:table-row table:style-name="ro3">
-     <table:table-cell table:style-name="ce12" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce62" office:value-type="string" calcext:value-type="string">
       <text:p>Player’s name forgotten</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce29"/>
+     <table:table-cell table:style-name="ce68"/>
      <table:table-cell table:number-columns-repeated="7"/>
-     <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce78" office:value-type="string" calcext:value-type="string">
       <text:p>Suspicious activity (meatshop)</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3"/>
@@ -894,14 +986,14 @@
       <text:p>G cuts too much</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="5"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Fur traffic suspicion</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="5"/>
     </table:table-row>
     <table:table-row table:style-name="ro6">
      <table:table-cell/>
-     <table:table-cell table:style-name="ce30" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
+     <table:table-cell table:style-name="ce69" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
       <text:p>Pr!nc355 stressed</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -909,24 +1001,24 @@
       <text:p>D stayed in the Kennel, C only person that uses Kennel regularly</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="2"/>
-     <table:table-cell table:style-name="ce23"/>
+     <table:table-cell table:style-name="ce77"/>
      <table:table-cell table:number-columns-repeated="3"/>
-     <table:table-cell table:style-name="ce15"/>
+     <table:table-cell table:style-name="ce79"/>
      <table:table-cell/>
     </table:table-row>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce24" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce63" office:value-type="string" calcext:value-type="string">
       <text:p>French language</text:p>
      </table:table-cell>
-     <table:covered-table-cell table:style-name="ce31"/>
+     <table:covered-table-cell table:style-name="ce70"/>
      <table:table-cell table:number-columns-repeated="4"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>D hates I</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="6"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce24" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce63" office:value-type="string" calcext:value-type="string">
       <text:p>French language</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
@@ -939,10 +1031,10 @@
      <table:table-cell table:number-columns-repeated="6"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce24" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce63" office:value-type="string" calcext:value-type="string">
       <text:p>French language</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce32" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
+     <table:table-cell table:style-name="ce71" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
       <text:p>R knitting</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Default"/>
@@ -954,8 +1046,8 @@
      <table:table-cell table:number-columns-repeated="6"/>
     </table:table-row>
     <table:table-row table:style-name="ro3">
-     <table:table-cell table:style-name="ce24"/>
-     <table:covered-table-cell table:style-name="ce33"/>
+     <table:table-cell table:style-name="ce63"/>
+     <table:covered-table-cell table:style-name="ce72"/>
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>G gives dog hairs to R</text:p>
@@ -968,63 +1060,63 @@
       <text:p>J vegan</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string">
       <text:p>Night Services (no sex)</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="9"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce24" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce63" office:value-type="string" calcext:value-type="string">
       <text:p>French language</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>G gives dog hairs to R</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="4"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Fur traffic suspicion</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="6"/>
     </table:table-row>
     <table:table-row table:style-name="ro3">
      <table:table-cell/>
-     <table:table-cell table:style-name="ce30" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
+     <table:table-cell table:style-name="ce69" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
       <text:p>Fur Traffic Suspicion</text:p>
      </table:table-cell>
-     <table:table-cell table:number-columns-repeated="2" table:style-name="ce35" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:number-columns-repeated="2" table:style-name="ce74" office:value-type="string" calcext:value-type="string">
       <text:p>Night Services (no sex)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Intern left</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string">
       <text:p>Night Services (no sex)</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Intern left</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce23" table:number-columns-repeated="2"/>
+     <table:table-cell table:style-name="ce77" table:number-columns-repeated="2"/>
      <table:table-cell table:number-columns-repeated="3"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce24" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce63" office:value-type="string" calcext:value-type="string">
       <text:p>Suspicious activity</text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:table-cell table:number-columns-repeated="5"/>
-     <table:table-cell table:number-columns-repeated="3" table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:number-columns-repeated="3" table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Intern left</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce24" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce63" office:value-type="string" calcext:value-type="string">
       <text:p>Suspicious activity</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce34"/>
+     <table:table-cell table:style-name="ce73"/>
      <table:table-cell table:number-columns-repeated="6"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Meat traffic discovered</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="4"/>
@@ -1032,44 +1124,44 @@
    </table:table>
    <table:table table:name="Sheet3" table:style-name="ta1">
     <table:table-column table:style-name="co2" table:default-cell-style-name="ce52"/>
-    <table:table-column table:style-name="co2" table:default-cell-style-name="ce36"/>
-    <table:table-column table:style-name="co2" table:number-columns-repeated="8" table:default-cell-style-name="ce18"/>
+    <table:table-column table:style-name="co2" table:default-cell-style-name="ce66"/>
+    <table:table-column table:style-name="co2" table:number-columns-repeated="8" table:default-cell-style-name="ce75"/>
     <table:table-row table:style-name="ro4">
      <table:table-cell table:style-name="ce51" office:value-type="string" calcext:value-type="string">
       <text:p>TRIGGERING CONDITIONS</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>TRIGGERING CLUES</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>President</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Receptionist</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Groomer</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Janitor</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Customer</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>D4rk Groomer</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>D4rk Janitor</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce25" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce64" office:value-type="string" calcext:value-type="string">
       <text:p>Night Warden</text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="ro7">
+    <table:table-row table:style-name="ro2">
      <table:table-cell/>
-     <table:table-cell table:style-name="ce27"/>
-     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce65"/>
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string">
       <text:p>Night Services (no sex)</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
@@ -1086,7 +1178,7 @@
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3"/>
     </table:table-row>
-    <table:table-row table:style-name="ro8">
+    <table:table-row table:style-name="ro7">
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>Job / name</text:p>
@@ -1100,9 +1192,9 @@
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="5"/>
     </table:table-row>
-    <table:table-row table:style-name="ro9">
+    <table:table-row table:style-name="ro3">
      <table:table-cell/>
-     <table:table-cell table:style-name="ce28" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
+     <table:table-cell table:style-name="ce67" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
       <text:p>Mission</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3" office:value-type="string" calcext:value-type="string">
@@ -1110,9 +1202,9 @@
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="5"/>
     </table:table-row>
-    <table:table-row table:style-name="ro10">
+    <table:table-row table:style-name="ro8">
      <table:table-cell/>
-     <table:covered-table-cell table:style-name="ce27"/>
+     <table:covered-table-cell table:style-name="ce65"/>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>- I 5 year intern</text:p><text:p>- Insists on staying intern</text:p><text:p>- Asks for vacations sometimes</text:p><text:p>- Business not so good, less customers</text:p><text:p>- Next-door business is booming (butchery)</text:p><text:p>- Would kill for such popularity</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>- I is such a sweet boi</text:p><text:p>- Seems wealthy despite his job</text:p><text:p>- Doesn’t seem to work besides this job</text:p><text:p>- Dreamy smile</text:p>
@@ -1121,7 +1213,7 @@
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="5"/>
     </table:table-row>
-    <table:table-row table:style-name="ro11">
+    <table:table-row table:style-name="ro9">
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>Night Services (no sex)</text:p>
@@ -1130,53 +1222,53 @@
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="7"/>
     </table:table-row>
-    <table:table-row table:style-name="ro12">
+    <table:table-row table:style-name="ro10">
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>I’s name</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Default"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string"><text:p>-Don&apos;t repeat to anybody but P&apos;s wife has an ongoing affair with I</text:p><text:p>- I takes P’s wife on dates, fancy restaurants and sometimes vacations</text:p><text:p>- P is none the wiser</text:p>
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string"><text:p>-Don&apos;t repeat to anybody but P&apos;s wife has an ongoing affair with I</text:p><text:p>- I takes P’s wife on dates, fancy restaurants and sometimes vacations</text:p><text:p>- P is none the wiser</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string"><text:p>- I is fricking with P&apos;s wife</text:p><text:p>- P’s wife often calls I at work</text:p><text:p>- I leaves early in those cases</text:p>
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string"><text:p>- I is fricking with P&apos;s wife</text:p><text:p>- P’s wife often calls I at work</text:p><text:p>- I leaves early in those cases</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="4"/>
     </table:table-row>
-    <table:table-row table:style-name="ro13">
+    <table:table-row table:style-name="ro11">
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>D stayed in Kennel</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string"><text:p>- I wouldn&apos;t know, I don&apos;t really manage this part</text:p><text:p>- You should go and ask the Warden for this </text:p>
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string"><text:p>- I wouldn&apos;t know, I don&apos;t really manage this part</text:p><text:p>- You should go and ask the Warden for this </text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string"><text:p>- I heard a dispute between I &amp; J about that</text:p><text:p/><text:p>- Only heard Pr!nc355 come up, no idea what the dispute was exactly about</text:p>
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string"><text:p>- I heard a dispute between I &amp; J about that</text:p><text:p/><text:p>- Only heard Pr!nc355 come up, no idea what the dispute was exactly about</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="6"/>
     </table:table-row>
-    <table:table-row table:style-name="ro14">
-     <table:table-cell table:style-name="ce12" office:value-type="string" calcext:value-type="string">
+    <table:table-row table:style-name="ro10">
+     <table:table-cell table:style-name="ce62" office:value-type="string" calcext:value-type="string">
       <text:p>Player’s name forgotten</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce29"/>
+     <table:table-cell table:style-name="ce68"/>
      <table:table-cell table:number-columns-repeated="7"/>
-     <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string"><text:p>- Oh you&apos;re here for the shipment, make it quick, a lousy investigator is supposed to come by</text:p><text:p>- You should go through the Kennel, the secret passage is open</text:p>
+     <table:table-cell table:style-name="ce78" office:value-type="string" calcext:value-type="string"><text:p>- Oh you&apos;re here for the shipment, make it quick, a lousy investigator is supposed to come by</text:p><text:p>- You should go through the Kennel, the secret passage is open</text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="ro9">
+    <table:table-row table:style-name="ro3">
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>G cuts too much</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="5"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Fur traffic suspicion</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="2"/>
     </table:table-row>
-    <table:table-row table:style-name="ro15">
+    <table:table-row table:style-name="ro12">
      <table:table-cell/>
-     <table:table-cell table:style-name="ce30" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
+     <table:table-cell table:style-name="ce69" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
       <text:p>Pr!nc355 stressed</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -1185,20 +1277,20 @@
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>- The dog wasn&apos;t so stressed yesterdy, but since this morning it was</text:p><text:p>- Dog was in the Kennel during the night</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="2"/>
-     <table:table-cell table:style-name="ce23"/>
+     <table:table-cell table:style-name="ce77"/>
      <table:table-cell table:number-columns-repeated="2"/>
     </table:table-row>
     <table:table-row table:style-name="ro4">
      <table:table-cell table:style-name="ce53" office:value-type="string" calcext:value-type="string">
       <text:p>French language</text:p>
      </table:table-cell>
-     <table:covered-table-cell table:style-name="ce31"/>
+     <table:covered-table-cell table:style-name="ce70"/>
      <table:table-cell table:number-columns-repeated="4"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string"><text:p>- D always barks at I</text:p><text:p>- Always tries to attack him</text:p>
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string"><text:p>- D always barks at I</text:p><text:p>- Always tries to attack him</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3"/>
     </table:table-row>
-    <table:table-row table:style-name="ro13">
+    <table:table-row table:style-name="ro11">
      <table:table-cell table:style-name="ce53" office:value-type="string" calcext:value-type="string">
       <text:p>French language</text:p>
      </table:table-cell>
@@ -1210,11 +1302,11 @@
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3"/>
     </table:table-row>
-    <table:table-row table:style-name="ro14">
+    <table:table-row table:style-name="ro10">
      <table:table-cell table:style-name="ce53" office:value-type="string" calcext:value-type="string">
       <text:p>French language</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce32" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
+     <table:table-cell table:style-name="ce71" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
       <text:p>R knitting</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="ce54"/>
@@ -1224,25 +1316,25 @@
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3"/>
     </table:table-row>
-    <table:table-row table:style-name="ro16">
+    <table:table-row table:style-name="ro13">
      <table:table-cell table:style-name="ce53"/>
-     <table:covered-table-cell table:style-name="ce33"/>
+     <table:covered-table-cell table:style-name="ce72"/>
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>- Oh yeah, I&apos;m trying to see what I can do with this ball of wool</text:p><text:p>- It’s G that gave it to me, it’s nice to the touch</text:p><text:p>- I’m thankful for G, if only he stopped giving me these creepy smiles</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="6"/>
     </table:table-row>
-    <table:table-row table:style-name="ro17">
+    <table:table-row table:style-name="ro14">
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>J vegan</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string"><text:p>- Really ? That&apos;s strange, I passed by the shop the other day and saw J eat a hot-dog with W</text:p><text:p>- Maybe I was wrong, vegan hot dogs should exist but they were just exiting the butchery, and I can tell you there is only meat there</text:p>
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string"><text:p>- Really ? That&apos;s strange, I passed by the shop the other day and saw J eat a hot-dog with W</text:p><text:p>- Maybe I was wrong, vegan hot dogs should exist but they were just exiting the butchery, and I can tell you there is only meat there</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="6"/>
     </table:table-row>
-    <table:table-row table:style-name="ro16">
+    <table:table-row table:style-name="ro13">
      <table:table-cell table:style-name="ce53" office:value-type="string" calcext:value-type="string">
       <text:p>French language</text:p>
      </table:table-cell>
@@ -1250,47 +1342,49 @@
       <text:p>G gives dog hairs to R</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="4"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string"><text:p>- Really ? That&apos;s strange, the more I think of it, the more the &apos;wool&apos; looks like D&apos;s fur...</text:p><text:p>- It couldn’t be that G reused my baby’s fur ? No, can’t be, he is creepy but not to this point…</text:p>
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string"><text:p>- Really ? That&apos;s strange, the more I think of it, the more the &apos;wool&apos; looks like D&apos;s fur...</text:p><text:p>- It couldn’t be that G reused my baby’s fur ? No, can’t be, he is creepy but not to this point…</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="3"/>
     </table:table-row>
-    <table:table-row table:style-name="ro7">
+    <table:table-row table:style-name="ro15">
      <table:table-cell/>
-     <table:table-cell table:style-name="ce30" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
+     <table:table-cell table:style-name="ce69" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="1" table:number-rows-spanned="2">
       <text:p>Fur Traffic Suspicion</text:p>
      </table:table-cell>
-     <table:table-cell table:number-columns-repeated="2" table:style-name="ce35" office:value-type="string" calcext:value-type="string">
-      <text:p>Night Services (no sex)</text:p>
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string"><text:p>- Wouldn&apos;t know anything about it</text:p><text:p>- You should ask the warden, if any suspicious going on at night she should know</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
-      <text:p>Intern left</text:p>
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string">
+      <text:p>- Nothing suspicious for her, you should ask the W</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce35" office:value-type="string" calcext:value-type="string">
-      <text:p>Night Services (no sex)</text:p>
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
+      <text:p>- Threatened the Intern, must have fled the danger, wasn&apos;t be faulted</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce74" office:value-type="string" calcext:value-type="string">
+      <text:p>- Saw nothing suspicious during the day so must be at night, talk to W</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
-      <text:p>Intern left</text:p>
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
+      <text:p>- Threatened the Intern, must have fled the danger, wasn&apos;t be faulted</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce23" table:number-columns-repeated="2"/>
+     <table:table-cell table:style-name="ce77" table:number-columns-repeated="2"/>
     </table:table-row>
-    <table:table-row table:style-name="ro9">
+    <table:table-row table:style-name="ro16">
      <table:table-cell table:style-name="ce53" office:value-type="string" calcext:value-type="string">
       <text:p>Suspicious activity</text:p>
      </table:table-cell>
      <table:covered-table-cell/>
      <table:table-cell table:number-columns-repeated="5"/>
-     <table:table-cell table:number-columns-repeated="3" table:style-name="ce20" office:value-type="string" calcext:value-type="string">
-      <text:p>Intern left</text:p>
+     <table:table-cell table:number-columns-repeated="3" table:style-name="ce76" office:value-type="string" calcext:value-type="string">
+      <text:p>- The Intern must have discovered something and was scared and took leave</text:p>
      </table:table-cell>
     </table:table-row>
-    <table:table-row table:style-name="ro9">
+    <table:table-row table:style-name="ro3">
      <table:table-cell table:style-name="ce53" office:value-type="string" calcext:value-type="string">
       <text:p>Suspicious activity</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce34"/>
+     <table:table-cell table:style-name="ce73"/>
      <table:table-cell table:number-columns-repeated="6"/>
-     <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce76" office:value-type="string" calcext:value-type="string">
       <text:p>Meat traffic discovered</text:p>
      </table:table-cell>
      <table:table-cell/>
