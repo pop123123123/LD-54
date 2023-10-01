@@ -6,3 +6,5 @@ label loop
 janitor: Watcha wanna talk about?
 janitor: I ain't got all day, y'know.
 jump loop
+label bye
+janitor: See ya!

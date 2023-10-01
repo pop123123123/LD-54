@@ -24,7 +24,7 @@ var current_room: Room = Room.LOBBY:
 var secret_access: bool = false
 
 
-func get_transitions(from: Room):
+func get_transitions(from: Room = current_room) -> Array:
 	return {
 		Room.LOBBY:
 		[
@@ -54,7 +54,7 @@ func get_transitions(from: Room):
 	}[from]
 
 
-func get_room_name(room: Room):
+func get_room_name(room: Room = current_room) -> String:
 	return {
 		Room.LOBBY: "Lobby",
 		Room.TOILET: "Restroom",
@@ -66,3 +66,12 @@ func get_room_name(room: Room):
 		Room.KENNEL: "Kennel",
 		Room.MEAT_ROOM: "Meat Room",
 	}[room]
+
+func move_to_room(room: Room):
+	# var events = Dialogic.current_timeline_events
+	# var has_bye = events.any(
+	# 	func(event: DialogicEvent): return event is DialogicLabelEvent and event.name == "bye"
+	# )
+	# if has_bye:
+	# 	var timeline = Dialogic.current_timeline.jump_to_label('bye')
+	current_room = room
