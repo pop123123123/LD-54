@@ -1,0 +1,8 @@
+# idle
+[new_memory id="test" x="1" y="1"]
+Join janitor 1
+janitor: Yo man, what's up?
+label loop
+janitor: Watcha wanna talk about?
+janitor: I ain't got all day, y'know.
+jump loop

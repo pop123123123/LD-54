@@ -1,0 +1,7 @@
+# idle
+[new_memory id="test" x="1" y="1"]
+Testing if memory "test" exists
+if Memories.active_memories.has('test') == true:
+	exists
+else:
+	does not exist
