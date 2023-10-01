@@ -55,6 +55,7 @@ layout/styles={
 }
 }
 layout/default_style="Default"
+layout/end_behaviour=2
 
 [editor_plugins]
 
