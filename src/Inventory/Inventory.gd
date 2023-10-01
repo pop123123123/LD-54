@@ -77,7 +77,7 @@ func _input(event: InputEvent) -> void:
 	
 	var item = get_hovered_item()
 	if item != null:
-		lbl_description.set_text(get_hovered_item().get_property("description"))
+		lbl_description.set_text(item.get_property("description"))
 		lbl_description.show()
 		#lbl_info.show()
 		#lbl_info.set_global_position(get_global_mouse_position() + INFO_OFFSET)
