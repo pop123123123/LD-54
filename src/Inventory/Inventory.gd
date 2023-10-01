@@ -117,7 +117,10 @@ func _on_item_added_left(item: InventoryItem) -> void:
 
 
 func _on_memory_added(memory: Dictionary) -> void:
-	add_item(memory.id, memory.title, memory.width, memory.height, memory.description, memory.short_title)
+	var short_title = memory.short_title
+	if short_title == null or short_title.length() == 0:
+		short_title = memory.title
+	add_item(memory.id, memory.title, memory.width, memory.height, memory.description, short_title)
 
 
 func add_item(id: String, title: String, width = 1, height = 1, description = "", short_title = ""):
