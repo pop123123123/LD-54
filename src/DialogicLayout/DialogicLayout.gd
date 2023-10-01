@@ -125,7 +125,4 @@ func _apply_export_overrides():
 func _input(event:InputEvent):
 	if event is InputEventMouseButton:
 		if event.pressed and event.button_index == MOUSE_BUTTON_LEFT and %DialogTextPanel.get_global_rect().has_point(event.position):
-			var new_event = InputEventAction.new()
-			new_event.action = "dialogic_default_action"
-			new_event.pressed = true
-			Input.parse_input_event(new_event)
+			Globals.dialogic_default_action()

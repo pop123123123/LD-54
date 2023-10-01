@@ -6,6 +6,7 @@ extends CanvasLayer
 
 func _ready() -> void:
 	Globals.room_changed.connect(Callable(self, "_on_room_changed"))
+	Globals.moving_changed.connect(Callable(self, "_on_moving_changed"))
 	_on_room_changed(Globals.current_room)
 
 
@@ -25,6 +26,9 @@ func update_transitions():
 		button.pressed.connect(Callable(self, "_on_room_button_pressed").bind(room))
 		transition_buttons.add_child(button)
 
+func _on_moving_changed(moving: bool) -> void:
+	for child in transition_buttons.get_children():
+		child.disabled = moving
 
 func _on_room_button_pressed(room: Globals.Room) -> void:
 	Globals.move_to_room(room)

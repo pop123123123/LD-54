@@ -1,6 +1,7 @@
 extends Node
 
 signal room_changed(room: Room)
+signal moving_changed(moving: bool)
 
 enum Room {
 	LOBBY,
@@ -14,11 +15,20 @@ enum Room {
 	MEAT_ROOM,
 }
 
+var moving: bool = false:
+	get:
+		return moving
+	set(new_moving):
+		if moving != new_moving:
+			moving = new_moving
+			moving_changed.emit(moving)
+
 var current_room: Room = Room.LOBBY:
 	get:
 		return current_room
 	set(room):
 		current_room = room
+		moving = false
 		room_changed.emit(room)
 
 var secret_access: bool = false
@@ -67,11 +77,22 @@ func get_room_name(room: Room = current_room) -> String:
 		Room.MEAT_ROOM: "Meat Room",
 	}[room]
 
+func dialogic_default_action():
+	var new_event = InputEventAction.new()
+	new_event.action = "dialogic_default_action"
+	new_event.pressed = true
+	Input.parse_input_event(new_event)
+
 func move_to_room(room: Room):
-	# var events = Dialogic.current_timeline_events
-	# var has_bye = events.any(
-	# 	func(event: DialogicEvent): return event is DialogicLabelEvent and event.name == "bye"
-	# )
-	# if has_bye:
-	# 	var timeline = Dialogic.current_timeline.jump_to_label('bye')
+	moving = true
+	var events = Dialogic.current_timeline_events
+	var has_bye = events.any(
+		func(event: DialogicEvent): return event is DialogicLabelEvent and event.name == "bye"
+	)
+	if has_bye:
+		var timeline = Dialogic.current_timeline
+		Dialogic.Jump.jump_to_label('bye')
+		dialogic_default_action()
+		await Dialogic.timeline_ended
+		Dialogic.start_timeline('test_idle')
 	current_room = room
