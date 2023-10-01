@@ -21,6 +21,7 @@ config/icon="res://assets/sprites/gdansk.png"
 Globals="*res://src/Globals.gd"
 GLoot="*res://addons/gloot/gloot_autoload.gd"
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
+Memories="*res://src/Memories.gd"
 
 [dialogic]
 
@@ -39,10 +40,13 @@ animations/leave_default_wait=true
 animations/join_default_wait=true
 save/autosave_delay=60.0
 text/autopauses={}
+variables={}
+glossary/default_case_sensitive=true
+glossary/glossary_files=["res://story/glossary.tres"]
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/gloot/plugin.cfg")
+enabled=PackedStringArray("res://addons/csv-data-importer/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/gloot/plugin.cfg")
 
 [input]
 
