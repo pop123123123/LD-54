@@ -26,8 +26,10 @@ func _ready() -> void:
 	ctrl_inventory_right.inventory_item_activated.connect(Callable(self, "_on_item_activated"))
 	confirmation_dialog.canceled.connect(Callable(self, "_on_delete_cancel"))
 	confirmation_dialog.confirmed.connect(Callable(self, "_on_delete_confirm"))
+	inventory.item_removed.connect(Callable(self, "_on_item_removed"))
+	inventory.item_added.connect(Callable(self, "_on_item_added"))
 	Memories.memory_added.connect(Callable(self, "_on_memory_added"))
-	
+
 	Memories.add_memory('test')
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
@@ -146,3 +148,11 @@ func add_item(id: String, title: String, width = 1, height = 1, description = ""
 		if pos.success:
 			inventory.add_item_at(item, pos.position)
 	inventory_left.sort()
+
+func _on_item_removed(item: InventoryItem) -> void:
+	var id = item.get_property("id", "")
+	Memories.remove_active_memory(id)
+
+func _on_item_added(item: InventoryItem) -> void:
+	var id = item.get_property("id", "")
+	Memories.add_active_memory(id)

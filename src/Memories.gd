@@ -1,8 +1,11 @@
 extends Node
 
 signal memory_added(memory: Dictionary)
+signal active_memory_added(memory_id: String)
+signal active_memory_removed(memory_id: String)
 
 var memories: Array = []
+var active_memories: Array = []
 
 
 func _ready():
@@ -20,3 +23,13 @@ func add_memory(id: String):
 		memory_added.emit(memory)
 	else:
 		printerr("memory not found: ", id)
+
+func add_active_memory(id: String):
+	if not active_memories.has(id):
+		active_memories.append(id)
+		active_memory_added.emit(id)
+
+func remove_active_memory(id: String):
+	if active_memories.has(id):
+		active_memories.erase(id)
+		active_memory_removed.emit(id)
