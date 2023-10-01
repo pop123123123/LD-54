@@ -1,0 +1,17 @@
+receptionist: Hello, how may I help you?
+- Actually, I'm not sure. [if Memories.active_memories.has("mission") == true]
+	receptionist: Then I can't help you, can I?
+	investigator: I guess you are right.
+	receptionist: See you later then!
+	investigator: ...
+- I am officer Fossil from the NTMP.
+- The name is Vintage, Vincent Vintage. Neo-Tourcouing Municipal Police.
+- Officer Rusty, at your service.
+- I am officer Wrinkly, we must have met before?
+receptionist: You must be here to inquire about the vanishing of our vintern. Poor boy, I hope his death wasn't too painful. Or that he is still alive in the basement of some sadistic psychopath.
+investigator: Don't we all... Have you seen him around?
+receptionist: No, that's the point. Can you see that the boy will get a decent burial? Assuming he's dead, I mean.
+investigator: You can count on me, or my name isn't... hmm... Weathered Walter?
+receptionist: ...
+investigator: I guess I can just walk around and interrogate people?
+receptionist: By all means, help yourself. It's your job after all. In the meantime, I will just keep knitting smelly sweaters.
