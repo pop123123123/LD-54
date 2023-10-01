@@ -16,7 +16,7 @@ var ctrl_inventory_left: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxCo
 @onready
 var ctrl_inventory_right: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxContainer2/PanelContainer2/CtrlInventoryGridRight
 @onready var lbl_info: Label = $LblInfo
-@onready var lbl_description: Label = $%LabelDescription
+@onready var lbl_description: Label = %LabelDescription
 @onready var inventory_left: InventoryGrid = $InventoryGridLeft
 @onready var inventory: InventoryGrid = $InventoryGridRight
 @onready var confirmation_dialog: ConfirmationDialog = $ConfirmationDialog
