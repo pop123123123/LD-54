@@ -50,7 +50,7 @@ signal item_mouse_exited(item)
 
         if is_inside_tree():
             assert(node is InventoryGrid)
-            
+
         self.inventory = node
         update_configuration_warnings()
 @export var default_item_texture: Texture2D :
@@ -262,11 +262,12 @@ func _populate_list() -> void:
     var ctrl_item_container = _ctrl_item_container.get_ref()
     if inventory == null || ctrl_item_container == null:
         return
-        
+
     for item in inventory.get_items():
         var ctrl_inventory_item = _ctrl_inventory_item_script.new()
         ctrl_inventory_item.ctrl_inventory = self
         ctrl_inventory_item.texture = default_item_texture
+        ctrl_inventory_item.text = ""
         ctrl_inventory_item.item = item
         ctrl_inventory_item.grabbed.connect(Callable(self, "_on_item_grab"))
         ctrl_inventory_item.activated.connect(Callable(self, "_on_item_activated"))
@@ -302,6 +303,9 @@ func _on_item_grab(ctrl_inventory_item, offset: Vector2) -> void:
         drag_sprite.texture = ctrl_inventory_item.texture
         if drag_sprite.texture == null:
             drag_sprite.texture = default_item_texture
+        # drag_sprite.text = ctrl_inventory_item.text
+        # if drag_sprite.text == null:
+        #     drag_sprite.text = ""
         if stretch_item_sprites:
             var texture_size: Vector2 = drag_sprite.texture.get_size()
             var streched_size: Vector2 = _get_streched_item_sprite_size(ctrl_inventory_item.item)
@@ -460,7 +464,7 @@ func _move_item(item: InventoryItem, position: Vector2i) -> void:
     else:
         inventory.move_item_to(item, position)
 
-        
+
 # TODO: Find a better way for undoing/redoing item merges
 func _merge_item(item_src: InventoryItem, position: Vector2i) -> void:
     var item_dst = (inventory as InventoryGridStacked)._get_mergable_item_at(item_src, position)

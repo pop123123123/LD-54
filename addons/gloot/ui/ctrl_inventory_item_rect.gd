@@ -15,6 +15,7 @@ var item: InventoryItem :
             var texture_path = item.get_property(CtrlInventory.KEY_IMAGE)
             if texture_path:
                 texture = load(texture_path)
+            text = item.get_property(CtrlInventory.KEY_TEXT, "")
             _refresh()
 var ctrl_inventory
 var texture: Texture2D :
@@ -22,6 +23,12 @@ var texture: Texture2D :
         return texture
     set(new_texture):
         texture = new_texture
+        queue_redraw()
+var text: String :
+    get:
+        return text
+    set(new_text):
+        text = new_text
         queue_redraw()
 var selected: bool = false :
     get:
@@ -99,6 +106,12 @@ func _draw_texture(rect: Rect2):
     else:
         draw_rect(rect, Color.WHITE, false)
 
+    if text:
+        var src_rect: Rect2 = Rect2(0, 0, texture.get_width(), texture.get_height())
+        var font: Font = ThemeDB.fallback_font
+        var font_size: int = ThemeDB.fallback_font_size
+        draw_string(font, Vector2i(rect.position.x, rect.size.y / 2), text, HORIZONTAL_ALIGNMENT_CENTER, rect.size.x, font_size, Color(0.1, 0.1, 0.1))
+
 
 func _draw_stack_size(rect: Rect2):
     if item == null:
@@ -116,7 +129,7 @@ func _draw_stack_size(rect: Rect2):
         rect.position + Vector2(0, rect.size.y),
         text,
         HORIZONTAL_ALIGNMENT_RIGHT,
-        rect.size.x, 
+        rect.size.x,
         default_font_size
     )
 

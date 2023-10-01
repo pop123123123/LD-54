@@ -27,6 +27,7 @@ func _ready() -> void:
 	confirmation_dialog.confirmed.connect(Callable(self, "_on_delete_confirm"))
 	Memories.memory_added.connect(Callable(self, "_on_memory_added"))
 
+	# Memories.add_memory('test')
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
 	lbl_info.text = item.get_property("title", item.prototype_id)
@@ -116,10 +117,10 @@ func _on_item_added_left(item: InventoryItem) -> void:
 
 
 func _on_memory_added(memory: Dictionary) -> void:
-	add_item(memory.id, memory.title, memory.width, memory.height, memory.description)
+	add_item(memory.id, memory.title, memory.width, memory.height, memory.description, memory.short_title)
 
 
-func add_item(id: String, title: String, width = 1, height = 1, description = ""):
+func add_item(id: String, title: String, width = 1, height = 1, description = "", short_title = ""):
 	var protoset: ItemProtoset = inventory_left.item_protoset
 	var item: InventoryItem = InventoryItem.new()
 	item.protoset = protoset
@@ -129,6 +130,7 @@ func add_item(id: String, title: String, width = 1, height = 1, description = ""
 	item.set_property("width", width)
 	item.set_property("height", height)
 	item.set_property("description", description)
+	item.set_property("short_title", short_title)
 	var pos = inventory_left.find_free_place(item)
 	if pos.success:
 		inventory_left.add_item_at(item, pos.position)

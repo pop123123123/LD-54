@@ -16,7 +16,7 @@ signal inventory_item_activated(item)
 
         if is_inside_tree():
             assert(node is Inventory)
-            
+
         self.inventory = node
         update_configuration_warnings()
 
@@ -28,7 +28,7 @@ var inventory: Inventory = null :
     set(new_inventory):
         if new_inventory == inventory:
             return
-    
+
         _disconnect_inventory_signals()
         inventory = new_inventory
         _connect_inventory_signals()
@@ -38,6 +38,7 @@ var _vbox_container: VBoxContainer
 var _item_list: ItemList
 
 const KEY_IMAGE = "image"
+const KEY_TEXT = "short_title"
 const KEY_NAME = "name"
 
 
