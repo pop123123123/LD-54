@@ -3,11 +3,11 @@ class_name DialogicNewMemoryEvent
 extends DialogicEvent
 
 # Define properties of the event here
-var memory_name: String = ""
+var id: String = ""
 
 
 func _execute() -> void:
-	Memories.add_memory(memory_name)
+	Memories.add_memory(id)
 	finish()
 
 
@@ -32,7 +32,7 @@ func get_shortcode() -> String:
 func get_shortcode_parameters() -> Dictionary:
 	return {
 		#param_name 	: property_info
-		"memory_name": {"property": "memory_name", "default": ""},
+		"id": {"property": "id", "default": ""},
 	}
 
 
@@ -45,5 +45,5 @@ func get_shortcode_parameters() -> Dictionary:
 
 func build_event_editor() -> void:
 	add_header_edit(
-		"memory_name", ValueType.SINGLELINE_TEXT, {"left_text": "NEW MEMORY:", "autofocus": true}
+		"id", ValueType.SINGLELINE_TEXT, {"left_text": "NEW MEMORY:", "autofocus": true}
 	)
