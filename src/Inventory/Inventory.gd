@@ -10,6 +10,7 @@ var ctrl_inventory_left: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxCo
 @onready
 var ctrl_inventory_right: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxContainer2/PanelContainer2/CtrlInventoryGridRight
 @onready var lbl_info: Label = $LblInfo
+@onready var lbl_description: Label = $VBoxContainer/DescriptionBackground/LabelDescription
 @onready var inventory_left: InventoryGrid = $InventoryGridLeft
 @onready var inventory: InventoryGrid = $InventoryGridRight
 @onready var confirmation_dialog: ConfirmationDialog = $ConfirmationDialog
@@ -26,8 +27,8 @@ func _ready() -> void:
 	confirmation_dialog.canceled.connect(Callable(self, "_on_delete_cancel"))
 	confirmation_dialog.confirmed.connect(Callable(self, "_on_delete_confirm"))
 	Memories.memory_added.connect(Callable(self, "_on_memory_added"))
-
-	# Memories.add_memory('test')
+	
+	Memories.add_memory('test')
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
 	lbl_info.text = item.get_property("title", item.prototype_id)
@@ -73,13 +74,16 @@ func get_items():
 func _input(event: InputEvent) -> void:
 	if !(event is InputEventMouseMotion):
 		return
-
+	
 	var item = get_hovered_item()
 	if item != null:
-		lbl_info.show()
-		lbl_info.set_global_position(get_global_mouse_position() + INFO_OFFSET)
+		lbl_description.set_text(get_hovered_item().get_property("description"))
+		lbl_description.show()
+		#lbl_info.show()
+		#lbl_info.set_global_position(get_global_mouse_position() + INFO_OFFSET)
 	else:
-		lbl_info.hide()
+		lbl_description.hide()
+		#lbl_info.hide()
 
 
 func _on_delete_cancel() -> void:
