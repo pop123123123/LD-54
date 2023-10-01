@@ -35,8 +35,7 @@ func _ready() -> void:
 	inventory.item_removed.connect(Callable(self, "_on_item_removed"))
 	inventory.item_added.connect(Callable(self, "_on_item_added"))
 	Memories.memory_added.connect(Callable(self, "_on_memory_added"))
-
-	Memories.add_memory('test')
+	Memories.active_memory_added.connect(Callable(self, "_on_active_memory_added"))
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
 	lbl_info.text = item.get_property("title", item.prototype_id)
@@ -129,13 +128,16 @@ func _on_item_added_left(item: InventoryItem) -> void:
 
 
 func _on_memory_added(memory: Dictionary) -> void:
-	var short_title = memory.short_title
-	if short_title == null or short_title.length() == 0:
-		short_title = memory.title
-	add_item(memory.id, memory.title, memory.width, memory.height, memory.description, short_title)
+	var item = _create_item(memory.id, memory.title, memory.width, memory.height, memory.description, Memories.get_short_title(memory))
+	add_item(item)
 
 
-func add_item(id: String, title: String, width = 1, height = 1, description = "", short_title = ""):
+func _on_active_memory_added(memory: Dictionary, x: int, y: int) -> void:
+	var item = _create_item(memory.id, memory.title, memory.width, memory.height, memory.description, Memories.get_short_title(memory))
+	add_active_item(item, x, y)
+
+
+func _create_item(id: String, title: String, width = 1, height = 1, description = "", short_title = "") -> InventoryItem:
 	var protoset: ItemProtoset = inventory_left.item_protoset
 	var item: InventoryItem = InventoryItem.new()
 	item.protoset = protoset
@@ -146,6 +148,9 @@ func add_item(id: String, title: String, width = 1, height = 1, description = ""
 	item.set_property("height", height)
 	item.set_property("description", description)
 	item.set_property("short_title", short_title)
+	return item
+
+func add_item(item: InventoryItem) -> void:
 	var pos = inventory_left.find_free_place(item)
 	if pos.success:
 		inventory_left.add_item_at(item, pos.position)
@@ -155,10 +160,20 @@ func add_item(id: String, title: String, width = 1, height = 1, description = ""
 			inventory.add_item_at(item, pos.position)
 	inventory_left.sort()
 
+func add_active_item(item: InventoryItem, x: int, y: int) -> void:
+	var res = inventory.add_item_at(item, Vector2i(x, y))
+	if not res:
+		var pos = inventory.find_free_place(item)
+		if pos.success:
+			inventory.add_item_at(item, pos.position)
+		else:
+			add_item(item)
+
 func _on_item_removed(item: InventoryItem) -> void:
 	var id = item.get_property("id", "")
 	Memories.remove_active_memory(id)
 
 func _on_item_added(item: InventoryItem) -> void:
 	var id = item.get_property("id", "")
-	Memories.add_active_memory(id)
+	var pos = inventory.get_item_position(item)
+	Memories.add_active_memory(id, pos.x, pos.y)
