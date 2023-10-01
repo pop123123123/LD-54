@@ -5,11 +5,16 @@ const INFO_OFFSET: Vector2 = Vector2(20, 0)
 var item_to_delete: InventoryItem = null
 var item_to_delete_position: Vector2i = Vector2i.ZERO
 
-var can_edit: bool = true:
+var can_edit: bool = false:
 	set(new_can_edit):
 		can_edit = new_can_edit
 		ctrl_inventory_left.can_edit = can_edit
 		ctrl_inventory_right.can_edit = can_edit
+
+var is_idle: bool = false:
+	set(new_is_idle):
+		is_idle = new_is_idle
+		can_edit = is_idle
 
 @onready
 var ctrl_inventory_left: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/CtrlInventoryGridLeft
@@ -34,8 +39,12 @@ func _ready() -> void:
 	confirmation_dialog.confirmed.connect(Callable(self, "_on_delete_confirm"))
 	inventory.item_removed.connect(Callable(self, "_on_item_removed"))
 	inventory.item_added.connect(Callable(self, "_on_item_added"))
+
 	Memories.memory_added.connect(Callable(self, "_on_memory_added"))
 	Memories.active_memory_added.connect(Callable(self, "_on_active_memory_added"))
+
+	Dialogic.timeline_started.connect(Callable(self, "_on_timeline_started"))
+	_on_timeline_started()
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
 	lbl_info.text = item.get_property("title", item.prototype_id)
@@ -177,3 +186,7 @@ func _on_item_added(item: InventoryItem) -> void:
 	var id = item.get_property("id", "")
 	var pos = inventory.get_item_position(item)
 	Memories.add_active_memory(id, pos.x, pos.y)
+
+func _on_timeline_started() -> void:
+	var events = Dialogic.current_timeline_events
+	is_idle = events.any(func(event: DialogicEvent): return event is DialogicCommentEvent and event.text == "idle")
