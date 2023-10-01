@@ -28,12 +28,13 @@ func add_memory(id: String, active = false, x = 0, y = 0):
 	else:
 		printerr("memory not found: ", id)
 
-func add_active_memory(id: String, x: int, y: int):
+func add_active_memory(id: String, x: int, y: int, emit_event = true):
 	var memory = get_memory(id)
 	if memory != null:
 		if not active_memories.has(id):
 			active_memories.append(id)
-			active_memory_added.emit(memory, x, y)
+			if emit_event:
+				active_memory_added.emit(memory, x, y)
 	else:
 		printerr("memory not found: ", id)
 

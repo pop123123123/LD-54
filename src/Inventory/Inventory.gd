@@ -16,10 +16,8 @@ var is_idle: bool = false:
 		is_idle = new_is_idle
 		can_edit = is_idle
 
-@onready
-var ctrl_inventory_left: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/CtrlInventoryGridLeft
-@onready
-var ctrl_inventory_right: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxContainer2/PanelContainer2/CtrlInventoryGridRight
+@onready var ctrl_inventory_left: CtrlInventoryGrid = %CtrlInventoryGridLeft
+@onready var ctrl_inventory_right: CtrlInventoryGrid = %CtrlInventoryGridRight
 @onready var lbl_info: Label = $LblInfo
 @onready var lbl_description: Label = %LabelDescription
 @onready var inventory_left: InventoryGrid = $InventoryGridLeft
@@ -30,7 +28,6 @@ var ctrl_inventory_right: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxC
 func _ready() -> void:
 	ctrl_inventory_left.item_mouse_entered.connect(Callable(self, "_on_item_mouse_entered"))
 	ctrl_inventory_left.item_mouse_exited.connect(Callable(self, "_on_item_mouse_exited"))
-	inventory_left.item_added.connect(Callable(self, "_on_item_added_left"))
 	ctrl_inventory_right.item_mouse_entered.connect(Callable(self, "_on_item_mouse_entered"))
 	ctrl_inventory_right.item_mouse_exited.connect(Callable(self, "_on_item_mouse_exited"))
 	ctrl_inventory_right.item_dropped.connect(Callable(self, "_on_item_dropped"))
@@ -45,6 +42,7 @@ func _ready() -> void:
 
 	Dialogic.timeline_started.connect(Callable(self, "_on_timeline_started"))
 	_on_timeline_started()
+
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
 	lbl_info.text = item.get_property("title", item.prototype_id)
@@ -123,30 +121,33 @@ func _on_item_activated(item: InventoryItem) -> void:
 	print_debug("activated", item)
 
 
-func _on_item_added_left(item: InventoryItem) -> void:
-	# var pos = inventory.find_free_place(item)
-	# inventory_left.transfer(item, inventory)
-	# print('pos', item_to_delete_position)
-	# print(pos.success, pos.position)
-	# TODO: investigate why this does not work
-	# to reproduce: move item from inventory to left inventory
-	# inventory.move_item_to(item, item_to_delete_position)
-	# if pos.success:
-	# 	inventory.move_item_to(item, pos.position)
-	pass
-
-
 func _on_memory_added(memory: Dictionary) -> void:
-	var item = _create_item(memory.id, memory.title, memory.width, memory.height, memory.description, Memories.get_short_title(memory))
+	var item = _create_item(
+		memory.id,
+		memory.title,
+		memory.width,
+		memory.height,
+		memory.description,
+		Memories.get_short_title(memory)
+	)
 	add_item(item)
 
 
 func _on_active_memory_added(memory: Dictionary, x: int, y: int) -> void:
-	var item = _create_item(memory.id, memory.title, memory.width, memory.height, memory.description, Memories.get_short_title(memory))
+	var item = _create_item(
+		memory.id,
+		memory.title,
+		memory.width,
+		memory.height,
+		memory.description,
+		Memories.get_short_title(memory)
+	)
 	add_active_item(item, x, y)
 
 
-func _create_item(id: String, title: String, width = 1, height = 1, description = "", short_title = "") -> InventoryItem:
+func _create_item(
+	id: String, title: String, width = 1, height = 1, description = "", short_title = ""
+) -> InventoryItem:
 	var protoset: ItemProtoset = inventory_left.item_protoset
 	var item: InventoryItem = InventoryItem.new()
 	item.protoset = protoset
@@ -159,6 +160,7 @@ func _create_item(id: String, title: String, width = 1, height = 1, description 
 	item.set_property("short_title", short_title)
 	return item
 
+
 func add_item(item: InventoryItem) -> void:
 	var pos = inventory_left.find_free_place(item)
 	if pos.success:
@@ -169,6 +171,7 @@ func add_item(item: InventoryItem) -> void:
 			inventory.add_item_at(item, pos.position)
 	inventory_left.sort()
 
+
 func add_active_item(item: InventoryItem, x: int, y: int) -> void:
 	var res = inventory.add_item_at(item, Vector2i(x, y))
 	if not res:
@@ -178,15 +181,20 @@ func add_active_item(item: InventoryItem, x: int, y: int) -> void:
 		else:
 			add_item(item)
 
+
 func _on_item_removed(item: InventoryItem) -> void:
 	var id = item.get_property("id", "")
 	Memories.remove_active_memory(id)
 
+
 func _on_item_added(item: InventoryItem) -> void:
 	var id = item.get_property("id", "")
 	var pos = inventory.get_item_position(item)
-	Memories.add_active_memory(id, pos.x, pos.y)
+	Memories.add_active_memory(id, pos.x, pos.y, false)
+
 
 func _on_timeline_started() -> void:
 	var events = Dialogic.current_timeline_events
-	is_idle = events.any(func(event: DialogicEvent): return event is DialogicCommentEvent and event.text == "idle")
+	is_idle = events.any(
+		func(event: DialogicEvent): return event is DialogicCommentEvent and event.text == "idle"
+	)
