@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://ckdix4i74pgsy"]
+[gd_scene load_steps=27 format=3 uid="uid://ckdix4i74pgsy"]
 
 [ext_resource type="Script" path="res://src/DialogicLayout/DialogicLayout.gd" id="1_5ldky"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Background/node_background_holder.gd" id="2_gxen2"]
@@ -16,9 +16,7 @@
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="14_73ht4"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/TextInput/node_text_input.gd" id="15_3l454"]
 [ext_resource type="Script" path="res://src/DialogicLayout/ExampleGlossaryPopup.gd" id="16_haldl"]
-[ext_resource type="FontFile" uid="uid://vrrmdx83skor" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Regular.ttf" id="18_5l0fm"]
-[ext_resource type="FontFile" uid="uid://cc4xli25271fd" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Bold.ttf" id="19_wansu"]
-[ext_resource type="FontFile" uid="uid://b5c0p00x6g6u5" path="res://addons/dialogic/Example Assets/Fonts/Roboto-Italic.ttf" id="20_pnts7"]
+[ext_resource type="PackedScene" uid="uid://n4chpcm77cn4" path="res://src/Inventory/Inventory.tscn" id="17_3fq2p"]
 
 [sub_resource type="Animation" id="Animation_au0a2"]
 length = 0.001
@@ -616,6 +614,28 @@ rotation = 0.75799
 size_flags_horizontal = 4
 size_flags_vertical = 8
 theme_override_styles/panel = SubResource("StyleBoxFlat_a3cyk")
+
+[node name="Sidebar" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Sidebar"]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -297.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sidebar/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inventory" parent="Sidebar/Panel/VBoxContainer" instance=ExtResource("17_3fq2p")]
+layout_mode = 2
 
 [connection signal="meta_hover_ended" from="DefaultStyle/DialogicTextAnchor/DialogTextAnimationParent/DialogTextPanel/DialogicNode_DialogText" to="DefaultStyle/Glossary" method="_on_dialogic_display_dialog_text_meta_hover_ended"]
 [connection signal="meta_hover_started" from="DefaultStyle/DialogicTextAnchor/DialogTextAnimationParent/DialogTextPanel/DialogicNode_DialogText" to="DefaultStyle/Glossary" method="_on_dialogic_display_dialog_text_meta_hover_started"]
