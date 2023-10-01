@@ -121,7 +121,7 @@ func _set_panel_style(panel: Panel, style: StyleBox) -> void:
 
 func _ready() -> void:
     super._ready()
-    
+
     _create_selection_panel()
     _create_field_background_grid()
     selection_changed.connect(Callable(self, "_on_selection_changed"))
@@ -145,24 +145,29 @@ func _on_inventory_resized() -> void:
 
 
 func _input(event) -> void:
+    if !can_edit:
+        return
+
     super._input(event)
-    
+
     if !(event is InputEventMouseMotion):
         return
     if !inventory:
         return
-    
+
     var hovered_field_coords := Vector2i(-1, -1)
     if _is_hovering(get_global_mouse_position()):
         hovered_field_coords = get_field_coords(get_global_mouse_position())
 
     _reset_highlights()
+    if inventory.readonly:
+        return
     if !field_highlighted_style:
         return
     if _highlight_grabbed_item(field_highlighted_style):
         return
     _highlight_hovered_fields(hovered_field_coords, field_highlighted_style)
-        
+
 
 func _reset_highlights() -> void:
     while true:
@@ -238,4 +243,4 @@ func _get_global_grabbed_item_global_pos() -> Vector2:
     if _gloot && _gloot._grabbed_inventory_item:
         return get_global_mouse_position() - _gloot._grab_offset + (field_dimensions / 2)
     return Vector2(-1, -1)
-    
+

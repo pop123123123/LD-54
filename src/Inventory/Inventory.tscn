@@ -61,6 +61,7 @@ field_dimensions = Vector2(48, 48)
 draw_grid = false
 inventory_path = NodePath("../../../../../InventoryGridLeft")
 default_item_texture = ExtResource("5_bbk6n")
+can_edit = null
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -79,6 +80,7 @@ field_dimensions = Vector2(48, 48)
 draw_grid = false
 inventory_path = NodePath("../../../../../InventoryGridRight")
 default_item_texture = ExtResource("5_bbk6n")
+can_edit = null
 
 [node name="DescriptionBackground" type="ColorRect" parent="VBoxContainer"]
 layout_mode = 2
@@ -96,11 +98,13 @@ text = "Hello
 script = ExtResource("2_uiyc4")
 size = Vector2i(3, 6)
 item_protoset = ExtResource("8_ie0jr")
+readonly = true
 
 [node name="InventoryGridRight" type="Node" parent="."]
 script = ExtResource("2_uiyc4")
 size = Vector2i(6, 6)
 item_protoset = ExtResource("8_ie0jr")
+readonly = null
 
 [node name="LblInfo" type="Label" parent="."]
 visible = false

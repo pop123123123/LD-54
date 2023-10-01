@@ -21,6 +21,7 @@ const ConstraintManager = preload("res://addons/gloot/core/constraints/constrain
         item_protoset = new_item_protoset
         protoset_changed.emit()
         update_configuration_warnings()
+@export var readonly: bool = false
 var _items: Array[InventoryItem] = []
 var _constraint_manager: ConstraintManager = null
 
@@ -151,10 +152,10 @@ func add_item(item: InventoryItem) -> bool:
 func can_add_item(item: InventoryItem) -> bool:
     if item == null || has_item(item):
         return false
-        
+
     if !can_hold_item(item):
         return false
-        
+
     if !_constraint_manager.has_space_for(item):
         return false
 
@@ -198,7 +199,7 @@ func get_item_by_id(prototype_id: String) -> InventoryItem:
     for item in get_items():
         if item.prototype_id == prototype_id:
             return item
-            
+
     return null
 
 
@@ -208,7 +209,7 @@ func get_items_by_id(prototype_id: String) -> Array[InventoryItem]:
     for item in get_items():
         if item.prototype_id == prototype_id:
             result.append(item)
-            
+
     return result
 
 
@@ -217,7 +218,7 @@ func has_item_by_id(prototype_id: String) -> bool:
 
 
 func transfer(item: InventoryItem, destination: Inventory) -> bool:
-    if !_can_remove_item(item) || !destination.can_add_item(item):
+    if !_can_remove_item(item) || !destination.can_add_item(item) || destination.readonly:
         return false
 
     remove_item(item)

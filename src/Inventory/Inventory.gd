@@ -5,6 +5,12 @@ const INFO_OFFSET: Vector2 = Vector2(20, 0)
 var item_to_delete: InventoryItem = null
 var item_to_delete_position: Vector2i = Vector2i.ZERO
 
+var can_edit: bool = true:
+	set(new_can_edit):
+		can_edit = new_can_edit
+		ctrl_inventory_left.can_edit = can_edit
+		ctrl_inventory_right.can_edit = can_edit
+
 @onready
 var ctrl_inventory_left: CtrlInventoryGrid = $VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/CtrlInventoryGridLeft
 @onready
@@ -76,7 +82,7 @@ func get_items():
 func _input(event: InputEvent) -> void:
 	if !(event is InputEventMouseMotion):
 		return
-	
+
 	var item = get_hovered_item()
 	if item != null:
 		lbl_description.set_text(item.get_property("description"))

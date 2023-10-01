@@ -80,6 +80,14 @@ var inventory: InventoryGrid = null :
         _connect_inventory_signals()
 
         _refresh()
+@export var can_edit: bool = true :
+    get:
+        return can_edit
+    set(new_can_edit):
+        can_edit = new_can_edit
+        if !can_edit and _grabbed_ctrl_inventory_item:
+            _handle_item_release(_grabbed_ctrl_inventory_item.item)
+
 var _gloot_undo_redo = null
 var _grabbed_ctrl_inventory_item = null
 var _grab_offset: Vector2
@@ -291,6 +299,9 @@ func _refresh_selection() -> void:
 
 
 func _on_item_grab(ctrl_inventory_item, offset: Vector2) -> void:
+    if !can_edit:
+        return
+
     _select(null)
     _grabbed_ctrl_inventory_item = ctrl_inventory_item
     _grabbed_ctrl_inventory_item.hide()
@@ -358,6 +369,9 @@ func _select(item: InventoryItem) -> void:
 # This makes dragging items from one CtrlInventoryGrid to another impossible to implement with
 # _gui_input.
 func _input(event: InputEvent) -> void:
+    if !can_edit:
+        return
+
     if !(event is InputEventMouseButton):
         return
 
@@ -378,7 +392,7 @@ func _handle_item_release(item: InventoryItem) -> void:
         _gloot._grabbed_inventory_item = null
 
     var global_grabbed_item_pos := _get_grabbed_item_global_pos()
-    if _is_hovering(global_grabbed_item_pos):
+    if _is_hovering(global_grabbed_item_pos) and !inventory.readonly:
         _handle_item_move(item, global_grabbed_item_pos)
     else:
         _handle_item_drop(item, global_grabbed_item_pos)
