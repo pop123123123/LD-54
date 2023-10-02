@@ -239,6 +239,7 @@ func move_to_room(room: Room):
 
 	current_room = room
 	await update_room_characters(room)
+	Dialogic.end_timeline()
 	Dialogic.start_timeline(get_room_timeline_id(room))
 
 func _ready():
@@ -275,6 +276,7 @@ func _on_signal(signal_type: String):
 	if signal_type == "nap":
 		Dialogic.VAR.is_night = 1
 		move_to_room(Room.KENNEL)
+		Dialogic.end_timeline()
 		Dialogic.start_timeline("res://story/night_transition.dtl")
 
 func trigger_ending(ending_name: String):
@@ -292,6 +294,7 @@ func _on_timeline_started():
 	pass
 
 func select_memory(memory_id: String):
+	Dialogic.end_timeline()
 	Dialogic.start_timeline(get_memory_timeline_id(last_character.get_character_name(), memory_id))
 
 
