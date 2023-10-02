@@ -57,7 +57,10 @@ var can_edit: bool = false:
 var is_idle: bool = false:
 	set(new_is_idle):
 		is_idle = new_is_idle
-		mode = Mode.SELECT
+		if is_idle:
+			mode = Mode.SELECT
+		else:
+			mode = Mode.EDIT
 
 @onready var ctrl_inventory_left: CtrlInventoryGrid = %CtrlInventoryGridLeft
 @onready var ctrl_inventory_right: CtrlInventoryGrid = %CtrlInventoryGridRight
