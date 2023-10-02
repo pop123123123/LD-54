@@ -375,7 +375,7 @@ func _ready():
 	input_handler.set_script(load(get_script().resource_path.get_base_dir().path_join('default_input_handler.gd')))
 	add_child(input_handler)
 	
-	Dialogic.Settings.connect_to_change('text_speed', _update_user_speed)
+	# Dialogic.Settings.connect_to_change('text_speed', _update_user_speed)
 
 
 func _update_user_speed(user_speed:float) -> void:
