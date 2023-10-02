@@ -13,6 +13,6 @@ dest_files=["res://.godot/imported/timelines.csv-bc32f583e2e9e4fd4992afcdf536fa8
 [params]
 
 delimiter=0
-headers=false
+headers=true
 detect_numbers=false
-force_float=true
+force_float=false

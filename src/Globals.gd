@@ -36,22 +36,29 @@ var current_room: Room = Room.LOBBY:
 		room_changed.emit(room)
 
 var secret_access: bool = false
+var is_suspicious: bool = false
 
 var visited_rooms: Dictionary = {}
 
 var last_character: DialogicCharacter = null
 
+var timeline_transitions: Dictionary = {}
+
+
 func reset_state() -> void:
-	print('resetting state')
-	print('previously visited rooms: ', visited_rooms)
+	print("resetting state")
+	print("previously visited rooms: ", visited_rooms)
 	moving = false
 	current_room = Room.LOBBY
 	secret_access = false
+	is_suspicious = false
 	visited_rooms = {}
 	last_character = null
 
+
 func is_first_visit() -> bool:
 	return visited_rooms[current_room] == 1
+
 
 func get_transitions(from: Room = current_room) -> Array:
 	return {
@@ -60,7 +67,8 @@ func get_transitions(from: Room = current_room) -> Array:
 			Room.TOILET,
 			Room.GROOMING,
 		],
-		Room.TOILET: [
+		Room.TOILET:
+		[
 			Room.LOBBY,
 			Room.GROOMING,
 		],
@@ -99,29 +107,42 @@ func get_room_name(room: Room = current_room) -> String:
 		Room.MEAT_ROOM: "Meat Room",
 	}[room]
 
+
 func dialogic_default_action():
 	var new_event = InputEventAction.new()
 	new_event.action = "dialogic_default_action"
 	new_event.pressed = true
 	Input.parse_input_event(new_event)
 
+
 func get_room_timeline_id(room: Room) -> String:
-	return "res://story/arrival_" + {
-		Room.LOBBY: "lobby",
-		Room.TOILET: "toilet",
-		Room.GROOMING: "grooming",
-		Room.CORRIDOR: "corridor",
-		Room.SUPPLY_ROOM: "supply_room",
-		Room.STAFF_ROOM: "staff_room",
-		Room.CEO_OFFICE: "ceo_office",
-		Room.KENNEL: "kennel",
-		Room.MEAT_ROOM: "meat_room",
-	}[room] + ".dtl"
+	return (
+		"res://story/arrival_"
+		+ {
+			Room.LOBBY: "lobby",
+			Room.TOILET: "toilet",
+			Room.GROOMING: "grooming",
+			Room.CORRIDOR: "corridor",
+			Room.SUPPLY_ROOM: "supply_room",
+			Room.STAFF_ROOM: "staff_room",
+			Room.CEO_OFFICE: "ceo_office",
+			Room.KENNEL: "kennel",
+			Room.MEAT_ROOM: "meat_room",
+		}[room]
+		+ ".dtl"
+	)
+
 
 func get_memory_timeline_id(character_id: String, memory_id: String) -> String:
-	var timeline_id = ""
-	# TODO
+	var timeline_id = timeline_transitions[[character_id, memory_id, is_suspicious]]
+	if timeline_id == null and is_suspicious:
+		timeline_id = timeline_transitions[[character_id, memory_id, false]]
+	if timeline_id == null:
+		timeline_id = timeline_transitions[[character_id, "", is_suspicious]]
+	if timeline_id == null and is_suspicious:
+		timeline_id = timeline_transitions[[character_id, "", false]]
 	return "res://story/" + timeline_id + ".dtl"
+
 
 func move_to_room(room: Room):
 	moving = true
@@ -130,14 +151,17 @@ func move_to_room(room: Room):
 		func(event: DialogicEvent): return event is DialogicLabelEvent and event.name == "bye"
 	)
 	if has_bye:
-		Dialogic.Jump.jump_to_label('bye')
+		Dialogic.Jump.jump_to_label("bye")
 		dialogic_default_action()
 		await Dialogic.timeline_ended
 	Dialogic.start_timeline(get_room_timeline_id(room))
 	current_room = room
 
+
 func _ready():
 	Dialogic.event_handled.connect(Callable(self, "_on_event_handled"))
+	_init_timelines()
+
 
 func _on_event_handled(event: DialogicEvent):
 	if event is DialogicCharacterEvent:
@@ -145,5 +169,27 @@ func _on_event_handled(event: DialogicEvent):
 	if event is DialogicTextEvent and event.character:
 		last_character = event.character
 
+
 func select_memory(memory_id: String):
 	Dialogic.start_timeline(get_memory_timeline_id(last_character.get_character_name(), memory_id))
+
+
+func _init_timelines() -> void:
+	var transitions: Dictionary = {}
+	var data = preload("res://data/timelines.csv").records
+	var characters = [
+		"president",
+		"receptionist",
+		"groomer",
+		"janitor",
+		"customer",
+		"night_groomer",
+		"night_janitor",
+		"night_warden",
+	]
+	for row in data:
+		for character in characters:
+			var dest: String = row[character]
+			if dest.length() > 0:
+				transitions[[character, row.memory_id, row.suspicious == "true"]] = dest
+	timeline_transitions = transitions
