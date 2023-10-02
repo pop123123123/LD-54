@@ -1,5 +1,5 @@
 # idle
-[new_memory id="test" x="1" y="1"]
+[new_memory id="test" active="true" x="1" y="1"]
 Join janitor 1
 janitor: Yo man, what's up?
 label loop

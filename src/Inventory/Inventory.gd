@@ -1,9 +1,52 @@
 extends Control
 
+enum Mode {
+	VIEW,
+	SELECT,
+	EDIT,
+}
+
 const INFO_OFFSET: Vector2 = Vector2(20, 0)
 
 var item_to_delete: InventoryItem = null
 var item_to_delete_position: Vector2i = Vector2i.ZERO
+
+var default_description: String = "":
+	set(description):
+		default_description = description
+		lbl_description.set_text(
+			current_description if current_description.length() > 0 else default_description
+		)
+var current_description: String = "":
+	set(description):
+		if description != current_description:
+			current_description = description
+			lbl_description.set_text(
+				current_description if current_description.length() > 0 else default_description
+			)
+
+var mode: Mode = Mode.VIEW:
+	set(new_mode):
+		mode = new_mode
+		match mode:
+			Mode.VIEW:
+				can_select = false
+				can_edit = false
+				default_description = ""
+			Mode.SELECT:
+				can_select = true
+				can_edit = false
+				default_description = "Double click on a memory to activate it."
+				# inventory_left.clear()
+			Mode.EDIT:
+				can_select = false
+				can_edit = true
+				default_description = "You can move things around.\nPut a memory away to forget it."
+
+var can_select: bool = false:
+	set(new_can_select):
+		can_select = new_can_select
+		selection_hint.visible = can_select
 
 var can_edit: bool = false:
 	set(new_can_edit):
@@ -14,15 +57,17 @@ var can_edit: bool = false:
 var is_idle: bool = false:
 	set(new_is_idle):
 		is_idle = new_is_idle
-		can_edit = is_idle
+		mode = Mode.SELECT
 
 @onready var ctrl_inventory_left: CtrlInventoryGrid = %CtrlInventoryGridLeft
 @onready var ctrl_inventory_right: CtrlInventoryGrid = %CtrlInventoryGridRight
 @onready var lbl_info: Label = $LblInfo
-@onready var lbl_description: Label = %LabelDescription
+@onready var lbl_description: RichTextLabel = %LabelDescription
 @onready var inventory_left: InventoryGrid = $InventoryGridLeft
 @onready var inventory: InventoryGrid = $InventoryGridRight
 @onready var confirmation_dialog: ConfirmationDialog = $ConfirmationDialog
+@onready var selection_hint: NinePatchRect = $SelectionHint
+@onready var inventory_left_container: Control = %InventoryLeftContainer
 
 
 func _ready() -> void:
@@ -36,6 +81,8 @@ func _ready() -> void:
 	confirmation_dialog.confirmed.connect(Callable(self, "_on_delete_confirm"))
 	inventory.item_removed.connect(Callable(self, "_on_item_removed"))
 	inventory.item_added.connect(Callable(self, "_on_item_added"))
+	inventory_left.contents_changed.connect(Callable(self, "_on_left_contents_changed"))
+	_on_left_contents_changed()
 
 	Memories.memory_added.connect(Callable(self, "_on_memory_added"))
 	Memories.active_memory_added.connect(Callable(self, "_on_active_memory_added"))
@@ -91,13 +138,11 @@ func _input(event: InputEvent) -> void:
 
 	var item = get_hovered_item()
 	if item != null:
-		lbl_description.set_text(item.get_property("description"))
-		lbl_description.show()
-		#lbl_info.show()
-		#lbl_info.set_global_position(get_global_mouse_position() + INFO_OFFSET)
+		current_description = (
+			"[b]" + item.get_property("title", "") + "[/b]\n" + item.get_property("description", "")
+		)
 	else:
-		lbl_description.hide()
-		#lbl_info.hide()
+		current_description = ""
 
 
 func _on_delete_cancel() -> void:
@@ -118,6 +163,8 @@ func _on_item_dropped(item_wr: WeakRef, _pos: Vector2) -> void:
 
 
 func _on_item_activated(item: InventoryItem) -> void:
+	if mode != Mode.SELECT:
+		return
 	print_debug("activated", item)
 
 
@@ -198,3 +245,11 @@ func _on_timeline_started() -> void:
 	is_idle = events.any(
 		func(event: DialogicEvent): return event is DialogicCommentEvent and event.text == "idle"
 	)
+
+
+func _on_left_contents_changed() -> void:
+	var items: Array = inventory_left.get_items()
+	if items.size() > 0:
+		inventory_left_container.show()
+	else:
+		inventory_left_container.hide()

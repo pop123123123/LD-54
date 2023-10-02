@@ -11,36 +11,43 @@ anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -297.0
+offset_left = -303.0
 grow_horizontal = 0
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
 
-[node name="Inventory" parent="Panel/VBoxContainer" instance=ExtResource("1_1r5iy")]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+[node name="Inventory" parent="Panel/MarginContainer/VBoxContainer" instance=ExtResource("1_1r5iy")]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Current room:"
 
-[node name="RoomLabel" type="Label" parent="Panel/VBoxContainer/HBoxContainer"]
+[node name="RoomLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Move to:"
 
-[node name="TransitionButtons" type="VBoxContainer" parent="Panel/VBoxContainer"]
+[node name="TransitionButtons" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
