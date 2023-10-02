@@ -18,3 +18,6 @@ bus = &"Music"
 [node name="watiByNight" type="AudioStreamPlayer" parent="DJ"]
 stream = ExtResource("4_son7k")
 bus = &"Music"
+
+[connection signal="finished" from="DJ/whitePastaReggae" to="DJ" method="_start_reggae"]
+[connection signal="finished" from="DJ/watiByNight" to="DJ" method="_start_night_music"]
