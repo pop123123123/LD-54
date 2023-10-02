@@ -59,6 +59,11 @@ layout/styles={
 layout/default_style="Default"
 layout/end_behaviour=2
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/csv-data-importer/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/gloot/plugin.cfg")

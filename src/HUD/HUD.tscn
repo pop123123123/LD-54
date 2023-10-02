@@ -31,6 +31,7 @@ theme_override_constants/margin_bottom = 8
 layout_mode = 2
 
 [node name="Inventory" parent="Panel/MarginContainer/VBoxContainer" instance=ExtResource("1_1r5iy")]
+custom_minimum_size = Vector2(288, 456)
 layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
