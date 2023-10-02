@@ -4,5 +4,5 @@ if {has_talked_to.receptionist} == 0:
 label loop
 
 receptionist: Hello, can I be of service?
-receptionist: I know may thing about this company, just ask me!
+receptionist: I know many things about this company, just ask me!
 jump loop
