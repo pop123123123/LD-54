@@ -1,2 +1,9 @@
 You enter the Lobby.
 
+
+if {is_night} == 1:
+	- Talk to the Warden
+		jump idle_warden/
+else:
+	- Talk to the Receptionist
+		jump idle_receptionist/

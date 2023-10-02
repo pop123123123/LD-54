@@ -1,2 +1,5 @@
 You enter the Supply Room.
 
+if {is_night} == 0:
+	- Talk to the Janitor
+		jump idle_janitor/

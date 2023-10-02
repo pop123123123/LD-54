@@ -1,4 +1,5 @@
 You enter the President's Office.
 
-- Talk to the President
-	jump idle_president/
+if {is_night} == 0:
+	- Talk to the President
+		jump idle_president/

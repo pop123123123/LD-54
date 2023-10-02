@@ -1,2 +1,6 @@
 You enter the Kennel.
 
+if {is_night} == 1:
+	if {is_suspicious} == 0:
+		- Talk to the Janitor
+			jump idle_dark_janitor/
