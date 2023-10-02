@@ -173,40 +173,45 @@ func _on_item_activated(item: InventoryItem) -> void:
 
 
 func _on_memory_added(memory: Dictionary) -> void:
+	print(memory)
 	var item = _create_item(
 		memory.id,
 		memory.title,
 		memory.width,
 		memory.height,
 		memory.description,
-		Memories.get_short_title(memory)
+		Memories.get_short_title(memory),
+		memory.tile_size,
 	)
 	add_item(item)
 
 
 func _on_active_memory_added(memory: Dictionary, x: int, y: int) -> void:
+	print(memory)
 	var item = _create_item(
 		memory.id,
 		memory.title,
 		memory.width,
 		memory.height,
 		memory.description,
-		Memories.get_short_title(memory)
+		Memories.get_short_title(memory),
+		memory.tile_size,
 	)
 	add_active_item(item, x, y)
 
 
 func _create_item(
-	id: String, title: String, width = 1, height = 1, description = "", short_title = ""
+	id: String, title: String, width = 1, height = 1, description = "", short_title = "", tile_size= "1x1"
 ) -> InventoryItem:
 	var protoset: ItemProtoset = inventory_left.item_protoset
 	var item: InventoryItem = InventoryItem.new()
 	item.protoset = protoset
-	item.prototype_id = "base_memory"
+	var n = randi() % 2 if tile_size == "1x1" else 0
 	item.set_property("id", id)
 	item.set_property("title", title)
 	item.set_property("width", width)
-	item.set_property("height", height)
+	item.set_property("height", height - .25)
+	item.set_property("image", "res://assets/ui/icons/icon_" + tile_size + "_" + str(n) + ".png")
 	item.set_property("description", description)
 	item.set_property("short_title", short_title)
 	return item
