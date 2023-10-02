@@ -10,11 +10,11 @@ config_version=5
 
 [application]
 
-config/name="LD-54"
+config/name="Vintage Vincent"
 config/description="Ludum Dare 54"
 run/main_scene="res://src/MainScene/MainScene.tscn"
 config/features=PackedStringArray("4.1")
-config/icon="res://assets/sprites/gdansk.png"
+config/icon="res://assets/ui/icons/dave.png"
 
 [autoload]
 
