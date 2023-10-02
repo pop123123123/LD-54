@@ -41,6 +41,7 @@ animations/join_default_wait=true
 save/autosave_delay=60.0
 text/autopauses={}
 variables={
+"allow_moving": "0",
 "has_talked_to": {
 "customer": "0",
 "dark_groomer": "0",

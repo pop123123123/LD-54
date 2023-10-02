@@ -37,3 +37,5 @@ sheriff: Other questions?
 - ...
 	sheriff: Perfect! The address is 173 Patrick Sebastien Street.
 [new_memory id="mission"]
+set {allow_moving} = 1
+sheriff: You should go now. Good luck.

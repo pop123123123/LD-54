@@ -10,6 +10,9 @@ func _ready() -> void:
 	Globals.moving_changed.connect(Callable(self, "_on_moving_changed"))
 	_on_room_changed(Globals.current_room)
 
+func _process(_delta):
+	transition_buttons.visible = Dialogic.VAR.allow_moving > 0
+
 
 func _on_room_changed(room: Globals.Room):
 	var room_name = Globals.get_room_name(room)

@@ -59,8 +59,10 @@ var is_idle: bool = false:
 		is_idle = new_is_idle
 		if is_idle:
 			mode = Mode.SELECT
+			Dialogic.VAR.allow_moving = 1
 		else:
 			mode = Mode.EDIT
+			Dialogic.VAR.allow_moving = 0
 
 @onready var ctrl_inventory_left: CtrlInventoryGrid = %CtrlInventoryGridLeft
 @onready var ctrl_inventory_right: CtrlInventoryGrid = %CtrlInventoryGridRight
