@@ -13,6 +13,7 @@ enum Room {
 	CEO_OFFICE,
 	KENNEL,
 	MEAT_ROOM,
+	SHERIFF_OFFICE,
 }
 
 var moving: bool = false:
@@ -91,6 +92,7 @@ func get_transitions(from: Room = current_room) -> Array:
 		Room.CEO_OFFICE: [Room.CORRIDOR],
 		Room.KENNEL: [Room.CORRIDOR, Room.MEAT_ROOM] if secret_access else [Room.CORRIDOR],
 		Room.MEAT_ROOM: [Room.KENNEL],
+		Room.SHERIFF_OFFICE: [],
 	}[from]
 
 
@@ -105,6 +107,7 @@ func get_room_name(room: Room = current_room) -> String:
 		Room.CEO_OFFICE: "CEO's Office",
 		Room.KENNEL: "Kennel",
 		Room.MEAT_ROOM: "Meat Room",
+		Room.SHERIFF_OFFICE: "Sheriff's Office",
 	}[room]
 
 
@@ -128,10 +131,25 @@ func get_room_timeline_id(room: Room) -> String:
 			Room.CEO_OFFICE: "ceo_office",
 			Room.KENNEL: "kennel",
 			Room.MEAT_ROOM: "meat_room",
+			Room.SHERIFF_OFFICE: "sheriff_office",
 		}[room]
 		+ ".dtl"
 	)
 
+
+func get_room_background_path(room: Room) -> String:
+	return "res://assets/background/" + {
+		Room.LOBBY: "reception",
+		Room.TOILET: "restroom",
+		Room.GROOMING: "generic_room",
+		Room.CORRIDOR: "corridor",
+		Room.SUPPLY_ROOM: "supply",
+		Room.STAFF_ROOM: "staff_room",
+		Room.CEO_OFFICE: "ceo_office",
+		Room.KENNEL: "generic_room_2",
+		Room.MEAT_ROOM: "meat_factory",
+		Room.SHERIFF_OFFICE: "sheriff_office",
+	}[room] + ".png"
 
 func get_memory_timeline_id(character_id: String, memory_id: String) -> String:
 	var timeline_id = timeline_transitions.get([character_id, memory_id, is_suspicious])
@@ -156,12 +174,13 @@ func move_to_room(room: Room):
 		Dialogic.Jump.jump_to_label("bye")
 		dialogic_default_action()
 		await Dialogic.timeline_ended
-	Dialogic.start_timeline(get_room_timeline_id(room))
 	current_room = room
+	Dialogic.start_timeline(get_room_timeline_id(room))
 
 
 func _ready():
 	Dialogic.event_handled.connect(Callable(self, "_on_event_handled"))
+	Dialogic.timeline_started.connect(Callable(self, "_on_timeline_started"))
 	_init_timelines()
 
 
@@ -171,6 +190,11 @@ func _on_event_handled(event: DialogicEvent):
 	if event is DialogicTextEvent and event.character:
 		last_character = event.character
 
+var previous_room: Room = Room.CEO_OFFICE
+func _on_timeline_started():
+	if current_room != previous_room:
+		Dialogic.Backgrounds.update_background('', get_room_background_path(current_room), .5)
+		previous_room = current_room
 
 func select_memory(memory_id: String):
 	Dialogic.start_timeline(get_memory_timeline_id(last_character.get_character_name(), memory_id))
