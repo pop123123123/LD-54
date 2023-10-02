@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgkighx8i005i"]
+[gd_scene load_steps=5 format=3 uid="uid://dgkighx8i005i"]
 
 [ext_resource type="Script" path="res://src/MainScene/MainScene.gd" id="1_she3g"]
+[ext_resource type="Script" path="res://src/MainScene/DJ.gd" id="2_0qk82"]
+[ext_resource type="AudioStream" uid="uid://cwoxq74p5lcbi" path="res://assets/musics/whitePastaReggae.ogg" id="3_p4ls1"]
+[ext_resource type="AudioStream" uid="uid://cghxk0s3mgllh" path="res://assets/musics/watiByNight.ogg" id="4_son7k"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_she3g")
+
+[node name="DJ" type="Node" parent="."]
+script = ExtResource("2_0qk82")
+
+[node name="whitePastaReggae" type="AudioStreamPlayer" parent="DJ"]
+stream = ExtResource("3_p4ls1")
+bus = &"Music"
+
+[node name="watiByNight" type="AudioStreamPlayer" parent="DJ"]
+stream = ExtResource("4_son7k")
+bus = &"Music"
