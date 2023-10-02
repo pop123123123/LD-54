@@ -2,14 +2,17 @@ inspector: Hello, R.
 dark_janitor: R? What do you mean.
 inspector: I know everything.
 - Let's talk about the fur traffic [if Memories.active_memories.has('fur') == true]
-	dark_janitor: Alright, I can't hide the truth for much longer.
+	dark_janitor: ...F..Fur trafic?? Alright, I can't hide the truth for much longer.
 	dark_janitor: The intern came back at night once, and he saw everything.
 	dark_janitor: He was so schocked by this discovery that he fell in the loom.
 	dark_janitor: May Jah forgive us.
 	inspector: What happened to the body?
 	dark_janitor: It disappeared in the loom. It's probably still in there somewhere.
+	inspector: You monsters ! I want the name of your accomplices !
+	dark_janitor: Well... Mike, Mandy and me had this small business to earn just a little more money. No harm man !
+	inspector: Poor boy...
 - Let's talk about the meat traffic
-	dark_janitor: We are also running an artisanal corned beef factory in collaboration with the butcher next door.
+	dark_janitor: Well... as you see, we are running an artisanal corned beef factory in collaboration with the butcher next door.
 	dark_janitor: Customers love these, so the butcher rewards us handsomely.
 	inspector: I did't see any beef in the premises.
 	dark_janitor: Corned beef is just a commercial name, it doesn't have to be literally beef.
@@ -27,15 +30,27 @@ inspector: I know everything.
 	inspector: Fantastic!
 	dark_janitor: We didn't manage to erase the security tapes. They are stored in the president's office, everything is on there. I was surprised you didn't ask to see them as soon as you arrived.
 	dark_janitor: Then there is also the neo-pagan death cult we are running on the side, but I think that you already have enough to indict us.
+	inspector: By the way, you will be a good boy and you will give me the name of all your accomplices
+	dark_janitor: Me and my sista Mandy... Since the boss Pascal fell in the grinder.... Jah bless...
 	inspector: Formidable! With this information, I can send all of you to the electric chair by tomorrow!
 	dark_janitor: Not so fast! Why do you assume that I will let you leave the building other than through the grinder?
 	inspector: Not fiyah man.
 	dark_janitor: What are you going to do about it?
 	inspector: I'm too old for this shit, let me call reinforcements.
-	dark_janitor: Sure, assuming you still remember the phone number.
+	dark_janitor: Sure, assuming you still remember the phone number... Old man!
 	if Memories.active_memories.has('number') == true:
 		inspector: Do I look like a rookie to you?
+		dark_janitor: You jsut look like a grandpa that should go for retirement
+		inspector: Retirement? Poor boy, this concept disappeared in 2023
+		dark_janitor: Let's play a game... What's your name my breda?
+		inspector: ...
+		inspector: Dupont?
+		dark_janitor: You can't event remember your name inspector Vintage, how could you remember a phone number?
+		inspector: ...
+		inspector: ... ...
+		inspector: I GOT IT! SHERIF! SEND AN UNIT TO JAZZY JAW GROOMING! NOW!
 		dark_janitor: Oh no, you look like you actually remember the phone number. I will just throw myself in the grinder, then. Goodbye, Jah bless. Jah rastafari.
 		inspector: Jah bless my breda. Your sins are forgiven.
 	else:
 		inspector: It is... erm... I think it starts with a 0. It also ends with a 4. Or was it an 8? At least it ended with an even number. Or was it an odd one?
+		dark_janitor: Come here old man, you will not even feel the pain, everything will happen real quick
