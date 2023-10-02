@@ -113,7 +113,7 @@ func get_transitions(from: Room = current_room) -> Array:
 		Room.CEO_OFFICE: [Room.CORRIDOR],
 		Room.KENNEL: [Room.CORRIDOR, Room.MEAT_ROOM] if has_secret_access() else [Room.CORRIDOR],
 		Room.MEAT_ROOM: [Room.KENNEL],
-		Room.SHERIFF_OFFICE: [],
+		Room.SHERIFF_OFFICE: [Room.LOBBY],
 	}[from]
 
 var NIGHT_CHARS = {
