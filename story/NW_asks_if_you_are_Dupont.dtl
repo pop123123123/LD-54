@@ -1,2 +1,10 @@
-warden: Halt! Who goes there? Ah... Dupont, is that you?
+warden: Halt! Who goes there? Hand up or I'll shoot!
+inspector: Here you go, no need to shoot.
+warden: ...
+warden: Your face is familiar. I must have seen you before but I can't remember where. I'm sorta bad at remembering faces.
+inspector: I'm sorry, I'm not sure who I am either.
+warden: Hahaha, I recognize this sense of humor\: you are Ducon, aren't you?
+inspector: I just might be.
+warden: Pascal told me that you were supposed to come at some point during the week. I almost asked you the password. I was ready to shoot at the slightest hesitation! Haha. But come in, friend.
+inspector: Thank you for your hospitality.
 jump idle_warden/
