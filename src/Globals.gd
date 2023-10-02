@@ -134,13 +134,15 @@ func get_room_timeline_id(room: Room) -> String:
 
 
 func get_memory_timeline_id(character_id: String, memory_id: String) -> String:
-	var timeline_id = timeline_transitions[[character_id, memory_id, is_suspicious]]
+	var timeline_id = timeline_transitions.get([character_id, memory_id, is_suspicious])
 	if timeline_id == null and is_suspicious:
-		timeline_id = timeline_transitions[[character_id, memory_id, false]]
+		timeline_id = timeline_transitions.get([character_id, memory_id, false])
 	if timeline_id == null:
-		timeline_id = timeline_transitions[[character_id, "", is_suspicious]]
+		timeline_id = timeline_transitions.get([character_id, "", is_suspicious])
 	if timeline_id == null and is_suspicious:
-		timeline_id = timeline_transitions[[character_id, "", false]]
+		timeline_id = timeline_transitions.get([character_id, "", false])
+	if timeline_id == null:
+		return ""
 	return "res://story/" + timeline_id + ".dtl"
 
 
