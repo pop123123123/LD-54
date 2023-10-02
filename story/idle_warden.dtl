@@ -1,5 +1,8 @@
 # idle
 if {has_talked_to.warden} == 0:
 	jump NW_asks_if_you_are_Dupont/
+label loop
 
-warden: ?
+night_warden: The dogs are safe with me.
+night_warden: Do you need anything?
+jump loop

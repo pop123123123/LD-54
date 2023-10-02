@@ -1,5 +1,8 @@
 # idle
 if {has_talked_to.dark_groomer} == 0:
 	jump DG_explains_why_he_is_here/
+label loop
 
-dark_groomer: ?
+dark_groomer: You again?
+dark_groomer: Can't you see that I'm working?
+jump loop

@@ -1,8 +1,13 @@
 # idle
 if {has_talked_to.groomer} == 0:
 	jump G_while_yawning/
+label loop
 
-groomer: kestuveux
+groomer: What is it?
+groomer: Can I get back to work?
 - Goodbye.
-  Join customer 3
+	Join customer 3
 	jump arrival_grooming/
+- ...
+	groomer: Did you have a stroke? Can you still speak?
+	jump loop

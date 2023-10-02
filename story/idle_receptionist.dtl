@@ -1,5 +1,8 @@
 # idle
 if {has_talked_to.receptionist} == 0:
 	jump R_while_knitting/
+label loop
 
-receptionist: ?
+receptionist: Hello, can I be of service?
+receptionist: I know may thing about this company, just ask me!
+jump loop
