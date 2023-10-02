@@ -33,9 +33,9 @@ investigator: I know everything.
 	janitor: What are you going to do about it?
 	investigator: I'm too old for this shit, let me call reinforcements.
 	janitor: Sure, assuming you still remember the phone number.
-	if Memories.active_memories.has("number") == true:
-		 investigator: Do I look like a rookie to you?
+	if Memories.active_memories.has('number') == true:
+		investigator: Do I look like a rookie to you?
 		janitor: Oh no, you look like you actually remember the phone number. I will just throw myself in the grinder, then. Goodbye, Jah bless. Jah rastafari.
-		 investigator: Jah bless my breda. Your sins are forgiven.
+		investigator: Jah bless my breda. Your sins are forgiven.
 	else:
 		investigator: It is... erm... I think it starts with a 0. It also ends with a 4. Or was it an 8? At least it ended with an even number. Or was it an odd one?
