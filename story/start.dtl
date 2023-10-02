@@ -39,3 +39,4 @@ sheriff: Other questions?
 [new_memory id="mission"]
 set {allow_moving} = 1
 sheriff: You should go now. Good luck.
+[wait time="1.0"]
