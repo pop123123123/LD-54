@@ -128,6 +128,7 @@ func _ready() -> void:
     var drag_sprite = Sprite2D.new()
     drag_sprite.centered = false
     drag_sprite.z_index = drag_sprite_z_index
+    drag_sprite.modulate.a = 0.5
     drag_sprite.hide()
     add_child(drag_sprite)
     _drag_sprite = weakref(drag_sprite)

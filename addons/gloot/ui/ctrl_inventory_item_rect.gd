@@ -2,6 +2,7 @@ class_name CtrlInventoryItemRect
 extends Control
 
 const StacksConstraint = preload("res://addons/gloot/core/constraints/stacks_constraint.gd")
+const FONT: Font = preload("res://assets/fonts/JustAnotherHand-Regular.ttf")
 
 signal grabbed(offset)
 signal activated
@@ -108,9 +109,8 @@ func _draw_texture(rect: Rect2):
 
     if text:
         var src_rect: Rect2 = Rect2(0, 0, texture.get_width(), texture.get_height())
-        var font: Font = ThemeDB.fallback_font
-        var font_size: int = ThemeDB.fallback_font_size
-        draw_string(font, Vector2i(rect.position.x, rect.size.y / 2), text, HORIZONTAL_ALIGNMENT_CENTER, rect.size.x, font_size, Color(0.1, 0.1, 0.1))
+        var font_size: int = 28
+        draw_string(FONT, Vector2i(rect.position.x, rect.size.y / 2 + 10), text, HORIZONTAL_ALIGNMENT_CENTER, rect.size.x, font_size, Color(0.1, 0.1, 0.1))
 
 
 func _draw_stack_size(rect: Rect2):
