@@ -10,9 +10,9 @@
 "name": "Mood 1",
 "pitch_base": 1.0,
 "pitch_variance": 0.3,
-"skip_characters": 2.0,
+"skip_characters": 6.0,
 "sound_path": "res://assets/sounds/uh.ogg",
-"volume_base": 0.0,
+"volume_base": -0.5,
 "volume_variance": 0.0
 }
 },
