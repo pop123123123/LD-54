@@ -1,9 +1,6 @@
 You enter the Lobby.
 
-
-if {is_night} == 1:
-	- Talk to the Warden
-		jump idle_warden/
-else:
-	- Talk to the Receptionist
-		jump idle_receptionist/
+- Talk to the Warden [if {is_night} == 1][else="hide"]
+	jump idle_warden/
+- Talk to the Receptionist [if {is_night} == 0][else="hide"]
+	jump idle_receptionist/

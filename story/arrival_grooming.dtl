@@ -1,10 +1,10 @@
 You enter the Grooming Room.
 
-- Talk to the Groomer [if {is_night} == 1]
+- Talk to the Groomer [if {is_night} == 1][else="hide"]
 	jump idle_dark_groomer/
-- Talk to the groomer [if {is_night} == 0]
+- Talk to the groomer [if {is_night} == 0][else="hide"]
 	Leave customer
 	jump idle_groomer/
-- Talk to the customer [if {is_night} == 0]
+- Talk to the customer [if {is_night} == 0][else="hide"]
 	Leave groomer
 	jump idle_customer/

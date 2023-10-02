@@ -145,7 +145,7 @@ var DAY_CHARS = {
 }
 
 func is_night() -> bool:
-	return Dialogic.VAR.is_night
+	return Dialogic.VAR.is_night == 1
 
 func get_characters_by_room(room: Room) -> Array:
 	if has_secret_access() and room == Room.KENNEL:
@@ -273,7 +273,7 @@ func _on_signal(signal_type: String):
 	if signal_type == "end":
 		get_tree().change_scene_to_file("res://src/HUD/credits.tscn")
 	if signal_type == "nap":
-		Dialogic.VAR.is_night = true
+		Dialogic.VAR.is_night = 1
 		move_to_room(Room.KENNEL)
 		Dialogic.start_timeline("res://story/night_transition.dtl")
 
