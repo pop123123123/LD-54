@@ -192,9 +192,18 @@ func _on_event_handled(event: DialogicEvent):
 		last_character = event.character
 
 func _on_signal(signal_type: String):
-	# TODO: fondu au noir
 	if signal_type in ["ending_win", "ending_death"]:
-		Dialogic.start("res://story/" + signal_type + ".dtl")
+		trigger_ending(signal_type)
+	if signal_type == "end":
+		print('the end')
+
+func get_sidebar():
+	return get_node("/root/DefaultDialogNode").get_node("Sidebar")
+
+func trigger_ending(ending_name: String):
+	# TODO: fondu au noir
+	get_sidebar().visible = false
+	Dialogic.start("res://story/" + ending_name + ".dtl")
 
 var previous_room: Room = Room.CEO_OFFICE
 func _on_timeline_started():

@@ -1,4 +1,5 @@
 inspector: Hello, R.
+[signal arg="ending_win"]
 dark_janitor: R? What do you mean.
 inspector: I know everything.
 - Let's talk about the fur traffic [if Memories.active_memories.has('fur') == true]
