@@ -3,3 +3,4 @@ if Memories.active_memories.has('french') == true:
 else:
 	customer: Yes, Bitterbark is tired, and he should be resting because he's always trimming Princesse Christine de-la-Fourrière's hair. Flush! Imagine that! Poor little Princesse looks like a wet coypu when she gets out of there!
 Leave --All--
+
