@@ -21,3 +21,5 @@ doctor,Doctor,1,1,I have an appointment with my doctor in three days.,true
 cut,Cut,1,1,The groomer appears to cut the hair of the dogs too short. They come back almost bald!,false
 tired,Tired,1,1,That groomer doesn't seem to sleep a lot.,false
 knitting,Knitting,1,1,The receptionist enjoys knitting.,false
+dog_hair,Hair,1,1,The groomer gave a ball of dog based yarn to the receptionist. Curious!,false
+traffic,Traffic,1,1,I am about to bust a hair trafficking ring,false
