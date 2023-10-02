@@ -35,7 +35,7 @@ var mode: Mode = Mode.VIEW:
 				default_description = ""
 			Mode.SELECT:
 				can_select = true
-				can_edit = false
+				can_edit = true
 				default_description = "Double click on a memory to activate it."
 				# inventory_left.clear()
 			Mode.EDIT:
