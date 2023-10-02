@@ -5,4 +5,3 @@ if Memories.active_memories.has('test') == true:
 	exists
 else:
 	does not exist
-Leave --All--
