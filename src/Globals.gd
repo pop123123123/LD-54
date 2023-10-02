@@ -180,6 +180,7 @@ func move_to_room(room: Room):
 
 func _ready():
 	Dialogic.event_handled.connect(Callable(self, "_on_event_handled"))
+	Dialogic.signal_event.connect(Callable(self, "_on_signal"))
 	Dialogic.timeline_started.connect(Callable(self, "_on_timeline_started"))
 	_init_timelines()
 
@@ -189,6 +190,11 @@ func _on_event_handled(event: DialogicEvent):
 		last_character = event.character
 	if event is DialogicTextEvent and event.character:
 		last_character = event.character
+
+func _on_signal(signal_type: String):
+	# TODO: fondu au noir
+	if signal_type in ["ending_win", "ending_death"]:
+		Dialogic.start("res://story/" + signal_type + ".dtl")
 
 var previous_room: Room = Room.CEO_OFFICE
 func _on_timeline_started():
