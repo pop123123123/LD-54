@@ -174,7 +174,6 @@ func _on_item_activated(item: InventoryItem) -> void:
 
 
 func _on_memory_added(memory: Dictionary) -> void:
-	print(memory)
 	var item = _create_item(
 		memory.id,
 		memory.title,
@@ -188,7 +187,6 @@ func _on_memory_added(memory: Dictionary) -> void:
 
 
 func _on_active_memory_added(memory: Dictionary, x: int, y: int) -> void:
-	print(memory)
 	var item = _create_item(
 		memory.id,
 		memory.title,
