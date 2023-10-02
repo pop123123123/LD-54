@@ -5,7 +5,6 @@ extends Node
 var current_player_index = 0
 
 func _ready():
-	Dialogic.signal_event.connect(Callable(self, "_on_dialogic_signal"))
 	_start_reggae()
 	
 func _start_reggae():
