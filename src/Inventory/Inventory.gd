@@ -92,7 +92,6 @@ func _ready() -> void:
 
 	Dialogic.timeline_started.connect(Callable(self, "_on_timeline_started"))
 	_on_timeline_started()
-	Dialogic.event_handled.connect(Callable(self, "_on_event_handled"))
 
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
@@ -249,15 +248,11 @@ func _on_item_added(item: InventoryItem) -> void:
 
 
 func _on_timeline_started() -> void:
-	# var events = Dialogic.current_timeline_events
-	# is_idle = events.any(
-	# 	func(event: DialogicEvent): return event is DialogicCommentEvent and event.text == "idle"
-	# )
-	is_idle = false
+	var events = Dialogic.current_timeline_events
+	is_idle = events.any(
+		func(event: DialogicEvent): return event is DialogicCommentEvent and event.text == "idle"
+	)
 
-func _on_event_handled(event: DialogicEvent):
-	if event is DialogicCommentEvent and event.text == "idle":
-		is_idle = true
 
 func _on_left_contents_changed() -> void:
 	var items: Array = inventory_left.get_items()

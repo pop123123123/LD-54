@@ -113,7 +113,7 @@ func get_transitions(from: Room = current_room) -> Array:
 		Room.CEO_OFFICE: [Room.CORRIDOR],
 		Room.KENNEL: [Room.CORRIDOR, Room.MEAT_ROOM] if has_secret_access() else [Room.CORRIDOR],
 		Room.MEAT_ROOM: [Room.KENNEL],
-		Room.SHERIFF_OFFICE: [Room.LOBBY],
+		Room.SHERIFF_OFFICE: [],
 	}[from]
 
 var NIGHT_CHARS = {
@@ -270,6 +270,10 @@ func _on_signal(signal_type: String):
 		trigger_ending(signal_type)
 	if signal_type == "end":
 		get_tree().change_scene_to_file("res://src/HUD/credits.tscn")
+	if signal_type == "nap":
+		Dialogic.VAR.is_night = true
+		move_to_room(Room.KENNEL)
+		Dialogic.start_timeline("res://story/night_transition.dtl")
 
 func trigger_ending(ending_name: String):
 	# TODO: fondu au noir
