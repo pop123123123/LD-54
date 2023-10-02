@@ -1,8 +1,10 @@
 if Memories.active_memories.has('french') == false:
-	customer: TODO
+	customer: This is a very emotional topic for me, and I don't feel like talking about it except in my native language. As we say in France: "L'Anglois c'est caca". Honhonhon.
 else:
-	customer: Wait... Now that you mention it... Miss Lullaby's felt looks strangely like Princesse's fur... That cad Bitterbark always cuts Princess' hair too short....
+	customer: Wait... Now that you mention it... Miss Lullaby's yarn looks strangely like Princesse's fur... That evil Bitterbark always cuts Princess' hair too short....
 	inspector: What are you getting at, Mrs Du Canin?
-	customer: Inspector... I think Bitterbark is the head of... trafficking in my Princess's hair! I'm horrified, I'm outraged! It's an outrage! Call the police!
-	Inspector: Madam, keep calm, we'll find out what's going on.
+	customer: Inspector... I think Bitterbark is part of a ring of... traffickers of my little Princesse's hair! I'm horrified, I'm outraged! It's an outrage! Call the police!
+	inspector: Madame, I am the police.
+	customer: Then call competent police!
+	inspector: Jeez, alright.
 

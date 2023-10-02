@@ -1,5 +1,5 @@
 if Memories;active_memories.has('french') == true:
-	customer: Hmmm? Of course I've seen his piece of felt... I am not blind... I'm only 70. Décidémment, ces vieillards manquent vraiment de tact... Qu'ais-je fait pour mériter ça ?
+	customer: Hmmm? Of course I've seen his scarf... I am not yet blind. Décidément, ce vieux schnock manque vraiment de tact... Tout va à vau-l'eau, n'est-ce pas Princesse ?
 else:
-	customer: Oh yes, I did see the felt that Miss Lullaby was knitting. It's very chic, and it matches my Princesse's coat colour perfectly. Miss Lullaby certainly has great taste.
+	customer: Oh yes, I did see the felt that Miss Lullaby was knitting. It's very chic, and it matches my Princesse's coat perfectly. Miss Lullaby certainly has great taste. It's a shame her manners don't follow.
 
