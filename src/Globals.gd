@@ -58,6 +58,8 @@ var current_room: Room = Room.LOBBY:
 			visited_rooms[room] = 1
 		current_room = room
 		moving = false
+		Dialogic.Backgrounds.update_background('', get_room_background_path(current_room), .5)
+
 		room_changed.emit(room)
 
 var visited_rooms: Dictionary = {}
@@ -287,9 +289,7 @@ func trigger_ending(ending_name: String):
 
 var previous_room: Room = Room.CEO_OFFICE
 func _on_timeline_started():
-	if current_room != previous_room:
-		Dialogic.Backgrounds.update_background('', get_room_background_path(current_room), .5)
-		previous_room = current_room
+	pass
 
 func select_memory(memory_id: String):
 	Dialogic.start_timeline(get_memory_timeline_id(last_character.get_character_name(), memory_id))
