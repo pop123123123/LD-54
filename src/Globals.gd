@@ -60,9 +60,6 @@ var current_room: Room = Room.LOBBY:
 		moving = false
 		room_changed.emit(room)
 
-var secret_access: bool = false
-var is_suspicious: bool = false
-
 var visited_rooms: Dictionary = {}
 
 var last_character: DialogicCharacter = null
@@ -75,11 +72,11 @@ func reset_state() -> void:
 	print("previously visited rooms: ", visited_rooms)
 	moving = false
 	current_room = Room.LOBBY
-	secret_access = false
-	is_suspicious = false
 	visited_rooms = {}
 	last_character = null
 
+func has_secret_access() -> bool:
+	return Dialogic.VAR.secret_access
 
 func is_first_visit() -> bool:
 	return visited_rooms[current_room] == 1
@@ -114,24 +111,44 @@ func get_transitions(from: Room = current_room) -> Array:
 		Room.SUPPLY_ROOM: [Room.CORRIDOR],
 		Room.STAFF_ROOM: [Room.CORRIDOR],
 		Room.CEO_OFFICE: [Room.CORRIDOR],
-		Room.KENNEL: [Room.CORRIDOR, Room.MEAT_ROOM] if secret_access else [Room.CORRIDOR],
+		Room.KENNEL: [Room.CORRIDOR, Room.MEAT_ROOM] if has_secret_access() else [Room.CORRIDOR],
 		Room.MEAT_ROOM: [Room.KENNEL],
 		Room.SHERIFF_OFFICE: [],
 	}[from]
 
+var NIGHT_CHARS = {
+	Room.LOBBY: [Character.NIGHT_WARDEN],
+	Room.TOILET: [],
+	Room.GROOMING: [Character.NIGHT_GROOMER],
+	Room.CORRIDOR: [],
+	Room.SUPPLY_ROOM: [],
+	Room.STAFF_ROOM: [],
+	Room.CEO_OFFICE: [],
+	Room.MEAT_ROOM: [Character.NIGHT_JANITOR],
+	Room.SHERIFF_OFFICE: [],
+	Room.KENNEL: [Character.NIGHT_JANITOR],
+}
+
+var DAY_CHARS = {
+	Room.LOBBY: [Character.RECEPTIONIST],
+	Room.TOILET: [],
+	Room.GROOMING: [Character.GROOMER, Character.CUSTOMER],
+	Room.CORRIDOR: [],
+	Room.SUPPLY_ROOM: [Character.JANITOR],
+	Room.STAFF_ROOM: [],
+	Room.CEO_OFFICE: [Character.PRESIDENT],
+	Room.MEAT_ROOM: [Character.NIGHT_JANITOR],
+	Room.SHERIFF_OFFICE: [Character.SHERIFF],
+	Room.KENNEL: [],
+}
+
+func is_night() -> bool:
+	return Dialogic.VAR.is_night
+
 func get_characters_by_room(room: Room) -> Array:
-	return {
-		Room.LOBBY: [Character.RECEPTIONIST],
-		Room.TOILET: [],
-		Room.GROOMING: [Character.GROOMER, Character.CUSTOMER],
-		Room.CORRIDOR: [],
-		Room.SUPPLY_ROOM: [Character.JANITOR],
-		Room.STAFF_ROOM: [],
-		Room.CEO_OFFICE: [Character.PRESIDENT],
-		Room.MEAT_ROOM: [Character.NIGHT_JANITOR],
-		Room.SHERIFF_OFFICE: [Character.SHERIFF],
-		Room.KENNEL: [],
-	}[room]
+	if has_secret_access() and room == Room.KENNEL:
+		return []
+	return (NIGHT_CHARS if is_night() else DAY_CHARS)[room]
 
 func get_room_name(room: Room = current_room) -> String:
 	return {
@@ -189,12 +206,12 @@ func get_room_background_path(room: Room) -> String:
 	}[room] + ".png"
 
 func get_memory_timeline_id(character_id: String, memory_id: String) -> String:
-	var timeline_id = timeline_transitions.get([character_id, memory_id, is_suspicious])
-	if timeline_id == null and is_suspicious:
+	var timeline_id = timeline_transitions.get([character_id, memory_id, has_secret_access()])
+	if timeline_id == null and has_secret_access():
 		timeline_id = timeline_transitions.get([character_id, memory_id, false])
 	if timeline_id == null:
-		timeline_id = timeline_transitions.get([character_id, "", is_suspicious])
-	if timeline_id == null and is_suspicious:
+		timeline_id = timeline_transitions.get([character_id, "", has_secret_access()])
+	if timeline_id == null and has_secret_access():
 		timeline_id = timeline_transitions.get([character_id, "", false])
 	if timeline_id == null:
 		return ""

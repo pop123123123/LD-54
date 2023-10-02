@@ -10,6 +10,8 @@ if Memories.active_memories.has('identity') == false:
 	inspector: I just might be.
 	warden: Pascal told me that you were supposed to come at some point during the week. I almost asked you the password. I was ready to shoot at the slightest hesitation! Haha. But come in, friend.
 	inspector: Thank you for your hospitality.
+  set {secret_access} = 1
 else:
-	TODO
+	- I'm Limited Larry, the inspector.
+    jump NW_says_he_was_waiting_for_you/
 jump idle_warden/
