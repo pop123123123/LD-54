@@ -1,3 +1,4 @@
+# idle
 if {has_talked_to.warden} == 0:
 	jump NW_asks_if_you_are_Dupont/
 

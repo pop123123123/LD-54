@@ -1,3 +1,4 @@
+# idle
 if {has_talked_to.groomer} == 0:
 	jump G_while_yawning/
 
