@@ -48,7 +48,9 @@ layout/styles={
 "export_overrides": {
 "box_animation_in": "2",
 "box_animation_new_text": "0",
-"box_animation_out": "2"
+"box_animation_out": "2",
+"next_indicator_animation": "2",
+"next_indicator_texture": "\"res://assets/ui/arrow.png\""
 },
 "inherits": "",
 "layout": "res://src/DialogicLayout/DialogicLayout.tscn"
