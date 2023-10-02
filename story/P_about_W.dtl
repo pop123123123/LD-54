@@ -5,6 +5,6 @@ president: ... Yes, I will let you review the security tapes...
 president: ... Sure, I'll leave my office unlocked then!
 president: ... Bye, take care.
 inspector: Knock knock... I guess you are the boss here.
-president: Oh hello sir. Sorry, I was just on the phone with my night warden.
+president: Oh hello sir. Sorry, I was just on the phone with my night watchwoman.
 [new_memory id="night"]
 jump idle_president/
