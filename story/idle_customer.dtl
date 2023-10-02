@@ -1,13 +1,9 @@
 # idle
 if {has_talked_to.customer} == 0:
 	jump C_says_P_is_stressed/
-label loop
 
 customer (base): What is it, officer?
 customer: I'm waiting.
 - Goodbye.
 	Join groomer 1
 	jump arrival_grooming/
-- ...
-	customer: Just say something!
-	jump loop

@@ -1,8 +1,6 @@
 # idle
 if {has_talked_to.president} == 0:
 	jump P_about_W/
-label loop
 
 president: I'm all ears!
 president: Thanks for helping us!
-jump loop

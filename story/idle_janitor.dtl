@@ -1,8 +1,6 @@
 # idle
 if {has_talked_to.janitor} == 0:
 	jump J_tells_he_is_vegan/
-label loop
 
 janitor: Jah bless brother!
 janitor: Just tell me what's on your mind!
-jump loop
