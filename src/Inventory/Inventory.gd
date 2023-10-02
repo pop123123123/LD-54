@@ -94,6 +94,7 @@ func _ready() -> void:
 
 	Dialogic.timeline_started.connect(Callable(self, "_on_timeline_started"))
 	_on_timeline_started()
+	Dialogic.timeline_ended.connect(Callable(self, "_on_timeline_ended"))
 
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
@@ -254,6 +255,10 @@ func _on_timeline_started() -> void:
 	is_idle = events.any(
 		func(event: DialogicEvent): return event is DialogicCommentEvent and event.text == "idle"
 	)
+	# inventory_left.clear()
+
+func _on_timeline_ended() -> void:
+	pass
 
 
 func _on_left_contents_changed() -> void:
