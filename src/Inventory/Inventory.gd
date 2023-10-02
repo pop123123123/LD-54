@@ -165,7 +165,8 @@ func _on_item_dropped(item_wr: WeakRef, _pos: Vector2) -> void:
 func _on_item_activated(item: InventoryItem) -> void:
 	if mode != Mode.SELECT:
 		return
-	print_debug("activated", item)
+	var id = item.get_property("id", "")
+	Globals.select_memory(id)
 
 
 func _on_memory_added(memory: Dictionary) -> void:

@@ -39,6 +39,8 @@ var secret_access: bool = false
 
 var visited_rooms: Dictionary = {}
 
+var last_character: DialogicCharacter = null
+
 func reset_state() -> void:
 	print('resetting state')
 	print('previously visited rooms: ', visited_rooms)
@@ -46,6 +48,7 @@ func reset_state() -> void:
 	current_room = Room.LOBBY
 	secret_access = false
 	visited_rooms = {}
+	last_character = null
 
 func is_first_visit() -> bool:
 	return visited_rooms[current_room] == 1
@@ -99,18 +102,23 @@ func dialogic_default_action():
 	new_event.pressed = true
 	Input.parse_input_event(new_event)
 
-func get_next_timeline_id(room: Room):
-	return "res://story/" + {
-		Room.LOBBY: "arrival_lobby",
-		Room.TOILET: "arrival_toilet",
-		Room.GROOMING: "arrival_grooming",
-		Room.CORRIDOR: "arrival_corridor",
-		Room.SUPPLY_ROOM: "arrival_supply_room",
-		Room.STAFF_ROOM: "arrival_staff_room",
-		Room.CEO_OFFICE: "arrival_ceo_office",
-		Room.KENNEL: "arrival_kennel",
-		Room.MEAT_ROOM: "arrival_meat_room",
+func get_room_timeline_id(room: Room) -> String:
+	return "res://story/arrival_" + {
+		Room.LOBBY: "lobby",
+		Room.TOILET: "toilet",
+		Room.GROOMING: "grooming",
+		Room.CORRIDOR: "corridor",
+		Room.SUPPLY_ROOM: "supply_room",
+		Room.STAFF_ROOM: "staff_room",
+		Room.CEO_OFFICE: "ceo_office",
+		Room.KENNEL: "kennel",
+		Room.MEAT_ROOM: "meat_room",
 	}[room] + ".dtl"
+
+func get_memory_timeline_id(character_id: String, memory_id: String) -> String:
+	var timeline_id = ""
+	# TODO
+	return "res://story/" + timeline_id + ".dtl"
 
 func move_to_room(room: Room):
 	moving = true
@@ -122,5 +130,17 @@ func move_to_room(room: Room):
 		Dialogic.Jump.jump_to_label('bye')
 		dialogic_default_action()
 		await Dialogic.timeline_ended
-	Dialogic.start_timeline(get_next_timeline_id(room))
+	Dialogic.start_timeline(get_room_timeline_id(room))
 	current_room = room
+
+func _ready():
+	Dialogic.event_handled.connect(Callable(self, "_on_event_handled"))
+
+func _on_event_handled(event: DialogicEvent):
+	if event is DialogicCharacterEvent:
+		last_character = event.character
+	if event is DialogicTextEvent and event.character:
+		last_character = event.character
+
+func select_memory(memory_id: String):
+	Dialogic.start_timeline(get_memory_timeline_id(last_character.get_character_name(), memory_id))
