@@ -1,7 +1,7 @@
 Neo Tourcoing, September 30th 2033
 8\:30 AM
 Clear weather but some clouds on the horizon
-Join inspector 1
+Join sheriff 1
 sheriff: Please come in, Robert.
 sheriff: We need your help on an arson case. The region's main Schlagazon depot went up in flames.
 inspector: Alright, anything I need to know, Sir? Any leads?
@@ -26,4 +26,3 @@ sheriff: Other questions?
 - ...
 	sheriff: Perfect! The address is 173 Patrick Sebastien Street.
 Leave --All--
-
