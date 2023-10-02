@@ -210,7 +210,7 @@ func _create_item(
 	item.set_property("id", id)
 	item.set_property("title", title)
 	item.set_property("width", width)
-	item.set_property("height", height - .25)
+	item.set_property("height", height)
 	item.set_property("image", "res://assets/ui/icons/icon_" + tile_size + "_" + str(n) + ".png")
 	item.set_property("description", description)
 	item.set_property("short_title", short_title)
