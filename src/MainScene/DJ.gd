@@ -5,6 +5,7 @@ extends Node
 var current_player_index = 0
 
 func _ready():
+	Dialogic.signal_event.connect(Callable(self, "_on_dialogic_signal"))
 	_start_reggae()
 	
 func _start_reggae():
@@ -24,3 +25,7 @@ func _transition_reggae():
 	var tween = get_tree().create_tween()
 	tween.tween_property(watiByNight, "volume_db", Vector2(watiByNight.volume_db, -80), 2)
 	tween.tween_callback(func(): watiByNight.stop(); _start_reggae())
+	
+func _on_dialogic_signal(signal_type: String):
+	if signal_type == "nap":
+		_transition_night_music()

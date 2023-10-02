@@ -9,6 +9,7 @@
 script = ExtResource("1_she3g")
 
 [node name="DJ" type="Node" parent="."]
+unique_name_in_owner = true
 script = ExtResource("2_0qk82")
 
 [node name="whitePastaReggae" type="AudioStreamPlayer" parent="DJ"]
