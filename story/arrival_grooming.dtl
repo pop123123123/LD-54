@@ -1,3 +1,4 @@
+set {allow_moving} = 1
 You enter the Grooming Room.
 
 - Talk to the Groomer [if {is_night} == 1][else="hide"]

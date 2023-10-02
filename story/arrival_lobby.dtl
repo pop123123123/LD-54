@@ -1,3 +1,4 @@
+set {allow_moving} = 1
 You enter the Lobby.
 
 - Talk to the Warden [if {is_night} == 1][else="hide"]

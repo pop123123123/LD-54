@@ -1,3 +1,4 @@
+set {allow_moving} = 1
 You enter the Supply Room.
 
 if {is_night} == 0:
