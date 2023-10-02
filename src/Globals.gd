@@ -60,7 +60,10 @@ func get_transitions(from: Room = current_room) -> Array:
 			Room.TOILET,
 			Room.GROOMING,
 		],
-		Room.TOILET: [Room.GROOMING],
+		Room.TOILET: [
+			Room.LOBBY,
+			Room.GROOMING,
+		],
 		Room.GROOMING:
 		[
 			Room.LOBBY,
