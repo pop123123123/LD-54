@@ -19,12 +19,13 @@ func get_memory(id: String):
 func add_memory(id: String, active = false, x = 0, y = 0):
 	var memory = get_memory(id)
 	if memory != null:
-		if active:
-			print("add memory active: ", memory, " x:", x, " y:", y)
-			add_active_memory(id, x, y)
-		else:
-			print("add memory: ", memory)
-			memory_added.emit(memory)
+		if not active_memories.has(id):
+			if active:
+				print("add memory active: ", memory, " x:", x, " y:", y)
+				add_active_memory(id, x, y)
+			else:
+				print("add memory: ", memory)
+				memory_added.emit(memory)
 	else:
 		printerr("memory not found: ", id)
 
