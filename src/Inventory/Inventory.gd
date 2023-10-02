@@ -41,7 +41,7 @@ var mode: Mode = Mode.VIEW:
 			Mode.EDIT:
 				can_select = false
 				can_edit = true
-				default_description = "You can move things around.\nPut a memory away to forget it."
+				default_description = "You can drag memories around.\nPut a memory away to forget it."
 
 var can_select: bool = false:
 	set(new_can_select):
@@ -260,5 +260,8 @@ func _on_left_contents_changed() -> void:
 	var items: Array = inventory_left.get_items()
 	if items.size() > 0:
 		inventory_left_container.show()
+		if inventory_left.get_items().size() > 0:
+			default_description += "\nRemember to save new memories, otherwise they will be forgotten.\n"
 	else:
 		inventory_left_container.hide()
+		mode = mode
