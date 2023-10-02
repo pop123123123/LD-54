@@ -42,8 +42,14 @@ save/autosave_delay=60.0
 text/autopauses={}
 variables={
 "has_talked_to": {
-"NewVariable": "",
-"groomer": "0"
+"customer": "0",
+"dark_groomer": "0",
+"dark_janitor": "0",
+"groomer": "0",
+"janitor": "0",
+"president": "0",
+"receptionist": "0",
+"warden": "0"
 }
 }
 glossary/default_case_sensitive=true

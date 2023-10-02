@@ -1,3 +1,5 @@
+set {has_talked_to.president} = 1
+
 president (on the phone): ... Yes Mandy.
 president: ... Yes, I will let you review the security tapes...
 president: ... Sure, I'll leave my office unlocked then!

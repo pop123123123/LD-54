@@ -1,0 +1,4 @@
+if {has_talked_to.receptionist} == 0:
+	jump R_while_knitting/
+
+receptionist: ?

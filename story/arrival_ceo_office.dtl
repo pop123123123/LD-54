@@ -1,2 +1,4 @@
 You enter the President's Office.
 
+- Talk to the President
+	jump idle_president/

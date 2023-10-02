@@ -1,0 +1,4 @@
+if {has_talked_to.janitor} == 0:
+	jump J_tells_he_is_vegan/
+
+janitor: ?

@@ -1,0 +1,4 @@
+if {has_talked_to.dark_groomer} == 0:
+	jump DG_explains_why_he_is_here/
+
+dark_groomer: ?

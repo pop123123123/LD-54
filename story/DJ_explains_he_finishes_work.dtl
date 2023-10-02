@@ -1,3 +1,5 @@
+set {has_talked_to.dark_janitor} = 1
+
 dark_janitor: Jah Bless, what a pleasant surprise officer!
 inspector: Who are you?
 dark_janitor: I am the janitor, brother. We talked before.

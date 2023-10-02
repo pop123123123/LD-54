@@ -1,0 +1,4 @@
+if {has_talked_to.dark_janitor} == 0:
+	jump DJ_explains_he_finishes_work/
+
+dark_janitor: ?

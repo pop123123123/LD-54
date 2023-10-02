@@ -1,3 +1,5 @@
+set {has_talked_to.receptionist} = 1
+
 receptionist: Hello, how may I help you?
 - Actually, I'm not sure. [if Memories.active_memories.has("mission") == true]
 	receptionist: Then I can't help you, can I?

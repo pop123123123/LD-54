@@ -1,0 +1,4 @@
+if {has_talked_to.customer} == 0:
+	jump C_says_P_is_stressed/
+
+customer: ?

@@ -1,3 +1,5 @@
+set {has_talked_to.warden} = 1
+
 warden: Halt! Who goes there? Hand up or I'll shoot!
 inspector: Here you go, no need to shoot.
 warden: ...
