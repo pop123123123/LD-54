@@ -25,7 +25,7 @@ Memories="*res://src/Memories.gd"
 
 [dialogic]
 
-text/letter_speed=0.1
+text/letter_speed=0.05
 text/skippable=true
 text/skippable_delay=0.1
 text/autoadvance_delay=1.0
