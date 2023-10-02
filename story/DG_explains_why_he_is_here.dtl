@@ -6,4 +6,4 @@ inspector: What's that funny machine you're using?
 dark_groomer: Uh... It's a dog-brushing machine. Princesse's hair got stuck in it. I'm in charge of cleaning it. Satisfied?
 inspector: Remember to sleep... Otherwise, you won't last as long in the profession as I have.
 dark_groomer: I am a conscientious professional, I don't go to sleep before the job is done. Now let me work.
-jump story/iddle_dark_groomer/
+jump idle_dark_groomer/

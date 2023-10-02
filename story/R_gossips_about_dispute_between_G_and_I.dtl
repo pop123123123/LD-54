@@ -13,4 +13,4 @@ receptionist: I overheard the janitor and the intern having an argument last wee
 inspector: On which topic?
 receptionist: I don't know, It's not my business. If you ask me, it was probably something regarding their upcoming prestation on the company's talent show.
 [new_memory id="dispute"]
-jump story/iddle_receptionist/
+jump idle_receptionist/

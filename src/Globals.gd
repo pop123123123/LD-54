@@ -16,6 +16,30 @@ enum Room {
 	SHERIFF_OFFICE,
 }
 
+enum Character {
+	SHERIFF,
+	PRESIDENT,
+	RECEPTIONIST,
+	GROOMER,
+	JANITOR,
+	CUSTOMER,
+	NIGHT_GROOMER,
+	NIGHT_JANITOR,
+	NIGHT_WARDEN,
+}
+
+var characters = {
+	Character.SHERIFF: load("res://characters/sheriff.dch"),
+	Character.PRESIDENT: load("res://characters/president.dch"),
+	Character.RECEPTIONIST: load("res://characters/receptionist.dch"),
+	Character.GROOMER: load("res://characters/groomer.dch"),
+	Character.JANITOR: load("res://characters/janitor.dch"),
+	Character.CUSTOMER: load("res://characters/customer.dch"),
+	Character.NIGHT_GROOMER: load("res://characters/dark_groomer.dch"),
+	Character.NIGHT_JANITOR: load("res://characters/dark_janitor.dch"),
+	Character.NIGHT_WARDEN: load("res://characters/night_warden.dch"),
+}
+
 var moving: bool = false:
 	get:
 		return moving
@@ -95,6 +119,19 @@ func get_transitions(from: Room = current_room) -> Array:
 		Room.SHERIFF_OFFICE: [],
 	}[from]
 
+func get_characters_by_room(room: Room) -> Array:
+	return {
+		Room.LOBBY: [Character.RECEPTIONIST],
+		Room.TOILET: [],
+		Room.GROOMING: [Character.GROOMER, Character.CUSTOMER],
+		Room.CORRIDOR: [],
+		Room.SUPPLY_ROOM: [Character.JANITOR],
+		Room.STAFF_ROOM: [],
+		Room.CEO_OFFICE: [Character.PRESIDENT],
+		Room.MEAT_ROOM: [Character.NIGHT_JANITOR],
+		Room.SHERIFF_OFFICE: [Character.SHERIFF],
+		Room.KENNEL: [],
+	}[room]
 
 func get_room_name(room: Room = current_room) -> String:
 	return {
@@ -163,6 +200,12 @@ func get_memory_timeline_id(character_id: String, memory_id: String) -> String:
 		return ""
 	return "res://story/" + timeline_id + ".dtl"
 
+func update_room_characters(room: Room):
+	await Dialogic.Portraits.leave_all_characters()
+	var i = 1
+	for character in get_characters_by_room(room):
+		await Dialogic.Portraits.join_character(characters[character], "base", i)
+		i += 2
 
 func move_to_room(room: Room):
 	moving = true
@@ -174,9 +217,10 @@ func move_to_room(room: Room):
 		Dialogic.Jump.jump_to_label("bye")
 		dialogic_default_action()
 		await Dialogic.timeline_ended
-	current_room = room
-	Dialogic.start_timeline(get_room_timeline_id(room))
 
+	current_room = room
+	await update_room_characters(room)
+	Dialogic.start_timeline(get_room_timeline_id(room))
 
 func _ready():
 	Dialogic.event_handled.connect(Callable(self, "_on_event_handled"))

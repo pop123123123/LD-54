@@ -1,2 +1,8 @@
 You enter the Grooming Room.
 
+- Talk to the groomer
+	Leave customer
+	jump idle_groomer/
+- Talk to the customer
+	Leave groomer
+	jump idle_customer/

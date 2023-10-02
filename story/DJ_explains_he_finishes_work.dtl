@@ -13,4 +13,4 @@ dark_janitor: Does your warrant allow you to stay here by night?
 inspector: ... Sure.
 dark_janitor: Don't lie to me, brother. I have a law degree. Warrantless searches are a very bad offense, even by Babylon's standards. Makes Jah very sad.
 inspector: I won't answer any more questions without my lawyer present.
-jump story/iddle_dark_janitor/
+jump idle_dark_janitor/
