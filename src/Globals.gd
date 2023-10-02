@@ -39,6 +39,14 @@ var secret_access: bool = false
 
 var visited_rooms: Dictionary = {}
 
+func reset_state() -> void:
+	print('resetting state')
+	print('previously visited rooms: ', visited_rooms)
+	moving = false
+	current_room = Room.LOBBY
+	secret_access = false
+	visited_rooms = {}
+
 func is_first_visit() -> bool:
 	return visited_rooms[current_room] == 1
 
@@ -92,7 +100,7 @@ func dialogic_default_action():
 	Input.parse_input_event(new_event)
 
 func get_next_timeline_id(room: Room):
-	return {
+	return "res://story/" + {
 		Room.LOBBY: "arrival_lobby",
 		Room.TOILET: "arrival_toilet",
 		Room.GROOMING: "arrival_grooming",
@@ -102,7 +110,7 @@ func get_next_timeline_id(room: Room):
 		Room.CEO_OFFICE: "arrival_ceo_office",
 		Room.KENNEL: "arrival_kennel",
 		Room.MEAT_ROOM: "arrival_meat_room",
-	}[room]
+	}[room] + ".dtl"
 
 func move_to_room(room: Room):
 	moving = true

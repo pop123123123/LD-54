@@ -9,7 +9,7 @@ func _ready() -> void:
 		quit_button.hide()
 
 func _on_Start_pressed():
-	get_tree().change_scene_to_file("res://src/Credits/Credits.tscn")
+	get_tree().change_scene_to_file("res://src/MainScene/MainScene.tscn")
 
 func _on_Credits_pressed():
 	menu.hide()
