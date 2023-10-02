@@ -1,10 +1,10 @@
 Neo Tourcoing, September 30th 2033
 8\:30 AM
 Clear weather but some clouds on the horizon
-Join investigator 1
+Join inspector 1
 sheriff: Please come in, Robert.
 sheriff: We need your help on an arson case. The region's main Schlagazon depot went up in flames.
-investigator: Alright, anything I need to know, Sir? Any leads?
+inspector: Alright, anything I need to know, Sir? Any leads?
 sheriff: Well there is this kid that has been missing for a few days. Canine hairdressing student from the National Academy - these guys are the best of the best. Very gifted kid coming from a humble background, would be a shame if anything bad happened to him.
 sheriff: He was doing his internship at the "Jazzy Jaws Grooming". Acceptable haircuts for your dogs at an affordable price, revolutionary stuff. I took my Chihuahua there once, and it came back with an okay haircut. A bit shorter than what I asked, but at this pricepoint, I can't complain.
 sheriff: I just had his parents on the phone. I don't hink that I heard anything this sad in 50 years of career. If we can't solve this case, I think that I will just turn back my badge. And so I need you, Stephen, do you know why?
@@ -15,7 +15,7 @@ sheriff: I just had his parents on the phone. I don't hink that I heard anything
 sheriff: Other questions?
 - I fail to see the link between the kid and the arson, Sir.
 	sheriff: What arson?
-	investigator: The Schlagazon depot, Sir.
+	inspector: The Schlagazon depot, Sir.
 	sheriff: ... That was last week, Vincent.
 	- ... I know that, I was just thinking that there may be a link
 		sheriff: We've been over this Vincent. The culprit has been caught red-handed and is now behind bars. Have you have been taking your pills?
