@@ -191,18 +191,27 @@ func _on_event_handled(event: DialogicEvent):
 	if event is DialogicTextEvent and event.character:
 		last_character = event.character
 
+func get_blackscreen():
+	return get_node("/root/DefaultDialogNode/Blackscreen/ColorRect")
+
+func get_sidebar():
+	return get_node("/root/DefaultDialogNode/Sidebar")
+
 func _on_signal(signal_type: String):
 	if signal_type in ["ending_win", "ending_death"]:
 		trigger_ending(signal_type)
 	if signal_type == "end":
-		print('the end')
-
-func get_sidebar():
-	return get_node("/root/DefaultDialogNode").get_node("Sidebar")
+		await create_tween().tween_property(get_blackscreen(), "color:a", 1.0, 1.0).finished
+		# TODO: credit retry
 
 func trigger_ending(ending_name: String):
 	# TODO: fondu au noir
 	get_sidebar().visible = false
+
+	await create_tween().tween_property(get_blackscreen(), "color:a", 1.0, 1.0).finished
+	await create_tween().tween_interval(0.5)
+	await create_tween().tween_property(get_blackscreen(), "color:a", 0.0, 1.0).finished
+
 	Dialogic.start("res://story/" + ending_name + ".dtl")
 
 var previous_room: Room = Room.CEO_OFFICE
