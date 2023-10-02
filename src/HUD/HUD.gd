@@ -2,6 +2,7 @@ extends CanvasLayer
 
 @onready var room_label = %RoomLabel
 @onready var transition_buttons = %TransitionButtons
+@onready var move_to_label = %MoveToLabel
 
 
 func _ready() -> void:
@@ -20,6 +21,7 @@ func update_transitions():
 	var rooms = Globals.get_transitions()
 	for child in transition_buttons.get_children():
 		transition_buttons.remove_child(child)
+	move_to_label.visible = not rooms.is_empty()
 	for room in rooms:
 		var button = Button.new()
 		button.text = Globals.get_room_name(room)

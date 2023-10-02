@@ -71,7 +71,7 @@ func reset_state() -> void:
 	print("resetting state")
 	print("previously visited rooms: ", visited_rooms)
 	moving = false
-	current_room = Room.LOBBY
+	current_room = Room.SHERIFF_OFFICE
 	visited_rooms = {}
 	last_character = null
 

@@ -39,13 +39,14 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "Current room:"
+text = "Current location:"
 
 [node name="RoomLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="MoveToLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 text = "Move to:"
 
