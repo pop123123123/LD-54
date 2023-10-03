@@ -1,0 +1,12 @@
+Limited Larry, inspecteur dans la capitale du vice, Neo-Tourcoing, n'est plus tout jeune.
+Quel âge avait t'il ? 80 ? Peut-être 90 ? Il avait arrêté de compter...
+L'expérience ? Limited Larry ne l'avais plus, ayant développé le tristement célèbre syndrome d'Alzheimer, limitant grandement ses capacités d'enquête et de déduction.
+Pas le choix, il faut payer ses factures, Larry va devoir composer avec ses lacunes et enquêter sur la disparition inquiétante de Pascal Pala, stagiaire dans un modeste salon de toilettage, le "Jazzy Jaw Grooming".
+
+Le jeu est un visual novel vous demandant de gérer votre mémoire afin de retenir les informations les plus cruciales à l'enquête.
+
+NB: le jeu est extrèmement buggué pour le moment. Nous nous efforçons de sortir une version stable prochainement. La version fixée sera estampillée "postjam".
+
+Nous avons produit tous les assets et écrit cette histoire et ces dialogues à l'aide de nos petits doigts boudinés.
+
+NB: tous les assets graphiques ont été réalisés à l'aide de stable diffusion. Ayant passé un temps non négligeable à oritenter la génération puis à retoucher le rendu, nous nous sommes inscrits dans la catégorie Graphics.
