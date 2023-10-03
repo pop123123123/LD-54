@@ -246,6 +246,7 @@ func _ready():
 	Dialogic.event_handled.connect(Callable(self, "_on_event_handled"))
 	Dialogic.signal_event.connect(Callable(self, "_on_signal"))
 	Dialogic.timeline_started.connect(Callable(self, "_on_timeline_started"))
+	Dialogic.timeline_ended.connect(Callable(self, "_on_timeline_ended"))
 	_init_timelines()
 
 func setDialogicVisibility(mode: bool):
@@ -293,6 +294,9 @@ func trigger_ending(ending_name: String):
 var previous_room: Room = Room.CEO_OFFICE
 func _on_timeline_started():
 	pass
+
+func _on_timeline_ended():
+	Dialogic.Choices.hide_all_choices()
 
 func select_memory(memory_id: String):
 	Dialogic.end_timeline()
