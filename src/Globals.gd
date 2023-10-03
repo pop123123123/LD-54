@@ -271,9 +271,6 @@ func get_sidebar():
 func _on_signal(signal_type: String):
 	if signal_type == "hide_sidebar":
 		get_sidebar().visible = false
-	# Useless
-	if signal_type in ["ending_win", "ending_death"]:
-		trigger_ending(signal_type)
 	if signal_type == "end":
 		get_tree().change_scene_to_file("res://src/HUD/credits.tscn")
 	if signal_type == "nap":
