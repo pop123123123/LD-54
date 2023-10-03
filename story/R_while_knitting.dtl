@@ -1,6 +1,6 @@
 set {has_talked_to.receptionist} = 1
 
-receptionist: Hello, Sir, I'm Lucy Lullbay.
-receptionist: *You notice that she is knitting on her desk*
+receptionist: *You notice the receptionist, knitting at her desk*
 [new_memory id="knitting"]
+receptionist: Hello, Sir, I am Lucy Lullaby.
 jump idle_receptionist/
