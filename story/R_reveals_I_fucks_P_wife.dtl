@@ -4,7 +4,7 @@ receptionist: Oh look, it has a tattoo on the wrist. It says "I am having an aff
 inspector: Intriguing...
 receptionist: I think that the intern had one just like that!
 inspector: Hmmm... Makes me wonder... Could it be?
+[new_memory id="affair"]
 receptionist: What is it, inspector?
 inspector: I still need some time to think about it.
-[new_memory id="affair"]
 jump idle_receptionist/
