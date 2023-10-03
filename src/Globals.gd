@@ -277,11 +277,7 @@ func _on_signal(signal_type: String):
 	if signal_type == "end":
 		get_tree().change_scene_to_file("res://src/HUD/credits.tscn")
 	if signal_type == "nap":
-		Dialogic.VAR.is_night = 1
-		Dialogic.end_timeline()
 		current_room = Room.STAFF_ROOM
-		Dialogic.start_timeline("res://story/night_transition.dtl")
-		await update_room_characters(Room.STAFF_ROOM)
 
 func trigger_ending(ending_name: String):
 	# TODO: fondu au noir
