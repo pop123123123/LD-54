@@ -198,6 +198,8 @@ func get_sidebar():
 	return get_node("/root/DefaultDialogNode/Sidebar")
 
 func _on_signal(signal_type: String):
+	if signal_type == "hide_sidebar":
+		get_sidebar().visible = false
 	if signal_type in ["ending_win", "ending_death"]:
 		trigger_ending(signal_type)
 	if signal_type == "end":

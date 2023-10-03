@@ -1,4 +1,8 @@
+[signal arg="hide_sidebar"]
+[background arg="res://assets/background/black.png" fade="1.0"]
 Vintage Vincent returns to the sheriff's office with a vital piece of information.
+[background arg="res://assets/background/sheriff_office.png" fade="1.0"]
+Join sheriff 1
 sheriff: Good old Vinnie, back already?
 inspector: Sheriff, I've got my hands on a big fish!
 sheriff: So this Pascal Pala? Murdered? Runaway? Accident?
@@ -22,6 +26,8 @@ sheriff: Vinnie...
 inspector: Hold on, boss, I'll get back to you...
 inspector: ...
 sheriff: Vinnie, don't get your knickers in a twist, I'll send the brigade out to investigate further. Go on, back to your desk, chop-chop!
+Leave --All--
+[background arg="res://assets/background/black.png" fade="1.0"]
 And so ended Vintage Vincent's investigation at Jazzy Jaws Grooming. Sheriff's crews arrested the entire salon for undeclared activity.
 No one ever found out what happened to Pascal Pala...
 [signal arg="end"]
