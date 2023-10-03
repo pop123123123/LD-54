@@ -266,7 +266,7 @@ func _on_left_contents_changed() -> void:
 	if items.size() > 0:
 		inventory_left_container.show()
 		if inventory_left.get_items().size() > 0:
-			default_description += "\nRemember to save new memories, otherwise they will be forgotten.\n"
+			default_description += "\nRemember to save new memories, otherwise they will be forgotten.\n\n\n\n"
 	else:
 		inventory_left_container.hide()
 		mode = mode
