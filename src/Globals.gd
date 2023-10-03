@@ -93,31 +93,29 @@ func get_transitions(from: Room = current_room) -> Array:
 		Room.LOBBY:
 		[
 			Room.TOILET,
+			Room.KENNEL,
 			Room.GROOMING,
+			Room.CORRIDOR,
 		],
 		Room.TOILET:
 		[
 			Room.LOBBY,
-			Room.GROOMING,
 		],
 		Room.GROOMING:
 		[
-			Room.LOBBY,
 			Room.SUPPLY_ROOM,
-			Room.CORRIDOR,
+			Room.LOBBY,
 		],
 		Room.CORRIDOR:
 		[
-			Room.GROOMING,
-			Room.SUPPLY_ROOM,
 			Room.CEO_OFFICE,
 			Room.STAFF_ROOM,
-			Room.KENNEL,
+			Room.LOBBY,
 		],
-		Room.SUPPLY_ROOM: [Room.CORRIDOR],
+		Room.SUPPLY_ROOM: [Room.GROOMING],
 		Room.STAFF_ROOM: [Room.CORRIDOR],
 		Room.CEO_OFFICE: [Room.CORRIDOR],
-		Room.KENNEL: [Room.CORRIDOR, Room.MEAT_ROOM] if has_secret_access() else [Room.CORRIDOR],
+		Room.KENNEL: [Room.LOBBY, Room.MEAT_ROOM] if has_secret_access() else [Room.LOBBY],
 		Room.MEAT_ROOM: [Room.KENNEL],
 		Room.SHERIFF_OFFICE: [Room.LOBBY],
 	}[from]
