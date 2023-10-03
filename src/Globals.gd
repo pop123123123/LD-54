@@ -238,6 +238,7 @@ func move_to_room(room: Room):
 		Dialogic.Jump.jump_to_label("bye")
 		dialogic_default_action()
 		await Dialogic.timeline_ended
+	Dialogic.Choices.hide_all_choices()
 
 	current_room = room
 	await update_room_characters(room)
@@ -285,14 +286,14 @@ func trigger_ending(ending_name: String):
 	get_sidebar().visible = false
 
 	await create_tween().tween_property(get_blackscreen(), "color:a", 1.0, 1.0).finished
-	await create_tween().tween_interval(0.5)
+	create_tween().tween_interval(0.5)
 	await create_tween().tween_property(get_blackscreen(), "color:a", 0.0, 1.0).finished
 
 	Dialogic.start("res://story/" + ending_name + ".dtl")
 
 var previous_room: Room = Room.CEO_OFFICE
 func _on_timeline_started():
-	pass
+	Dialogic.Choices.hide_all_choices()
 
 func _on_timeline_ended():
 	Dialogic.Choices.hide_all_choices()
