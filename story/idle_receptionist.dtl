@@ -3,5 +3,5 @@ if {has_talked_to.receptionist} == 0:
 	jump R_while_knitting/
 
 receptionist: Can I be of service?
-receptionist: I know many thing about this company, just ask me!
+receptionist: I know many things about this company, just ask me!
 jump loop
