@@ -160,7 +160,7 @@ func get_room_name(room: Room = current_room) -> String:
 		Room.CORRIDOR: "Corridor",
 		Room.SUPPLY_ROOM: "Supply Room",
 		Room.STAFF_ROOM: "Staff Room",
-		Room.CEO_OFFICE: "CEO's Office",
+		Room.CEO_OFFICE: "President's Office",
 		Room.KENNEL: "Kennel",
 		Room.MEAT_ROOM: "Meat Room",
 		Room.SHERIFF_OFFICE: "Sheriff's Office",
