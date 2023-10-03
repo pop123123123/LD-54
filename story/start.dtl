@@ -14,22 +14,19 @@ Neo Tourcoing, September 30th 2033
 Clear weather but some clouds on the horizon
 Join sheriff 1
 sheriff: Come in, Larry!
-inspector: Wait a second sir, give me some time to stand up...
+inspector: Wait a second Sir, give me some time to stand up...
 inspector: ... My back is killing me!
-sheriff: Pascal Pala\: this kid that has been missing for a few days.
+sheriff: There's this kid, Pascal Pala, who has been missing for a few days.
 sheriff: Canine hairdressing student from the National Academy - these guys are the best of the best. Very gifted kid coming from a humble background, would be a shame if anything bad happened to him.
 inspector: ...
 inspector: What's his name again?
-sheriff: Focus Larry! The name is Pascal Pala
-inspector: ...Got it sir... Where did we see the pal for the last time?
-sheriff: He was working as intern in "Jazzy Jaws Grooming".
+sheriff: Focus Larry! The name is Pascal Pala.
+inspector: ...Got it Sir... Where was he seen for the last time?
+sheriff: He was working as an intern for the "Jazzy Jaws Grooming" beauty salon for dogs.
 sheriff: Acceptable haircuts for your dogs at an affordable price, revolutionary stuff. I took my Chihuahua there once, and it came back with an okay haircut.
-inspector: Why did you pick me sheriff ? I'm close to 90, I'm very old for this job.
-sheriff: Because all the other guys are on holiday.
-sheriff: Have you have been taking your pills?
-inspector: What pills?
-sheriff: ...Anyway
-sheriff: Go to "Jazzy Jaws Grooming", 173 Patrick Sebastien Street. Find Pascal Pala
+inspector: Why did you pick me sheriff ? I'm close to 90, can't I just retire?
+sheriff: We need you, all the other guys are on holiday.
+sheriff: ...Anyways. I need you to go to "Jazzy Jaws Grooming", 173 Balkany Street. Find what happened to that kid.
 [new_memory id="mission"]
 set {allow_moving} = 1
 sheriff: You should go now. Good luck.
