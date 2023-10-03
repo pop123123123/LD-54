@@ -58,6 +58,10 @@ var current_room: Room = Room.LOBBY:
 			visited_rooms[room] = 1
 		current_room = room
 		moving = false
+
+		var inventory = get_node("/root/DefaultDialogNode/Sidebar/Panel/MarginContainer/VBoxContainer/Inventory")
+		if inventory != null:
+			inventory.clear_left_panel()
 		Dialogic.Backgrounds.update_background('', get_room_background_path(current_room), .5)
 
 		room_changed.emit(room)
