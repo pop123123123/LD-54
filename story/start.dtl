@@ -13,29 +13,23 @@ Neo Tourcoing, September 30th 2033
 8\:30 AM
 Clear weather but some clouds on the horizon
 Join sheriff 1
-sheriff: Please come in, Robert.
-sheriff: We need your help on an arson case. The region's main Schlagazon depot went up in flames.
-inspector: Alright, anything I need to know, Sir? Any leads?
-sheriff: Well there is this kid that has been missing for a few days. Canine hairdressing student from the National Academy - these guys are the best of the best. Very gifted kid coming from a humble background, would be a shame if anything bad happened to him.
-sheriff: He was doing his internship at the "Jazzy Jaws Grooming". Acceptable haircuts for your dogs at an affordable price, revolutionary stuff. I took my Chihuahua there once, and it came back with an okay haircut. A bit shorter than what I asked, but at this pricepoint, I can't complain.
-sheriff: I just had his parents on the phone. I don't hink that I heard anything this sad in 50 years of career. If we can't solve this case, I think that I will just turn back my badge. And so I need you, Stephen, do you know why?
-- Because I'm the best, Sir
-	sheriff: ... Oh yes, sure.
-- ...
-	sheriff: Because all the other guys are on holiday.
-sheriff: Other questions?
-- I fail to see the link between the kid and the arson, Sir.
-	sheriff: What arson?
-	inspector: The Schlagazon depot, Sir.
-	sheriff: ... That was last week, Vincent.
-	- ... I know that, I was just thinking that there may be a link
-		sheriff: We've been over this Vincent. The culprit has been caught red-handed and is now behind bars. Have you have been taking your pills?
-		- What pills?
-			sheriff: Oh well.
-		- Just five minutes ago, but I could do with a coffee.
-			sheriff: ... Alright, I guess. The address is 173 Patrick Sebastien Street.
-- ...
-	sheriff: Perfect! The address is 173 Patrick Sebastien Street.
+sheriff: Come in, Larry!
+inspector: Wait sir, let me time to stand up...
+inspector: ...
+sheriff: Pascal Pala\: this kid that has been missing for a few days.
+sheriff: Canine hairdressing student from the National Academy - these guys are the best of the best. Very gifted kid coming from a humble background, would be a shame if anything bad happened to him.
+inspector: ...
+inspector: What's his name again?
+sheriff: Focus Larry! The name is Pascal Pala
+inspector: ...Got it sir... Where did we see the pal for the last time?
+sheriff: He was working as intern in "Jazzy Jaws Grooming".
+sheriff: Acceptable haircuts for your dogs at an affordable price, revolutionary stuff. I took my Chihuahua there once, and it came back with an okay haircut.
+inspector: Why did you pick me sheriff ? I'm close to 90, I'm very old for this job.
+sheriff: Because all the other guys are on holiday.
+sheriff: Have you have been taking your pills?
+inspector: What pills?
+sheriff: ...Anyway
+sheriff: Go to "Jazzy Jaws Goomring", 173 Patrick Sebastien Street. Find Pascal Pala
 [new_memory id="mission"]
 set {allow_moving} = 1
 sheriff: You should go now. Good luck.
