@@ -184,6 +184,10 @@ func _ready():
 	Dialogic.timeline_started.connect(Callable(self, "_on_timeline_started"))
 	_init_timelines()
 
+func setDialogicVisibility(mode: bool):
+	var nodes = get_node("/root/DefaultDialogNode").get_children()
+	for node in nodes:
+		node.visible = mode
 
 func _on_event_handled(event: DialogicEvent):
 	if event is DialogicCharacterEvent:
@@ -200,11 +204,11 @@ func get_sidebar():
 func _on_signal(signal_type: String):
 	if signal_type == "hide_sidebar":
 		get_sidebar().visible = false
+	# Useless
 	if signal_type in ["ending_win", "ending_death"]:
 		trigger_ending(signal_type)
 	if signal_type == "end":
-		await create_tween().tween_property(get_blackscreen(), "color:a", 1.0, 1.0).finished
-		# TODO: credit retry
+		get_tree().change_scene_to_file("res://src/HUD/credits.tscn")
 
 func trigger_ending(ending_name: String):
 	# TODO: fondu au noir
