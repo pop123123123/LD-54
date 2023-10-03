@@ -209,10 +209,12 @@ func get_room_background_path(room: Room) -> String:
 
 func get_memory_timeline_id(character_id: String, memory_id: String) -> String:
 	var timeline_id = timeline_transitions.get([character_id, memory_id, has_secret_access()])
+	
 	if timeline_id == null and has_secret_access():
 		timeline_id = timeline_transitions.get([character_id, memory_id, false])
 	if timeline_id == null:
-		timeline_id = timeline_transitions.get([character_id, "", has_secret_access()])
+		timeline_id = "nothing_" + character_id
+		#timeline_id = timeline_transitions.get([character_id, "", has_secret_access()])
 	if timeline_id == null and has_secret_access():
 		timeline_id = timeline_transitions.get([character_id, "", false])
 	if timeline_id == null:
