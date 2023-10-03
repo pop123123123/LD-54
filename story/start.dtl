@@ -29,7 +29,7 @@ sheriff: Because all the other guys are on holiday.
 sheriff: Have you have been taking your pills?
 inspector: What pills?
 sheriff: ...Anyway
-sheriff: Go to "Jazzy Jaws Goomring", 173 Patrick Sebastien Street. Find Pascal Pala
+sheriff: Go to "Jazzy Jaws Grooming", 173 Patrick Sebastien Street. Find Pascal Pala
 [new_memory id="mission"]
 set {allow_moving} = 1
 sheriff: You should go now. Good luck.
