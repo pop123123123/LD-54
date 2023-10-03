@@ -255,9 +255,10 @@ func _on_timeline_started() -> void:
 	is_idle = events.any(
 		func(event: DialogicEvent): return event is DialogicCommentEvent and event.text == "idle"
 	)
+	inventory_left.remove_all_items()
 
 func _on_timeline_ended() -> void:
-	inventory_left.remove_all_items()
+	pass
 
 
 func _on_left_contents_changed() -> void:
