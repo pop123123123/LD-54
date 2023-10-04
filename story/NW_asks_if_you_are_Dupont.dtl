@@ -2,7 +2,7 @@ set {has_talked_to.warden} = 1
 
 night_warden: Halt! Who goes there? Hand up or I'll shoot!
 inspector: Here you go, no need to shoot.
-...
+night_warden: ...
 night_warden: Your face is familiar. I must have seen you before but I can't remember where. I'm sorta bad at remembering faces.
 if Memories.active_memories.has('identity') == false:
 	inspector: I'm sorry, I'm not sure who I am either.
