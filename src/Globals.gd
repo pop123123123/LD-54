@@ -311,8 +311,8 @@ func _init_timelines() -> void:
 		"groomer",
 		"janitor",
 		"customer",
-		"night_groomer",
-		"night_janitor",
+		"dark_groomer",
+		"dark_janitor",
 		"night_warden",
 	]
 	for row in data:
