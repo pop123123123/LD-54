@@ -1,0 +1,6 @@
+president: Don't talk about it, it makes me sad. Sniff.
+investigator: No worries buddy. Hey, from a veteran to a veteran, I'm here if you need talking to. What happened?
+president: I was sentenced to two months of jail for crimes against humanity, though I got out early for good behavior.
+investigator: Hey, we all have bad days.
+president: Thank you, I needed to hear that.
+\jump idle_president

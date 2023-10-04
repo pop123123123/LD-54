@@ -1,0 +1,10 @@
+warden: I prefer not to talk about the war.
+investigator: Neither do I. All this senseless loss of life. Torn families. Let's not talk about it.
+warden: You're right, let's not talk about it. I served in the fifth cannonfodder regiment, I served as a suicide bomber.
+warden: Obviously, I wasn't that good at this job. You?
+investigator: Senior guard, I peeled potatoes. I... just can't talk about it. When I close my eyes, I just see piles upon piles of taters. The smell of starch... Let's talk about something else.
+warden: You're right, let's not talk about it. I'm so sorry you had to go through this. What a senseless war!
+investigator: Yes! Let's not talk about it. I suffered a light bruise on my thumb once. I still remember the pain.
+warden: I fell down some steps during my service. I still make nightmares about it. Let's forget it.
+investigator: Ok.
+\jump idle_warden

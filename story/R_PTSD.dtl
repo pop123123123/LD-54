@@ -1,0 +1,3 @@
+receptionist: Thank you for your service!
+investigator: Please, I was only doing my duty.
+\jump idle_receptionist
