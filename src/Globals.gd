@@ -278,6 +278,7 @@ func _on_signal(signal_type: String):
 		get_tree().change_scene_to_file("res://src/HUD/credits.tscn")
 	if signal_type == "nap":
 		current_room = Room.STAFF_ROOM
+		get_tree().root.get_node("MainScene/DJ")._transition_night_music()
 
 func trigger_ending(ending_name: String):
 	# TODO: fondu au noir
