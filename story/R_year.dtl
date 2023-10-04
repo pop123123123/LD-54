@@ -1,0 +1,3 @@
+receptionist: That is indeed the current year!
+investigator: Thank you, I just needed to be sure.
+\jump idle_receptionist
