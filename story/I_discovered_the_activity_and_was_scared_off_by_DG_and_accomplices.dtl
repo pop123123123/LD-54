@@ -15,4 +15,5 @@ groomer: Richie then told me that he scared Pascal. I guess he was convincing en
 inspector: Poor kid, aren't you ashamed? All this for a junk deal.
 groomer: When I meet the kid again, I'll personally apologize, we got scared, we overreacted... But it's not me, it's Richie!
 inspector: You're just as responsible. You will be held accountable.
+[new_memory id="intern_ran_off"]
 jump idle_groomer/

@@ -3,4 +3,5 @@ if Memories.active_memories.has('french') == false:
 else:
 	customer: Oh mon cher, do you speak French? What a pleasant surprise to bump into a civilized man so far from home. Yes, my poor Princesse Christine de-la-Fourrière is quite tense. To tell the truth, while I appreciate the little trainee's manners, Princesse has a much harder time appreciating him.
 	customer: As soon as she sees him, she starts howling, barking and shaking.
+	[new_memory id="intern_bitten_to_death"]
 jump idle_customer/

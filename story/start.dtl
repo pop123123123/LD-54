@@ -12,6 +12,7 @@
 Neo Tourcoing, September 30th 2033
 8\:30 AM
 Clear weather but some clouds on the horizon
+[background arg="res://assets/background/sheriff_office.png" fade="0.0"]
 Join sheriff 1
 sheriff: Come in, Larry!
 inspector: Wait a second Sir, give me some time to stand up...

@@ -2,6 +2,7 @@ extends Node
 
 signal memory_added(memory: Dictionary)
 signal active_memory_added(memory_id: String, x: int, y: int)
+signal active_memory_added_always_fired(memory: Dictionary)
 signal active_memory_removed(memory_id: String)
 
 var memories: Array = []
@@ -34,6 +35,7 @@ func add_active_memory(id: String, x: int, y: int, emit_event = true):
 	if memory != null:
 		if not active_memories.has(id):
 			active_memories.append(id)
+			active_memory_added_always_fired.emit(memory)
 			if emit_event:
 				active_memory_added.emit(memory, x, y)
 	else:
