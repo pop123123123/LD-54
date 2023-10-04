@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dch8fuekijffp"
-path="res://.godot/imported/rpg_box.webp-6ea0804b52e01599dbc94ffacc31d433.ctex"
+uid="uid://q4luol10dl8i"
+path="res://.godot/imported/surprised.webp-bda991c1cdf1933d321cb5c23e1f7461.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/backgrounds/rpg_box.webp"
-dest_files=["res://.godot/imported/rpg_box.webp-6ea0804b52e01599dbc94ffacc31d433.ctex"]
+source_file="res://characters/client/surprised.webp"
+dest_files=["res://.godot/imported/surprised.webp-bda991c1cdf1933d321cb5c23e1f7461.ctex"]
 
 [params]
 

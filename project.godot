@@ -14,7 +14,7 @@ config/name="Limited Larry and the lost intern"
 config/description="Ludum Dare 54"
 run/main_scene="res://src/MainScene/MainScene.tscn"
 config/features=PackedStringArray("4.1")
-config/icon="res://characters/sheriff/1.png"
+config/icon="res://characters/sheriff/1.webp"
 
 [autoload]
 

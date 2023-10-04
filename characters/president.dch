@@ -26,21 +26,21 @@
 "offset": Vector2(0, 0),
 "portraits": {
 "annoyed": {
-"image": "res://characters/ceo/annoyed.png",
+"image": "res://characters/ceo/annoyed.webp",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
 "base": {
-"image": "res://characters/ceo/base.png",
+"image": "res://characters/ceo/base.webp",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
 "happy": {
-"image": "res://characters/ceo/happy.png",
+"image": "res://characters/ceo/happy.webp",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,

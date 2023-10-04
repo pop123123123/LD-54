@@ -26,28 +26,28 @@
 "offset": Vector2(0, 0),
 "portraits": {
 "1": {
-"image": "res://characters/sheriff/1.png",
+"image": "res://characters/sheriff/1.webp",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
 "2": {
-"image": "res://characters/sheriff/2.png",
+"image": "res://characters/sheriff/2.webp",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
 "3": {
-"image": "res://characters/sheriff/3.png",
+"image": "res://characters/sheriff/3.webp",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
 "base": {
-"image": "res://characters/sheriff/base.png",
+"image": "res://characters/sheriff/base.webp",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,

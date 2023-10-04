@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dch8fuekijffp"
-path="res://.godot/imported/rpg_box.webp-6ea0804b52e01599dbc94ffacc31d433.ctex"
+uid="uid://bbn70qpx235mb"
+path="res://.godot/imported/2.webp-9eafbaa0a290c17c68fcde3f22d449f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/dialogic/Example Assets/backgrounds/rpg_box.webp"
-dest_files=["res://.godot/imported/rpg_box.webp-6ea0804b52e01599dbc94ffacc31d433.ctex"]
+source_file="res://characters/sheriff/2.webp"
+dest_files=["res://.godot/imported/2.webp-9eafbaa0a290c17c68fcde3f22d449f3.ctex"]
 
 [params]
 
