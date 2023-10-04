@@ -1,6 +1,6 @@
-warden: You're late Dupont... Don't dawdle and go and join the R. First left after the counter, you enter the kennel and move the cage at the back. At the back, push the partition and you'll get to the meatshop.
+night_warden: You're late Dupont... Don't dawdle and go and join the R. First left after the counter, you enter the kennel and move the cage at the back. At the back, push the partition and you'll get to the meatshop.
 inspector: The meatshop?
-warden: Well yes, old man, I hope your clothes don't get stains because you're going to get them everywhere. We haven't canned it yet and there are a few kilos to carry.
-warden: Hurry up instead of standing there swallowing flies! And try not to let that idiot Mike see you. You're not supposed to be here.
-warden: I can't believe it... who picks these goons... when are we gonna get someone other than a 30s Chicago nostalgic for once...
+night_warden: Well yes, old man, I hope your clothes don't get stains because you're going to get them everywhere. We haven't canned it yet and there are a few kilos to carry.
+night_warden: Hurry up instead of standing there swallowing flies! And try not to let that idiot Mike see you. You're not supposed to be here.
+night_warden: I can't believe it... who picks these goons... when are we gonna get someone other than a 30s Chicago nostalgic for once...
 jump idle_warden/

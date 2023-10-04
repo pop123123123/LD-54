@@ -1,5 +1,5 @@
-warden: Pascal is a nice guy. He's quite resourceful and enterprising. I'm grateful to him, because without him I wouldn't be working here.
+night_warden: Pascal is a nice guy. He's quite resourceful and enterprising. I'm grateful to him, because without him I wouldn't be working here.
 inspector: Did he pull strings for you?
-warden: Not at all, Inspector. It was Pascal's idea to open a kennel business at Jazzy Jaws Grooming. This naturally led to the opening of a night watchman position. It was a relief for me to get out of a long period of unemployment. You have to fight to find your place in Neo-Tourcoing inspector.
+night_warden: Not at all, Inspector. It was Pascal's idea to open a kennel business at Jazzy Jaws Grooming. This naturally led to the opening of a night watchman position. It was a relief for me to get out of a long period of unemployment. You have to fight to find your place in Neo-Tourcoing inspector.
 inspector: I know, Miss Moonllight. I'd leave my place to the youngsters, but retirement is getting further and further away as the years go by and successive reforms are implemented.
 jump idle_warden/

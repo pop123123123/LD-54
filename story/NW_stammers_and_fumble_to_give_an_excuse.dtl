@@ -1,6 +1,6 @@
-warden: Ah... uh... I... Wait.... Aren't you Ducon?
+night_warden: Ah... uh... I... Wait.... Aren't you Ducon?
 inspector: Hmm... To tell you the truth, I'm not sure anymore, miss... I'm having a bit of a memory lapse... You know, age...
-warden: Uh... Ah yes, ah okay I understand, you're the inspector! Of course I am! I've been expecting you, Inspector! Please, take a seat!
+night_warden: Uh... Ah yes, ah okay I understand, you're the inspector! Of course I am! I've been expecting you, Inspector! Please, take a seat!
 inspector: Ah yes, that must be it, I must be the inspector... Limited is it?
-warden: Hmmm yes yes of course inspector Limited
+night_warden: Hmmm yes yes of course inspector Limited
 jump idle_warden/

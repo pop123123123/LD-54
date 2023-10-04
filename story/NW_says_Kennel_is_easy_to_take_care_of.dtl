@@ -1,8 +1,8 @@
-warden: My job here is mainly to look after the kennels. You know, dogs can get lonely at night and start crying. They also tend to wet their cages when they are distraught.
+night_warden: My job here is mainly to look after the kennels. You know, dogs can get lonely at night and start crying. They also tend to wet their cages when they are distraught.
 inspector: And how do you deal with that?
-warden: Oh, you know, a little choke hold is more than enough to put a dog to sleep.
+night_warden: Oh, you know, a little choke hold is more than enough to put a dog to sleep.
 inspector: ...
-warden: Just kidding inspector, I wouldn't hurt a fly! I prefer a gentle rhyme or song to help them fall asleep. Choke holds are really a last resort.
+night_warden: Just kidding inspector, I wouldn't hurt a fly! I prefer a gentle rhyme or song to help them fall asleep. Choke holds are really a last resort.
 inspector: You fooled me, Mandy. At my age, I tend to have trouble detecting the second degree. Why such a uniform then?
-warden: Oh, the kepi and the truncheon? That's... folklore. Fortunately we've never had any burglary attempts or other shenanigans. It was Barry who insisted on it. You know, you have to please him once in a while and indulge his fantasies of a small business owner... Makes him feel important.
+night_warden: Oh, the kepi and the truncheon? That's... folklore. Fortunately we've never had any burglary attempts or other shenanigans. It was Barry who insisted on it. You know, you have to please him once in a while and indulge his fantasies of a small business owner... Makes him feel important.
 jump idle_warden/
