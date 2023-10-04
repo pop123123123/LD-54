@@ -1,8 +1,8 @@
 Leave --All--
 [signal arg="hide_sidebar"]
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 Limited Larry returns to the sheriff's office with a vital piece of information.
-[background arg="res://assets/background/sheriff_office.png" fade="1.0"]
+[background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Good old Larry, back already?
 inspector: Sheriff, I've got my hands on a big fish!
@@ -28,7 +28,7 @@ inspector: Hold on, boss, I'll get back to you...
 inspector: ...
 sheriff: Larry, don't twist your knickers, I'll send the brigade out to investigate further. Go on, back to your desk, chop-chop!
 Leave --All--
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 And so ended Limited Larry's investigation at Jazzy Jaws Grooming. The Sheriff's crew arrested the entire salon for undeclared activity. Princess Christine de-la-Fourrière pulled the short straw and was hanged for the example.
 She was given a posthumous grace in 2078.
 No one ever found out what happened to Pascal Pala...

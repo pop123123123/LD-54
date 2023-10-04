@@ -1,9 +1,9 @@
 Leave --All--
 [signal arg="hide_sidebar"]
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 [wait time="1.0"]
 Limited Larry returned confidently to the sheriff's office
-[background arg="res://assets/background/sheriff_office.png" fade="1.0"]
+[background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Larry! Back so soon? Any news on the investigation?
 inspector: Boss! I've found the culprit!
@@ -18,7 +18,7 @@ sheriff: Larry... I was counting on you
 sheriff: I kept you here out of the kindness of my heart, because of your advanced age and the fact that my father owed you a debt when you saved him from banana indigestion.
 sheriff: But I regret to inform you that you're fired and that I'm taking over the Pascal Pala business.
 Leave --All--
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 No one ever knew what happened to Pascal Pala...
 Limited Larry was employed as a sandwich man for the rest of his life.
 [signal arg="end"]

@@ -1,8 +1,8 @@
 Leave --All--
 [signal arg="hide_sidebar"]
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 Limited Larry returns triumphant to the sheriff's office
-[background arg="res://assets/background/sheriff_office.png" fade="1.0"]
+[background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Larry! Back already?
 inspector: Boss! I've found the culprit!
@@ -19,7 +19,7 @@ sheriff: Barry confessed? I'm impressed, Larry. The guy's tough, how could you i
 inspector: Well... I... I forget if he confessed or not...
 sheriff: I've had enough, Larry! You're fired, we're back on the case!
 Leave --All--
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 The sheriff's men went off to shake Barry Integrity, who denied Larry's accusations. Desperate for a result, the sheriff finally brought down the president for tax evasion.
 Jazzy Jaws Grooming closed its doors.
 No one ever knew what really happened to Pascal Pala.

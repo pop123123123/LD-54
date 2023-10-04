@@ -1,6 +1,6 @@
 set {is_night} = 1
-[background arg="res://assets/background/black.png" fade="1.0"]
-[background arg="res://assets/background/staff_room.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
+[background arg="res://assets/background/staff_room.webp" fade="1.0"]
 inspector: Aaaaaah... What a wonderful sleep... I feel so refreshed!
 inspector: I had not slept that well since that time in the intensive care unit...
 jump arrival_staff_room/

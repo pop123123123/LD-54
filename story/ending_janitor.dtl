@@ -1,8 +1,8 @@
 Leave --All--
 [signal arg="hide_sidebar"]
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 Limited Larry returns confident to the sheriff's office
-[background arg="res://assets/background/sheriff_office.png" fade="1.0"]
+[background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Larry! Back already?
 inspector: Boss! I've found the culprit!
@@ -24,7 +24,7 @@ No one ever knew what had happened to Pascal Pala.
 Limited Larry had to work in the mine until he was 90, when he fell asleep peacefully.
 [signal arg="end"]
 Leave --All--
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 And so ended Limited Larry's investigation at Jazzy Jaws Grooming. Sheriff's crews arrested the entire salon for undeclared activity.
 No one ever found out what happened to Pascal Pala...
 [signal arg="end"]

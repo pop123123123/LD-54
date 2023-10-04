@@ -1,7 +1,7 @@
 Leave --All--
 [signal arg="hide_sidebar"]
 Limited Larry returns, in the dark, to the police station, the only building in the center of Neo Tourcoing still lit by light.
-[background arg="res://assets/background/sheriff_office.png" fade="1.0"]
+[background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Good old Larry, I'm on my way home...
 inspector: Sheriff, I've got my hands on a big fish!
@@ -17,7 +17,7 @@ sheriff: All right... Bitterbark, Riddim and Moonlight... And what's this got to
 inspector: The kid found out about their little nocturnal activity. The clique decided to scare him into not talking. Guess it worked too well, the kid took off.
 sheriff: He can't have gone far. Well done Larry, to tell you the truth, I didn't think you'd be able to draw any conclusions from this investigation. Let's go find the kid now!
 Leave --All--
-[background arg="res://assets/background/black.png" fade="1.0"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 Richie Riddim, Mike Bitterbark and Mandy Moonlight spent a short time in prison for their undeclared activities.
 Pascal Pala was never found.
 Leave --All--

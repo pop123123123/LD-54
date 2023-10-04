@@ -207,7 +207,7 @@ func get_room_background_path(room: Room) -> String:
 		Room.KENNEL: "generic_room_2",
 		Room.MEAT_ROOM: "meat_factory",
 		Room.SHERIFF_OFFICE: "sheriff_office",
-	}[room] + ".png"
+	}[room] + ".webp"
 
 func get_memory_timeline_id(character_id: String, memory_id: String) -> String:
 	var timeline_id = timeline_transitions.get([character_id, memory_id, has_secret_access()])
