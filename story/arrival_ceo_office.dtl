@@ -1,5 +1,5 @@
 set {allow_moving} = 1
 You enter the President's Office.
 
-- Talk to the President
+- Talk to the President [if {is_night} == 0][else="hide"]
 	jump idle_president/
