@@ -1,6 +1,5 @@
+Leave --All--
 [signal arg="hide_sidebar"]
-[background arg="res://assets/background/black.png" fade="1.0"]
-[wait time="1.0"]
 Limited Larry returns, in the dark, to the police station, the only building in the center of Neo Tourcoing still lit by light.
 [background arg="res://assets/background/sheriff_office.png" fade="1.0"]
 Join sheriff 1
@@ -21,4 +20,4 @@ Leave --All--
 [background arg="res://assets/background/black.png" fade="1.0"]
 Richie Riddim, Mike Bitterbark and Mandy Moonlight spent a short time in prison for their undeclared activities.
 Pascal Pala was never found
-[signal arg="end"]
+Leave --All--
