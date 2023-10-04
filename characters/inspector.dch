@@ -20,9 +20,9 @@
 },
 "default_portrait": "",
 "description": "",
-"display_name": "You",
+"display_name": "Limited Larry (You)",
 "mirror": false,
-"nicknames": [""],
+"nicknames": ["Limited Larry"],
 "offset": Vector2(0, 0),
 "portraits": {},
 "scale": 1.0

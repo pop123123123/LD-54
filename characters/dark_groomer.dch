@@ -20,9 +20,9 @@
 },
 "default_portrait": "base",
 "description": "",
-"display_name": "Groomer",
+"display_name": "Mike Bitterbark (Groomer)",
 "mirror": false,
-"nicknames": [""],
+"nicknames": ["Mike Bitterbark"],
 "offset": Vector2(0, 0),
 "portraits": {
 "base": {

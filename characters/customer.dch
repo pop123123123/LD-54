@@ -20,9 +20,9 @@
 },
 "default_portrait": "base",
 "description": "",
-"display_name": "Customer",
+"display_name": "Françoise du Canin (Customer)",
 "mirror": false,
-"nicknames": [""],
+"nicknames": ["Françoise du Canin"],
 "offset": Vector2(0, 0),
 "portraits": {
 "base": {

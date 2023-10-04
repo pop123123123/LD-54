@@ -20,9 +20,9 @@
 },
 "default_portrait": "base",
 "description": "",
-"display_name": "President",
+"display_name": "Barry Integrity (President)",
 "mirror": false,
-"nicknames": [""],
+"nicknames": ["Barry Integrity"],
 "offset": Vector2(0, 0),
 "portraits": {
 "annoyed": {

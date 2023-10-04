@@ -20,9 +20,9 @@
 },
 "default_portrait": "base",
 "description": "",
-"display_name": "Night Warden",
+"display_name": "Mandy Moolight (Night Warden)",
 "mirror": false,
-"nicknames": [""],
+"nicknames": ["Mandy Moolight"],
 "offset": Vector2(0, 0),
 "portraits": {
 "base": {

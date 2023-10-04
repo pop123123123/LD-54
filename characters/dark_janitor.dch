@@ -20,9 +20,9 @@
 },
 "default_portrait": "base",
 "description": "",
-"display_name": "Janitor",
+"display_name": "Richie Riddim (Janitor)",
 "mirror": false,
-"nicknames": [""],
+"nicknames": ["Richie Riddim"],
 "offset": Vector2(0, 0),
 "portraits": {
 "base": {
