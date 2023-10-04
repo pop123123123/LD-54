@@ -1,7 +1,7 @@
 id,title,width,height,description,short_title,passive,tile_size
 test,Test,2,2,Test description,,false,1x1
 test_passive,Test,2,2,Test description,,true,1x1
-mission,Mission,2,2,I am investigating a missing intern case.,,false,1x1
+mission,Mission,3,4,I am investigating a missing intern case.,,false,2x3
 identity,My Identity,2,1,My name is Vintage Vincent. I am an inspector.,ID,true,2x1
 number,Number,1,1,The phone number of the police office.,Num.,true,1x1
 grandchildren,Grandchildren,2,2,The names and birthday dates of my granchildren. This is my dearest memory!,,true,1x1
@@ -11,17 +11,17 @@ ptsd,PTSD,2,1,I fought in the 2028 civil war. I lost some good friends.,,true,2x
 french,French Language,3,2,I learned how to speak French at school.,,true,3x2
 year,Year,1,1,The current year is 2033. I think.,,true,1x1
 vegan,Vegan,1,1,The janitor is vegan.,,false,1x1
-night,Night Services,1,1,The salon offers some night services. I wonder what this means.,Night,false,1x1
+night,Night Services,3,3,The salon offers some night services. I wonder what this means.,Night,false,3x2
 kennel,Kennel,1,1,Princess spent the night in the kennel.,,false,1x1
-stress,Stress,1,1,Princess appears to be stressed.,,false,1x1
+stress,Stress,3,1,Princess appears to be stressed.,,false,3x1
 intern,Intern,1,1,The intern is (was?) called Pascal. What a lovely name!,,false,1x1
 cooking,Cooking,1,3,"I enjoy cooking, it is the only hobby I have left. Thanks to this memory, I never forget to turn the oven off!",Cook,true,1x3
 doctor,Doctor,1,1,I have an appointment with my doctor in three days.,,true,1x1
 cut,Cut,1,1,The groomer appears to cut the hair of the dogs too short. They come back almost bald!,,false,1x1
-tired,Tired,1,1,That groomer doesn't seem to sleep a lot.,,false,1x1
-knitting,Knitting,1,1,The receptionist enjoys knitting.,,false,1x1
-dog_hair,Hair,1,1,The groomer gave a ball of dog based yarn to the receptionist. Curious!,,false,1x1
-traffic,Traffic,1,1,I am about to bust a hair trafficking ring,,false,1x1
-intern,Intern,1,1,I know who I am looking for,,false,1x1
-affair,Affair,1,1,The intern was having an affair with the CEO's wife!,,false,1x1
-dispute,Dispute,1,1,The intern and the groomer had a dispute,,false,1x1
+tired,Tired,2,3,That groomer doesn't seem to sleep a lot.,,false,2x3
+knitting,Knitting,2,2,The receptionist enjoys knitting.,,false,1x1
+dog_hair,Hair,5,1,The groomer gave a ball of dog based yarn to the receptionist. Curious!,,false,3x1
+traffic,Traffic,4,3,I am about to bust a hair trafficking ring,,false,3x2
+intern,Intern,2,3,I know who I am looking for,,false,2x3
+affair,Affair,1,3,The intern was having an affair with the CEO's wife!,,false,1x3
+dispute,Dispute,2,2,The intern and the groomer had a dispute,,false,1x1
