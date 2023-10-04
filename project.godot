@@ -10,11 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Vintage Vincent"
+config/name="Limited Larry and the lost intern"
 config/description="Ludum Dare 54"
 run/main_scene="res://src/MainScene/MainScene.tscn"
 config/features=PackedStringArray("4.1")
-config/icon="res://assets/ui/icons/dave.png"
+config/icon="res://characters/sheriff/1.png"
 
 [autoload]
 
