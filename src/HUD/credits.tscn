@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://5kdjedl1secd"]
+[gd_scene load_steps=2 format=3 uid="uid://csaqqntp0wi17"]
 
 [ext_resource type="Script" path="res://src/HUD/credits.gd" id="1_ilq4s"]
 
@@ -60,8 +60,13 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Retry" type="Button" parent="Credits/VBoxContainer/CenterContainer4"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 0
 text = "Retry"
+
+[node name="Label" type="Label" parent="Credits/VBoxContainer/CenterContainer4"]
+layout_mode = 2
+text = "Reload the page (F5) to restart and get a better ending!"
 
 [connection signal="button_down" from="Credits/VBoxContainer/CenterContainer4/Retry" to="." method="_on_retry_button_down"]
