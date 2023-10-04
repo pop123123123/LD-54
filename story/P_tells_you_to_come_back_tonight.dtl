@@ -17,6 +17,7 @@ president: Or you can just take a nap in the kennel, all the cages are empty.
 - Actually, I think I'll just go for the staffroom and the sofa.
 	president: Your choice, your loss.
 	[signal arg="nap"]
+	Leave --All--
 	jump night_transition/
 - I think I'll pass on that one.
 	president (happy): Are you sure? It's very comfortable. I've slept there myself a few times. Well, it was not my choice, but still. Your loss.
