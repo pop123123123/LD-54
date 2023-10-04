@@ -1,6 +1,9 @@
 # idle
 if {has_talked_to.dark_janitor} == 0:
-	jump DJ_explains_he_finishes_work/
+	if {secret_access} == 1:
+		jump DJ_ending/
+	else:
+		jump DJ_explains_he_finishes_work/
 
 dark_janitor: Officer Limited!
 dark_janitor: What a pleasant surprise!

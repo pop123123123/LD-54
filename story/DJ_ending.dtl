@@ -11,7 +11,7 @@ inspector: I know everything.
 	inspector: You monsters ! I want the name of your accomplices !
 	dark_janitor: Well... Mike, Mandy and me had this small business to earn just a little more money. No harm man !
 	inspector: Poor boy...
-	jump story/ending_fur_traffic_intern_disappeared/
+	jump ending_fur_traffic_intern_disappeared/
 - Let's talk about the meat traffic
 	dark_janitor: Well... as you see, we are running an artisanal corned beef factory in collaboration with the butcher next door.
 	dark_janitor: Customers love these, so the butcher rewards us handsomely.
@@ -52,8 +52,8 @@ inspector: I know everything.
 		inspector: I GOT IT! SHERIF! SEND AN UNIT TO JAZZY JAW GROOMING! NOW!
 		dark_janitor: Oh no, you look like you actually remember the phone number. I will just throw myself in the grinder, then. Goodbye, Jah bless. Jah rastafari.
 		inspector: Jah bless my breda. Your sins are forgiven.
-		jump story/ending_win/
+		jump ending_win/
 	else:
 		inspector: It is... erm... I think it starts with a 0. It also ends with a 4. Or was it an 8? At least it ended with an even number. Or was it an odd one?
 		dark_janitor: Come here old man, you will not even feel the pain, everything will happen real quick
-		jump story/ending_death/ending_win
+		jump ending_death/
