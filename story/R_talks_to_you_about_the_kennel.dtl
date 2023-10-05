@@ -1,3 +1,5 @@
+receptionist: Yeah... We actually have a kennel activity at night
+inspector: Ooooh! Very interesting!
 receptionist: Why, do you have a dog?
 - Yes
 	receptionist: Can you show me pictures of it?
@@ -20,4 +22,5 @@ receptionist: You already did, don't you remember?
 	receptionist: Sure thing, old-timer.
 - Don't question my methods
 	receptionist: Okay okay, no need to get angry.
+[new_memory id="kennel"]
 jump idle_receptionist/

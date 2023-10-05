@@ -24,6 +24,6 @@ dog_hair,Hair,3,2,The groomer gave a ball of dog based yarn to the receptionist.
 traffic,Hair trafficking,4,3,I am about to bust a hair trafficking ring,,false,3x2,Report hair trafficking,ending_fur_traffic
 intern,Intern,2,3,I know who I am looking for,,false,2x3,,
 affair,Affair,1,3,The intern was having an affair with the CEO's wife!,,false,1x3,Blame the president,ending_president
-dispute,Dispute,2,2,The intern and the janitor had a dispute,,false,1x1,Blame the janitor,ending_fur_traffic_intern_disappeared
+dispute,Dispute,2,2,The intern and the janitor had a dispute,,false,1x1,Blame the janitor,ending_janitor
 intern_ran_off,Scared off,3,1,The intern was scared off by the hair traffickers,,false,3x1,Blame hair traffickers,ending_fur_traffic_intern_disappeared
 intern_bitten_to_death,Bitten to death,2,2,The intern was bitten to death by Princesse,,false,1x1,Blame Princesse,ending_princess
