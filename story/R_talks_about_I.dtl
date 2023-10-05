@@ -5,6 +5,6 @@ inspector: You can count on me, or my name isn't... hmm... Weathered Walter?
 receptionist: ...
 inspector: I guess I can just walk around and interrogate people?
 receptionist: By all means, help yourself. It's your job after all. In the meantime, I will just keep knitting smelly sweaters.
-[new_memory id="knitting"]
+[new_memory id="intern"]
 jump idle_receptionist/
 
