@@ -2,6 +2,11 @@ Leave --All--
 [signal arg="hide_sidebar"]
 [background arg="res://assets/background/black.webp" fade="1.0"]
 Limited Larry returns to the sheriff's office with a vital piece of information.
+Join groomer 1
+Join janitor 2
+Join night_warden 3
+He found out that Mike Bitterbark, Richie Riddim and Mandy Moonlight were involved in an illegal felt traffic
+Leave --All--
 [background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Good old Larry, back already?

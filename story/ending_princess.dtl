@@ -3,6 +3,9 @@ Leave --All--
 [background arg="res://assets/background/black.webp" fade="1.0"]
 [wait time="1.0"]
 Limited Larry returned confidently to the sheriff's office
+Join customer 1
+He was convinced that Princesse Christine de-la-Fourrière, the beloved dog of Françoise du Canin, killed the intern
+Leave --All--
 [background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Larry! Back so soon? Any news on the investigation?

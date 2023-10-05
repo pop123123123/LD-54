@@ -2,6 +2,9 @@ Leave --All--
 [signal arg="hide_sidebar"]
 [background arg="res://assets/background/black.webp" fade="1.0"]
 Limited Larry returns confident to the sheriff's office
+Join janitor 1
+He was convinced that Richie Riddim, the Janitor, killed the intern after a dispute
+Leave --All--
 [background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Larry! Back already?

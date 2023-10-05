@@ -1,6 +1,13 @@
 Leave --All--
 [signal arg="hide_sidebar"]
+[background arg="res://assets/background/black.webp" fade="1.0"]
 Limited Larry returns, in the dark, to the police station, the only building in the center of Neo Tourcoing still lit by light.
+Join groomer 1
+Join janitor 2
+Join night_warden 3
+He found out that Mike Bitterbark, Richie Riddim and Mandy Moonlight were involved in an illegal felt traffic.
+Because Pascal Pala found out their activity, he has been intimidated by the clique and disappeared...
+Leave --All--
 [background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
 sheriff: Good old Larry, I'm on my way home...
@@ -19,5 +26,5 @@ sheriff: He can't have gone far. Well done Larry, to tell you the truth, I didn'
 Leave --All--
 [background arg="res://assets/background/black.webp" fade="1.0"]
 Richie Riddim, Mike Bitterbark and Mandy Moonlight spent a short time in prison for their undeclared activities.
-Pascal Pala was never found.
-Leave --All--
+Pascal Pala was never found....
+[signal arg="end"]
