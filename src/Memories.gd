@@ -6,6 +6,7 @@ signal active_memory_added_always_fired(memory: Dictionary)
 signal active_memory_removed(memory_id: String)
 
 var memories: Array = []
+var pending_memories: Array = []
 var active_memories: Array = []
 
 
@@ -20,12 +21,13 @@ func get_memory(id: String):
 func add_memory(id: String, active = false, x = 0, y = 0):
 	var memory = get_memory(id)
 	if memory != null:
-		if not active_memories.has(id):
+		if not active_memories.has(id) and not pending_memories.has(id):
 			if active:
 				print("add memory active: ", memory, " x:", x, " y:", y)
 				add_active_memory(id, x, y)
 			else:
 				print("add memory: ", memory)
+				pending_memories.append(id)
 				memory_added.emit(memory)
 	else:
 		printerr("memory not found: ", id)
@@ -35,6 +37,7 @@ func add_active_memory(id: String, x: int, y: int, emit_event = true):
 	if memory != null:
 		if not active_memories.has(id):
 			active_memories.append(id)
+			pending_memories.erase(id)
 			active_memory_added_always_fired.emit(memory)
 			if emit_event:
 				active_memory_added.emit(memory, x, y)
