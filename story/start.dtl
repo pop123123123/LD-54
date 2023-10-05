@@ -1,14 +1,14 @@
 [background arg="res://assets/background/sheriff_office.webp" fade="0.0"]
 [new_memory id="identity" active="true"]
-[new_memory id="number" active="true" x="1" y="5"]
+[new_memory id="number" active="true" x="3" y="5"]
 [new_memory id="grandchildren" active="true" y="1"]
 [new_memory id="wife" active="true" x="2"]
 [new_memory id="plants" active="true" y="5"]
-[new_memory id="ptsd" active="true" x="3" y="4"]
+[new_memory id="ptsd" active="true" x="1" y="5"]
 [new_memory id="french" active="true" y="3"]
 [new_memory id="year" active="true" x="4" y="3"]
 [new_memory id="cooking" active="true" x="5" y="3"]
-[new_memory id="doctor" active="true" x="3" y="3"]
+[new_memory id="doctor" active="true" x="4" y="5"]
 Neo Tourcoing, September 30th 2033
 8\:30 AM
 Clear weather but some clouds on the horizon
