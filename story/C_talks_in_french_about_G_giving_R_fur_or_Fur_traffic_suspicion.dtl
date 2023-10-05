@@ -1,5 +1,5 @@
 if Memories.active_memories.has('french') == false:
-	customer: This is a very emotional topic for me, and I don't feel like talking about it except in my native language. As we say in France: "L'Anglois c'est caca". Honhonhon.
+	customer: This is a very emotional topic for me, and I don't feel like talking about it except in my native language. As we say in France\: "L'Anglois c'est caca". Honhonhon.
 else:
 	customer: Wait... Now that you mention it... Miss Lullaby's yarn looks strangely like Princesse's fur... That evil Bitterbark always cuts Princess' hair too short....
 	inspector: What are you getting at, Mrs Du Canin?
@@ -7,4 +7,5 @@ else:
 	inspector: Madame, I am the police.
 	customer: Then call competent police!
 	inspector: Jeez, alright.
+	[new_memory id="traffic"]
 jump idle_customer/
