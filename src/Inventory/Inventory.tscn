@@ -67,12 +67,12 @@ offset_bottom = 40.0
 [node name="CtrlInventoryGridLeft" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/InventoryLeftContainer/Control"]
 unique_name_in_owner = true
 texture_filter = 1
-custom_minimum_size = Vector2(192, 288)
+custom_minimum_size = Vector2(192, 336)
 layout_mode = 2
 anchors_preset = 0
 offset_left = -193.0
 offset_right = -1.0
-offset_bottom = 288.0
+offset_bottom = 336.0
 script = ExtResource("2_v6x15")
 field_style = SubResource("StyleBoxTexture_4kk5v")
 field_highlighted_style = SubResource("2")
@@ -122,7 +122,7 @@ shortcut_keys_enabled = false
 
 [node name="InventoryGridLeft" type="Node" parent="."]
 script = ExtResource("2_uiyc4")
-size = Vector2i(4, 6)
+size = Vector2i(4, 7)
 item_protoset = ExtResource("8_ie0jr")
 readonly = true
 
