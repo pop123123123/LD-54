@@ -1,0 +1,5 @@
+investigator: If you want to confess your crimes just call this number.
+groomer: What crimes?
+investigator: Don't worry, the calls are anonymous and not recorded. Just be your true self and say where you buried the body.
+groomer: What the hell! I didn't murder anyone!
+\jump idle_groomer
