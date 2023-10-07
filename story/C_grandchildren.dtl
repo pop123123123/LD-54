@@ -1,0 +1,4 @@
+customer: I love children! I employ some of them in my domain.
+investigator: Is that legal?
+customer: I don't know but it should be.
+\jump idle_customer

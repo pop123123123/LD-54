@@ -2,9 +2,9 @@ Leave --All--
 [signal arg="hide_sidebar"]
 [background arg="res://assets/background/black.webp" fade="1.0"]
 [wait time="1.0"]
-Limited Larry returned confidently to the sheriff's office
+Limited Larry returned confidently to the sheriff's office.
 Join customer 1
-He was convinced that Princesse Christine de-la-Fourrière, the beloved dog of Françoise du Canin, killed the intern
+He was convinced that Princesse Christine de-la-Fourrière, the beloved dog of Françoise du Canin, killed the intern.
 Leave --All--
 [background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
@@ -16,8 +16,8 @@ sheriff: A princess? What's all the fuss about?
 inspector: It's the dog of a loyal customer of Jazzy Jaws Grooming.
 sheriff: A dog? Guilty of Pascal Pala's disappearance?
 inspector: Uh... Absolutely! His mistress claimed that the dog HATED the trainee.
-inspector: So there's no doubt that he's responsible for his disappearance!
-sheriff: Larry... I was counting on you
+inspector: So there's no doubt that she's responsible for his disappearance!
+sheriff: Larry... I was counting on you.
 sheriff: I kept you here out of the kindness of my heart, because of your advanced age and the fact that my father owed you a debt when you saved him from banana indigestion.
 sheriff: But I regret to inform you that you're fired and that I'm taking over the Pascal Pala business.
 Leave --All--

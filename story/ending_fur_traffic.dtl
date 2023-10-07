@@ -5,7 +5,7 @@ Limited Larry returns to the sheriff's office with a vital piece of information.
 Join groomer 1
 Join janitor 2
 Join night_warden 3
-He found out that Mike Bitterbark, Richie Riddim and Mandy Moonlight were involved in an illegal felt traffic
+He found out that Mike Bitterbark, Richie Riddim and Mandy Moonlight were involved in an illegal dog hair traffic.
 Leave --All--
 [background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
@@ -22,7 +22,7 @@ inspector: Hmmm no, of...
 sheriff: Guns?!
 inspector: Well, more like...
 sheriff: ...
-inspector: Dog hair trafficking
+inspector: Dog hair trafficking.
 sheriff: ...
 inspector: To put it simply, they use dog hair to make yarn and fabric in an undisclosed way in their workshop.
 sheriff: Fabric and yarn...

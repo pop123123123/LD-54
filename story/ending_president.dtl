@@ -1,9 +1,9 @@
 Leave --All--
 [signal arg="hide_sidebar"]
 [background arg="res://assets/background/black.webp" fade="1.0"]
-Limited Larry returns triumphant to the sheriff's office
+Limited Larry returns triumphant to the sheriff's office.
 Join president 1
-He was convinced that Barry Integrity, the President, killed the intern after kowing about his wife having an affair with him
+He was convinced that Barry Integrity, the President, killed the intern after learning of an affair between him and his wife.
 Leave --All--
 [background arg="res://assets/background/sheriff_office.webp" fade="1.0"]
 Join sheriff 1
