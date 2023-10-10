@@ -1,4 +1,4 @@
 warden: I hate plants. My father was killed by a rhododendron.
 investigator: I'm so sorry.
 warden: Don't worry, you couldn't know.
-\jump idle_warden
+jump idle_warden/
